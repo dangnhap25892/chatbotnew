@@ -99,8 +99,10 @@ function gettoken($partner) {
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-   $chatfuelpa = getChatfuel($partner);
+   #$chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
+    echo $partner;
+  echo $tokenpa;
 if(isset($noidung)){
 sendchat2($noidung,$partner,$tokenpa);
 }
