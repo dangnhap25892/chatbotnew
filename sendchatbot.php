@@ -32,20 +32,19 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
   $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $jsondata);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-  curl_exec($ch);
-    if (curl_errno($ch)) {
-    echo errorChat;
-  } else {
-    $resultStatus = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    if ($resultStatus == 200) {
-      // send ok
-    } else {
-      echo errorChat;
-    }
-  }
-  curl_close($ch);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    $st=curl_exec($ch);
+
+  $errors = curl_error($ch);
+    $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    var_dump($errors);
+    var_dump($response);
+
+
+
+    curl_close($ch);
 }
 function sendchat2($message,$userID,$token)
 {
@@ -61,21 +60,22 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     }
 }";
   $ch = curl_init($url);
-   curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $jsondata);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-  curl_exec($ch);
-    if (curl_errno($ch)) {
-    echo errorChat;
-  } else {
-    $resultStatus = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    if ($resultStatus == 200) {
-      // send ok
-    } else {
-      echo errorChat;
-    }
-  }
-  curl_close($ch);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $st=curl_exec($ch);
+
+    $errors = curl_error($ch);
+    $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    var_dump($errors);
+    var_dump($response);
+
+
+
+    curl_close($ch);
 
 }
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
@@ -99,10 +99,8 @@ function gettoken($partner) {
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-   #$chatfuelpa = getChatfuel($partner);
+   $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
-    echo $partner;
-  echo $tokenpa;
 if(isset($noidung)){
 sendchat2($noidung,$partner,$tokenpa);
 }
