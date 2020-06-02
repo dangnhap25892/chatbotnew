@@ -1,8 +1,8 @@
 <?php
 
-$ID = $_POST['ID'];// lấy id từ chatfuel
-$chatfuel = $_POST['chatfuel'];
-$token = $_POST['token'];
+$ID = $_GET['ID'];// lấy id từ chatfuel
+#$chatfuel = $_POST['chatfuel'];
+$token = $_GET['token'];
 require_once 'config.php'; //lấy thông tin từ config
 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
