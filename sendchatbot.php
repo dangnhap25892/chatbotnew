@@ -101,8 +101,9 @@ $partner = getRelationship($userid);
 if($partner!= 0){
    $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
-
+if(isset($message)){
 sendchat2($noidung,$partner,$tokenpa);
+}
      }
 else{
   $jsonData ='{
