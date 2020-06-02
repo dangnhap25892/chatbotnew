@@ -5,27 +5,28 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
 $token = gettoken($userid);
-if (!$conn) {
-    echo'{
- "messages": [
-    {
-      "attachment":{
-        "type":"template",
-        "payload":{
-          "template_type":"generic",
-          "elements":[
-            {
-              "title":"Lỗi !!!",
-              "subtitle":"Đã xảy ra lỗi gửi tin. Bạn gửi lại thử nhé."
-            }
-          ]
-        }
-      }
-    }
-  ]
-}';
-}
+// if (!$conn) {
+//     echo'{
+//  "messages": [
+//     {
+//       "attachment":{
+//         "type":"template",
+//         "payload":{
+//           "template_type":"generic",
+//           "elements":[
+//             {
+//               "title":"Lỗi !!!",
+//               "subtitle":"Đã xảy ra lỗi gửi tin. Bạn gửi lại thử nhé."
+//             }
+//           ]
+//         }
+//       }
+//     }
+//   ]
+// }';
+// }
 ////// Hàm Gửi JSON //////////
+
 function sendchat($token,$jsonData)
 {
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
@@ -45,6 +46,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
     curl_close($ch);
+    die();
 }
 function sendchat2($message,$userID,$token)
 {
@@ -76,6 +78,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
     curl_close($ch);
+    die();
 
 }
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
@@ -99,9 +102,11 @@ function gettoken($partner) {
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-   $chatfuelpa = getChatfuel($partner);
+# $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
+  echo $partner;
+  echo $tokenpa;
 sendchat2($noidung,$partner,$tokenpa);
 }
      }
