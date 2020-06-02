@@ -86,12 +86,14 @@ function outchat($userid,$token) {
   $partner = getRelationship($userid);
   #$chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
+  echo $partner;
+  echo $tokenpa;
   #$tokenpa = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $partner");
   $jsonData ='{
   "recipient":{
-    "id":"'.$userID.'"
+    "id":"'.$userid.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
@@ -137,7 +139,7 @@ if (!hangcho($ID)) { // nếu không ở trong hàng chờ
 
 $jsonData ='{
   "recipient":{
-    "id":"'.$userID.'"
+    "id":"'.$ID.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
@@ -159,7 +161,7 @@ sendchat($token,$jsonData);
 }else{ // nếu đang ở trong hàng chờ
 $jsonData ='{
   "recipient":{
-    "id":"'.$userID.'"
+    "id":"'.$ID.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
