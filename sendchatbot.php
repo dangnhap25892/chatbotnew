@@ -101,7 +101,7 @@ $partner = getRelationship($userid);
 if($partner!= 0){
    $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
-if(isset($message)){
+if(isset($noidung)){
 sendchat2($noidung,$partner,$tokenpa);
 }
      }
