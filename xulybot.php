@@ -29,11 +29,6 @@ switch ($page)
         break;
 }
 
-if ($type=="image")
-{
-  sendchat2($image,$userID,$token);
-    die();
-}
 if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="Getstared"){
     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
