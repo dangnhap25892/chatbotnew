@@ -66,7 +66,6 @@ if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="newchat"){
     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
     header("Location: thamgiabot.php?ID=$userID&token=$token");
-    
     die();
   }
   if(isset($getstart['postback']))
@@ -147,6 +146,40 @@ if ($message=='Menu') {
   "messaging_type": "RESPONSE",
   "message":{
     "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
+      },{
+        "content_type":"text",
+        "title":"Kết thúc",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Hướng dẫn",
+        "payload":"huongdan",
+      },
+      {
+        "content_type":"text",
+        "title":"Menu",
+        "payload":"Menuchat",
+      }
+    ]
+  }
+}';
+    sendchat($token,$jsonData);
+    die();
+}
+if ($message=='Hướng dẫn') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Gõ ký tự bất kỳ để bắt đầu chat. Gõ pp hoặc end chat để kết thúc cuộc trò chuyện.Hiện tại Chat có hỗ trợ gửi ảnh, video, chatvoice, và file đính kèm.",
     "quick_replies":[
       {
         "content_type":"text",
