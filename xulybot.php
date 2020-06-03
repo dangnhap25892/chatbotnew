@@ -36,7 +36,7 @@ if ($type=="image")
 }
 if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="Getstared"){
-    header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
     $jsonData ='{
   "recipient":{
     "id": "'.$userID.'"
@@ -64,8 +64,8 @@ if(isset($getstart['postback']))
   }
   if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="newchat"){
-    header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-    header("Location: https://chatbot789.herokuapp.com/thamgiabot.php?ID=$userID&token=$token");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
+    header("Location: thamgiabot.php?ID=$userID&token=$token");
     $jsonData ='{
   "recipient":{
     "id": "'.$userID.'"
@@ -152,12 +152,12 @@ if(isset($getstart['postback']))
     die();
 }
 if ($message=='Kết thúc') {
-  header("Location: https://chatbot789.herokuapp.com/ketthucbot.php?ID=$userID&token=$token");
+  header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
-  header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-  header("Location: https://chatbot789.herokuapp.com/thamgiabot.php?ID=$userID&token=$token");
+  header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
+  header("Location: thamgiabot.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='Menu') {
@@ -220,7 +220,7 @@ if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$m
   die();
 }
 if(isset($message)){
-  header("Location: /sendchatbot.php?id=$userID&noidung=$message");
+  header("Location: sendchatbot.php?id=$userID&noidung=$message");
   die();
  }
  function sendchat($token,$jsonData)
