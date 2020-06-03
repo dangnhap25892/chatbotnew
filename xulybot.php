@@ -66,28 +66,7 @@ if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="newchat"){
     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
     header("Location: thamgiabot.php?ID=$userID&token=$token");
-    $jsonData ='{
-  "recipient":{
-    "id": "'.$userID.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"chuyển tới thamgiabot",
-        "buttons":[
-          {
-            "type":"Postback",
-            "title":"Bắt đầu",
-            "payload":"Start"
-          }
-        ]
-      }
-    }
-  }
-}';
-    sendchat($token,$jsonData);
+    
     die();
   }
   if(isset($getstart['postback']))
