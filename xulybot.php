@@ -220,7 +220,7 @@ if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$m
   die();
 }
 if(isset($message)){
-  header("Location: https://chatbot789.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message");
+  header("Location: /sendchatbot.php?id=$userID&noidung=$message");
   die();
  }
  function sendchat($token,$jsonData)
