@@ -108,9 +108,12 @@ if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
 sendchat2($noidung,$partner,$tokenpa);
+die();
 }
+
      }
 else{
+  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -131,13 +134,6 @@ else{
   }
 }';
 sendchat($token,$jsonData);
-
+die();
 }
-
-
-
-
-
-
-
 ?>
