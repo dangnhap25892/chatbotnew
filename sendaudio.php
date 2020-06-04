@@ -3,7 +3,7 @@
 require_once 'config.php'; //lấy thông tin từ config
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
-$noidung = $_GET['noidung'];
+#$noidung = $_GET['noidung'];
 $token = gettoken($userid);
 // if (!$conn) {
 //     echo'{
@@ -26,6 +26,29 @@ $token = gettoken($userid);
 // }';
 // }
 ////// Hàm Gửi JSON //////////
+$url = $_GET['noidung'];
+$v2 = '&_nc_sid=';
+$v3 = $_GET['_nc_sid'];
+$v4 = '&_nc_ohc=';
+$v5 = $_GET['_nc_ohc'];
+$v6 = '&_nc_ht=';
+$v7 = $_GET['_nc_ht'];
+$v8 = '&oh=';
+$v9 = $_GET['oh'];
+$v10 = '&oe=';
+$v11 = $_GET['oe'];
+$v12 = '&_nc_oc=';
+$v13 = $_GET['_nc_oc'];
+if (isset($v5))
+{
+$noidung="".$url."".$v2."".$v3."".$v4."".$v5."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."";
+#echo "$hihi";
+}
+else
+{
+  $noidung="".$url."".$v2."".$v3."".$v12."".$v13."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."";
+  #echo "$hihi";
+}
 $message = '"message":{
     "attachment":{
       "type":"audio", 
@@ -143,7 +166,7 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
-sendchat2($noidung,$partner,$tokenpa);
+sendchat3($message,$partner,$tokenpa);
 die();
 }
 
