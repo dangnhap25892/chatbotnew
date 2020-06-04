@@ -137,8 +137,7 @@ if ($message=='Kết thúc') {
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
   header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-  header("Location: thamgiabot.php?ID=$userID&token=$token");
-   $jsonData ="{
+  $jsonData ="{
    'messaging_type' : 'RESPONSE',
    'recipient':{
      'id': $userID
@@ -147,7 +146,9 @@ if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$mes
      'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page."'
      }
  }";
- sendchat($token,$jsonData);
+ 
+  header("Location: thamgiabot.php?ID=$userID&token=$token");
+   sendchat($token,$jsonData);
   die();
  
 }
