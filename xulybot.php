@@ -66,8 +66,8 @@ if(isset($getstart['postback']))
   }
   if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="newchat"){
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-    header("Location: thamgiabot.php?ID=$userID&token=$token");
+    header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
+    header("Location: https://chatbot789.herokuapp.com/thamgiabot.php?ID=$userID&token=$token");
     die();
   }
   if(isset($getstart['postback']))
