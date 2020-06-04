@@ -147,7 +147,7 @@ if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$mes
      }
  }";
  
-  header("Location: thamgiabot.php?ID=$userID&token=$token");
+  #header("Location: thamgiabot.php?ID=$userID&token=$token");
    sendchat($token,$jsonData);
   die();
  
