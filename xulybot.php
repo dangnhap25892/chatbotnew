@@ -222,6 +222,12 @@ if ($type=="image")
   sendchat2($image,$userID,$token);
     die();
 }
+if ($type=="audio")
+{
+  header("Location: sendvoid.php?id=$userID&noidung=$image");
+    die();
+}
+
 
 if ($message=='Kết thúc') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
