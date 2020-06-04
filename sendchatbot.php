@@ -4,7 +4,7 @@ require_once 'config.php'; //lấy thông tin từ config
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
-$token = gettoken($userid);
+$token = $_GET['token'];
 // if (!$conn) {
 //     echo'{
 //  "messages": [
