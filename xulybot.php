@@ -27,6 +27,9 @@ switch ($page)
     case '106013841142376' :
         $token = 'EAADn4qwXcIQBAPd61ca1Ee35hssJqhQz4qJFscbZCAXyeshGwCNmQl7hy6vpWqQB6uV8Vr97XTgmghTcMs1CeG7KrUJGHXeIP94PgUjJRfZBdyMDHMyDO7XI1HOHTFgUmAKWyDmJU2i5yFAvWN8YG0dPmzJpVcHSDwx8vGwgZDZD';
         break;
+    case '103303021315529' :
+        $token = 'EAADn4qwXcIQBAExg4ufcz8X1w4DgN6UP6ZAIEq6U9ZCodDzvFbZBkBsofbZBCGx29YU0ABV6YRRvZA8u6umZB71q7tOM7HpI4zRkrQasQs6CSHrpCMyj4yLaCHH34IGosUgljfEf4biZCAnZBsvlu3maLKoOn0dqEjCtZBsyBDit5zwZDZD';
+        break;
 }
 
 if(isset($getstart['postback']))
