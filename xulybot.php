@@ -218,8 +218,8 @@ if(isset($getstart['postback']))
 }
 if ($type=="image")
 {
-  header("Location: sendchatbot.php?id=$userID&noidung=$image");
-  sendchat2($image,$userID,$token);
+  header("Location: sendimage.php?id=$userID&noidung=$image");
+  #sendchat2($image,$userID,$token);
     die();
 }
 if ($type=="audio")
