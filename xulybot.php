@@ -143,7 +143,7 @@ if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$mes
      'id': $userID
    },
    'message':{
-     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page."'
+     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page." token:".$token."'
      }
  }";
  
