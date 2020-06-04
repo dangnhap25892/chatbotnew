@@ -22,9 +22,9 @@ $gioitinh = 2;
 if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
     $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 0 , $gioitinh,'$chatfuel','$token')";
    $info = mysqli_query($conn,$sql );
-  header("Location: thamgiabot.php?ID=$userID&token=$token");
+  header("Location: thamgiabot.php?ID=$ID&token=$token");
   }
-header("Location: thamgiabot.php?ID=$userID&token=$token");
+header("Location: thamgiabot.php?ID=$ID&token=$token");
 mysqli_close($conn);
 
 ?>
