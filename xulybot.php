@@ -224,7 +224,7 @@ if ($type=="image")
 }
 if ($type=="audio")
 {
-  header("Location: sendvoid.php?id=$userID&noidung=$image");
+  header("Location: sendaudio.php?id=$userID&noidung=$image");
     die();
 }
 
