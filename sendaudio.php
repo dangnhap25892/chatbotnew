@@ -143,7 +143,7 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
-sendchat3($message,$partner,$tokenpa);
+sendchat2($noidung,$partner,$tokenpa);
 die();
 }
 
