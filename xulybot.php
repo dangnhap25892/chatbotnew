@@ -227,6 +227,11 @@ if ($type=="audio")
   header("Location: sendaudio.php?id=$userID&noidung=$image");
     die();
 }
+if ($type=="video")
+{
+  header("Location: sendvideo.php?id=$userID&noidung=$image");
+    die();
+}
 
 
 if ($message=='Kết thúc') {
