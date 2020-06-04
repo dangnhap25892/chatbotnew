@@ -25,7 +25,7 @@ $token = gettoken($userid);
 // }';
 // }
 
-$url = $_GET['url'];
+$url = $_GET['noidung'];
 $url2 = '&_nc_sid=';
 $url3 = $_GET['_nc_sid'];
 $url4 = '&_nc_oc=';
@@ -54,14 +54,14 @@ else{
 
 $noidung= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
-$message = '"message":{
-    "attachment":{
-      "type":"audio", 
-      "payload":{
-        "url":"'.$noidung.'", 
-      }
-    }
-  }';
+// $message = '"message":{
+//     "attachment":{
+//       "type":"audio", 
+//       "payload":{
+//         "url":"'.$noidung.'", 
+//       }
+//     }
+//   }';
   ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
