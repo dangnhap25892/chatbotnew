@@ -136,7 +136,8 @@ if ($message=='Kết thúc') {
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
-  header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
+  header("Location: thamgiabot.php?ID=$userID&token=$token");
+  header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
   $jsonData ="{
    'messaging_type' : 'RESPONSE',
    'recipient':{
@@ -147,7 +148,7 @@ if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$mes
      }
  }";
  
-  #header("Location: thamgiabot.php?ID=$userID&token=$token");
+  
    sendchat($token,$jsonData);
   die();
  
