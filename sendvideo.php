@@ -90,7 +90,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     "id": "'.$userID.'"
   },
   "message":{
-    "text":"'.$message.'"
+    "text":"https://chathihi.herokuapp.com/index.php?&url='.$message.'"
     }
 }';
   $ch = curl_init($url);
