@@ -61,13 +61,11 @@ if(isset($getstart['postback']))
   }
 }';
     sendchat($token,$jsonData);
-    header("Location: thamgiabot.php?ID=$userID");
     die();
   }
   if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="newchat"){
-    header("Location: https://chatbot789.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-    header("Location: https://chatbot789.herokuapp.com/thamgiabot.php?ID=$userID&token=$token");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
     die();
   }
   if(isset($getstart['postback']))
@@ -136,20 +134,8 @@ if ($message=='Kết thúc') {
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
-  header("Location: thamgiabot.php?ID=$userID&token=$token");
   header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=testchat&gt=0");
-  $jsonData ="{
-   'messaging_type' : 'RESPONSE',
-   'recipient':{
-     'id': $userID
-   },
-   'message':{
-     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page." token:".$token."'
-     }
- }";
  
-  
-   sendchat($token,$jsonData);
   die();
  
 }
