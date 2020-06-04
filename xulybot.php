@@ -212,6 +212,12 @@ if(isset($getstart['postback']))
     sendchat($token,$jsonData);
     die();
 }
+if ($type=="image")
+{
+  sendchat2($image,$userID,$token);
+    die();
+}
+
 if ($message=='Kết thúc') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
@@ -345,6 +351,39 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     var_dump($response);
     curl_close($ch);
     die();
+}
+function sendchat2($message,$userID,$token)
+{
+
+$url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
+  $jsonData ="{
+  
+  'recipient':{
+    'id': $userID
+  },
+  'message':{
+    'text':'".$message."'
+    }
+}";
+  $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $st=curl_exec($ch);
+
+    $errors = curl_error($ch);
+    $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    var_dump($errors);
+    var_dump($response);
+
+
+
+    curl_close($ch);
+    die();
+
 }
 die();
 ?>
