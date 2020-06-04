@@ -52,15 +52,15 @@ function sendchat2($message,$userID,$token)
 {
 
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
-  $jsonData ="{
+  $jsonData ='{
   
-  'recipient':{
-    'id': $userID
+  "recipient":{
+    "id": "'.$userID'"
   },
-  'message':{
-    'text':'".$message."'
+  "message":{
+    "text":"'.$message.'"
     }
-}";
+}';
   $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
