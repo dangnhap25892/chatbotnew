@@ -233,6 +233,18 @@ if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$m
     sendchat($token,$jsonData);
   die();
 }
+if($message=='kiemtra2'){
+   $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page."'
+     }
+ }";
+ sendchat($token,$jsonData);
+ }
 if(isset($message)){
   header("Location: sendchatbot.php?id=$userID&noidung=$message");
   die();
