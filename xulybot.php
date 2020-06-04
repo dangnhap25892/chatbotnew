@@ -290,7 +290,7 @@ if ($message=='Hướng dẫn') {
     sendchat($token,$jsonData);
     die();
 }
-if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$message =='end') {
+if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$message =='end'||$message =='Kết Thúc') {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
