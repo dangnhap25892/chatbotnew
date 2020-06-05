@@ -114,7 +114,28 @@ die();
      }
 else{
   
-     header("Location: updatebot.php?ID=$userid&token=$token&chatfuel=$chatpage&gt=0");
+    mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Đang tìm kiếm...",
+            "subtitle":"Bạn có thể gõ start để tìm kiếm nhanh hơn.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
     
 }
 die();
