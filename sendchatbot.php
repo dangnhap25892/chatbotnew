@@ -143,7 +143,7 @@ die();
   }
     else
     {
-    #mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
+    mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
