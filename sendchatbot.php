@@ -1,4 +1,3 @@
-
 <?php
 require_once 'config.php'; //lấy thông tin từ config
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
@@ -25,6 +24,12 @@ $token = $_GET['token'];
 //   ]
 // }';
 // }
+function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
+  $row = mysqli_num_rows($result);
+  return $row;
+}
 
 ////// Hàm Gửi JSON //////////
 
@@ -113,8 +118,32 @@ die();
 
      }
 else{
-  
-    mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
+  if ( !isUserExist($userid) ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Thông báo",
+            "subtitle":"Bạn chưa bắt đầu hãy gõ start để kết nối với người lạ.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
+    else
+    {
+    #mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -136,7 +165,7 @@ else{
 }';
 sendchat($token,$jsonData);
 die();
-    
+    }
 }
 die();
 ?>
