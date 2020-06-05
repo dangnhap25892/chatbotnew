@@ -350,6 +350,7 @@ if($message=='kiemtra2'){
  sendchat($token,$jsonData);
  }
 if(isset($message)){
+   $message = preg_replace('/\n+/', '\n', $message);
   header("Location: sendchatbot.php?id=$userID&noidung=$message&token=$token");
   die();
  }
