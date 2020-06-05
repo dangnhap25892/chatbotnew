@@ -26,12 +26,6 @@ $token = $_GET['token'];
 // }';
 // }
 
-function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
-  global $conn;
-  $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
-  $row = mysqli_num_rows($result);
-  return $row;
-}
 ////// Hàm Gửi JSON //////////
 
 function sendchat($token,$jsonData)
@@ -119,32 +113,9 @@ die();
 
      }
 else{
-  if ( !isUserExist($userid) ) {
+  
      header("Location: updatebot.php?ID=$userid&token=$token&chatfuel=$chatpage&gt=0");
-  }
-    else{
-  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
-  $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData);
+    
+}
 die();
-}
-}
 ?>
