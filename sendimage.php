@@ -163,7 +163,7 @@ function gettoken($partner) {
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-# $chatfuelpa = getChatfuel($partner);
+ $chatfuelpa = getChatfuel($userid);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
     $admin ='{
@@ -179,7 +179,7 @@ if(isset($noidung)){
            {
             "title":"Ảnh",
             "image_url":"'.$noidung.'",
-            "subtitle":"ID:'.$userid.' ... ",
+            "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
             "buttons":[
               {
                 "type":"web_url",
