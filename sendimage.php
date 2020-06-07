@@ -160,10 +160,19 @@ function gettoken($partner) {
   $relationship = $row['token'];
   return $relationship;
 }
+//// Lấy Id chatfuel////
+function getChatfuel($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chatfuel'];
+  return $relationship;
+}
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-# $chatfuelpa = getChatfuel($userid);
+$chatfuelpa = getChatfuel($userid);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
     $admin ='{
@@ -179,7 +188,7 @@ if(isset($noidung)){
            {
             "title":"Ảnh",
             "image_url":"'.$noidung.'",
-            "subtitle":"ID:'.$userid.' ... page  ",
+            "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
             "buttons":[
               {
                 "type":"web_url",
