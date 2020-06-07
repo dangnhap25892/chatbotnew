@@ -78,11 +78,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
     var_dump($errors);
     var_dump($response);
-
-
-
     curl_close($ch);
-    die();
 }
 function sendchat2($message,$userID,$token)
 {
@@ -170,6 +166,38 @@ if($partner!= 0){
 # $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
+    $admin ='{
+  "recipient":{
+    "id":"2781358401974957"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Ảnh",
+            "image_url":"'.$noidung.'",
+            "subtitle":"ID:'.$userid.' ... ",
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"'.$noidung.'",
+                "title":"View Website"
+              },{
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
   echo $partner;
   echo $tokenpa;
 sendchat2($noidung,$partner,$tokenpa);
