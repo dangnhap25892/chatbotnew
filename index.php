@@ -140,7 +140,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
   </p>
   </div>
     <!-- Page Loader -->
-  /*  <div class="page-loader-wrapper">
+  <!--  <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
                 <div class="spinner-layer pl-red">
@@ -154,7 +154,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
             </div>
             <p>Please wait...</p>
         </div>
-    </div>*/
+    </div>-->
     <input class="toggle-box" id="identifier-1" type="checkbox" >
 <label for="identifier-1" style="text-align: center;">Click để hiển thị nội dung!</label>
 <div>Đây là phần nội dung rất dài, dài lê thê, dài ngoằng ngoẵng, dài kinh khủng.
