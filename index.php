@@ -342,15 +342,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 
    
     </div>
-	<!-- ad now-->
-	<script type="text/javascript">
-  (sc_adv_out = window.sc_adv_out || []).push({
-    id : "760383",
-    domain : "n.ads1-adnow.com"
-  });
-</script>
-<script type="text/javascript" src="//st-n.ads1-adnow.com/js/a.js" async></script>
-	<!-- ad now-->
+	
 </body>
 
 </html>
