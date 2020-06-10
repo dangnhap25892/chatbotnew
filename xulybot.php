@@ -238,6 +238,9 @@ if ($message=='Kết thúc') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
+if ($message=='Không') {
+  die();
+}
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
   header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
  
