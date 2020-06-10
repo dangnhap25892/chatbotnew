@@ -238,7 +238,7 @@ if ($message=='Kết thúc') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
-if ($message=='Không') {
+if ($message=='Không.') {
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
@@ -330,7 +330,7 @@ if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$m
         "payload":"endchat",
       },{
         "content_type":"text",
-        "title":"Không",
+        "title":"Không.",
         "payload":"Khong",
       }
       
