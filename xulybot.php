@@ -206,7 +206,7 @@ if(isset($getstart['postback']))
         "payload":"endchat",
       },{
         "content_type":"text",
-        "title":"Không",
+        "title":"Không.",
         "payload":"Khong",
       }
       
