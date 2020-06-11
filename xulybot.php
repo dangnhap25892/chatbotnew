@@ -125,7 +125,6 @@ switch ($page)
 
 if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="Getstared"){
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     $jsonData ='{
   "recipient":{
     "id": "'.$userID.'"
