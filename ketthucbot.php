@@ -144,7 +144,7 @@ sendchat($token,$jsonData);
     ]
   }
 }';
-sendchat($token,$jsonData);
+sendchat($tokenpa,$jsonData);
 }
 if (!trangthai($ID)){ // nếu chưa chát
 if (!hangcho($ID)) { // nếu không ở trong hàng chờ
