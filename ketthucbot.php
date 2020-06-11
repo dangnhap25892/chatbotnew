@@ -28,7 +28,7 @@ if (!$conn) {
 }
 $jsonData1 ='{
   "recipient":{
-    "id":"'.$userID.'"
+    "id":"'.$ID.'"
   },
   "messaging_type": "RESPONSE",
   
