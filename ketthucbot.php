@@ -37,6 +37,7 @@ $jsonData1 ='{
     }
   
 }';
+sendchat($token,$jsonData1);
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
 function getRelationship($userid) {
   global $conn;
@@ -122,7 +123,6 @@ function outchat($userid,$token) {
     ]
   }
 }';
- sendchat($token,$jsonData1);
 sendchat($token,$jsonData);
  
 }
@@ -149,7 +149,6 @@ $jsonData ='{
     ]
   }
 }';
-sendchat($token,$jsonData1);
 sendchat($token,$jsonData);
 }else{ // nếu đang ở trong hàng chờ
 $jsonData ='{
@@ -172,7 +171,7 @@ $jsonData ='{
     ]
   }
 }';
- sendchat($token,$jsonData1);
+
 sendchat($token,$jsonData);
 mysqli_query($conn, "UPDATE `users` SET `hangcho` = 0 WHERE `ID` = $ID");
 }
