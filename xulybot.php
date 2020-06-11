@@ -12,7 +12,7 @@ if($v =="123")
   exit;
 }
 $input = json_decode(file_get_contents('php://input'),true);
-file_put_contents("text.txt", $input);
+#file_put_contents("text.txt", $input);
 $userID = $input['entry'][0]['messaging'][0]['sender']['id'];
 $message = $input['entry'][0]['messaging'][0]['message']['text'];
 $getstart = $input['entry'][0]['messaging'][0];
@@ -135,7 +135,7 @@ if(isset($getstart['postback']))
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Chào bạn! Chat giúp bạn kết nối và trò chuyện với người lạ. Thật thú vị!",
+        "text":"Chào bạn! \nChat giúp bạn kết nối và trò chuyện với người lạ. Thật thú vị!",
         "buttons":[
           {
             "type":"Postback",
