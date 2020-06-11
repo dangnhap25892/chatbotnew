@@ -124,7 +124,27 @@ function outchat($userid,$token) {
   }
 }';
 sendchat($token,$jsonData);
- 
+ $jsonData ='{
+  "recipient":{
+    "id":"'.$partner.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Cuộc trò chuyện đã kết thúc.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
+      },{
+        "content_type":"text",
+        "title":"Menu",
+        "payload":"Menuchat",
+      }
+    ]
+  }
+}';
+sendchat($token,$jsonData);
 }
 if (!trangthai($ID)){ // nếu chưa chát
 if (!hangcho($ID)) { // nếu không ở trong hàng chờ
