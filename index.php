@@ -4,6 +4,9 @@
 <html>
 
 <head>
+	<!-- https://v2.panel.clickadu.com/ -->
+	<meta name="clckd" content="58700495b905702b43522dee4156d4bd" />
+	<!-- https://v2.panel.clickadu.com/ -->
 	<!-- Google adsense -->
 	<script data-ad-client="ca-pub-8784210033717367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Google adsense -->
