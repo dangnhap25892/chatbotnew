@@ -201,5 +201,5 @@ mysqli_query($conn, "UPDATE `users` SET `hangcho` = 0 WHERE `ID` = $ID");
 outchat($ID,$token);
 }
 mysqli_close($conn);
-
+die();
 ?>
