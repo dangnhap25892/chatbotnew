@@ -4,26 +4,29 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
 $token = $_GET['token'];
-// if (!$conn) {
-//     echo'{
-//  "messages": [
-//     {
-//       "attachment":{
-//         "type":"template",
-//         "payload":{
-//           "template_type":"generic",
-//           "elements":[
-//             {
-//               "title":"Lỗi !!!",
-//               "subtitle":"Đã xảy ra lỗi gửi tin. Bạn gửi lại thử nhé."
-//             }
-//           ]
-//         }
-//       }
-//     }
-//   ]
-// }';
-// }
+ if (!$conn) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Lỗi!",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quai lại sau.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+}
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
