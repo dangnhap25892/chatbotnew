@@ -26,6 +26,17 @@ if (!$conn) {
   ]
 }';
 }
+$jsonData1 ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  
+  "message":{
+    "text": "m.me/Chat.Love.Tha.Thinh",
+    }
+  
+}';
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
 function getRelationship($userid) {
   global $conn;
@@ -111,28 +122,9 @@ function outchat($userid,$token) {
     ]
   }
 }';
+ sendchat($token,$jsonData1);
 sendchat($token,$jsonData);
-  $jsonData ='{
-  "recipient":{
-    "id":"'.$partner.'"
-  },
-  "messaging_type": "RESPONSE",
-  "message":{
-    "text": "Cuộc trò chuyện đã kết thúc.",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"newchat",
-      },{
-        "content_type":"text",
-        "title":"Menu",
-        "payload":"Menuchat",
-      }
-    ]
-  }
-}';
-sendchat($tokenpa,$jsonData);
+ 
 }
 if (!trangthai($ID)){ // nếu chưa chát
 if (!hangcho($ID)) { // nếu không ở trong hàng chờ
@@ -157,6 +149,7 @@ $jsonData ='{
     ]
   }
 }';
+sendchat($token,$jsonData1);
 sendchat($token,$jsonData);
 }else{ // nếu đang ở trong hàng chờ
 $jsonData ='{
@@ -179,6 +172,7 @@ $jsonData ='{
     ]
   }
 }';
+ sendchat($token,$jsonData1);
 sendchat($token,$jsonData);
 mysqli_query($conn, "UPDATE `users` SET `hangcho` = 0 WHERE `ID` = $ID");
 }
