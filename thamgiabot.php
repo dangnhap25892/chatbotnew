@@ -8,24 +8,27 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 #$token = gettoken($userid);
 
 if (!$conn) {
-    echo'{
- "messages": [
-    {
-      "attachment":{
-        "type":"template",
-        "payload":{
-          "template_type":"generic",
-          "elements":[
-            {
-              "title":"Lỗi !!!",
-              "subtitle":"Đã xảy ra lỗi gửi tin. Bạn gửi lại sau thử nhé."
-            }
-          ]
-        }
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Lỗi!",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quai lại sau.",
+          }
+        ]
       }
     }
-  ]
+  }
 }';
+sendchat($token,$jsonData);
+die();
 }
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
