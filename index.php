@@ -131,7 +131,11 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 
 
 ?>
-	
+	<div>
+		<!-- https://publishers.propellerads.com/ -->
+		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
+		<!-- https://publishers.propellerads.com/ -->
+	</div>
     <div>
  <h1 style="1">
         <p>Ảnh người lạ đã gửi cho bạn</p>
