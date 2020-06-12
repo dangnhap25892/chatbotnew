@@ -170,5 +170,6 @@ sendchat($token,$jsonData);
 die();
     }
 }
+mysqli_close($conn);
 die();
 ?>
