@@ -20,6 +20,18 @@ $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
 
+if($message=='hi'){
+  $jsonData ='{
+  "messaging_type" : "RESPONSE",
+  "recipient":{
+    "id": "'.$userID.'"
+  },
+  "message":{
+    "text":"hello232\nchfugtv '.$input.'"
+    }
+}';
+sendchat($token,$jsonData);
+}
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 if(isset($message)){
 	$result = mysqli_query($conn, "SELECT trangthai, gioitinh, hangcho, ketnoi, chatfuel from users WHERE ID = $message");
@@ -34,7 +46,27 @@ if(isset($message)){
 
   die();
  }
+function sendchat($token,$jsonData)
+{
+$url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
+  $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    $st=curl_exec($ch);
+
+  $errors = curl_error($ch);
+    $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    var_dump($errors);
+    var_dump($response);
+
+
+
+    curl_close($ch);
+    die();
+}
  function sendchat2($message,$userID,$token)
 {
 
