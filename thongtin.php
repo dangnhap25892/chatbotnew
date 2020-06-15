@@ -28,8 +28,8 @@ if(isset($message)){
 	$gioitinh = $row['gioitinh'];
 	$chatfuel = $row['chatfuel'];
 
-	$noidung = "id'.$message.' \nkết nối'.$ketnoi.'\n Giới tính '.$gioitinh.' \nchatfuel '.$chatfuel.'"
-
+	$noidung = "id'.$message.' \nkết nối'.$ketnoi.'\n Giới tính '.$gioitinh.' \nchatfuel '.$chatfuel.'";
+	mysqli_close($conn);
    sendchat2($noidung,$userID,$token);
 
   die();
