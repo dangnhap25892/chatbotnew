@@ -120,7 +120,7 @@ function ketnoi($userid,$token) { //tìm người chát
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
           }
         ]
       }
@@ -146,7 +146,7 @@ sendchat($token,$jsonData);
         "template_type":"generic",
         "elements":[
            {
-            "title":"Người lạ đã tham gia trò chuyện",
+            "title":"Người lạ đã tham gia cuộc trò chuyện",
             "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
@@ -166,7 +166,7 @@ sendchat($token,$jsonData);
         "template_type":"generic",
         "elements":[
            {
-            "title":"Người lạ đã tham gia trò chuyện",
+            "title":"Người lạ đã tham gia cuộc trò chuyện",
             "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
@@ -197,7 +197,7 @@ ketnoi($userid,$token);
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
           }
         ]
       }
