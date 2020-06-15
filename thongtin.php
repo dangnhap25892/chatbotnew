@@ -1,5 +1,5 @@
 <?php
-
+require_once 'config.php';
 if (isset($_REQUEST['hub_challenge']))
 {
   $c = $_REQUEST['hub_challenge'];
