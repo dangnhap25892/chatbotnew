@@ -197,7 +197,7 @@ if(isset($getstart['postback']))
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn muốn kết thúc cuộc trò chuyện?",
+    "text": "Bạn muốn kết thúc cuộc trò chuyện?\nHoặc gõ End chat để kết thúc nhanh.",
     "quick_replies":[
       {
         "content_type":"text",
@@ -233,7 +233,7 @@ if ($type=="video")
 }
 
 
-if ($message=='Kết thúc') {
+if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
@@ -314,14 +314,14 @@ if ($message=='Hướng dẫn') {
     sendchat($token,$jsonData);
     die();
 }
-if ($message=='pp'||$message =='Pp'||$message =='End chat'||$message =='End'||$message =='end'||$message =='Kết Thúc') {
+if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$message =='Kết Thúc') {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn muốn kết thúc cuộc trò chuyện?",
+    "text": "Bạn muốn kết thúc cuộc trò chuyện?\nHoặc gõ End chat để kết thúc nhanh.",
     "quick_replies":[
       {
         "content_type":"text",
