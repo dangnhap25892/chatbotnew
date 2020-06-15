@@ -27,7 +27,7 @@ if($message=='hi'){
     "id": "'.$userID.'"
   },
   "message":{
-    "text":"hello232\nchfugtv '.$input.'"
+    "text":"hello232\nchfugtv '.$message.'"
     }
 }';
 sendchat($token,$jsonData);
@@ -40,7 +40,7 @@ if(isset($message)){
 	$gioitinh = $row['gioitinh'];
 	$chatfuel = $row['chatfuel'];
 
-	$noidung = "id'.$message.' \nkết nối'.$ketnoi.'\n Giới tính '.$gioitinh.' \nchatfuel '.$chatfuel.'";
+	$noidung = "id'.$message.'kết nối'.$ketnoi.' Giới tính '.$gioitinh.' chatfuel '.$chatfuel.'";
 	mysqli_close($conn);
    sendchat2($noidung,$userID,$token);
 
