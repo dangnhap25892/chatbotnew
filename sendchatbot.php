@@ -4,7 +4,7 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
 $token = $_GET['token'];
- if ($conn<100) {
+ if (!$conn) {
      $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
