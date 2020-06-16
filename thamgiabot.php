@@ -44,7 +44,7 @@ if ( !isUserExist($userid) ) {
         "elements":[
            {
             "title":"Thông báo",
-            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn không làm gì và quay lại sau ít phút.",
           }
         ]
       }
