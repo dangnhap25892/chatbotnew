@@ -141,6 +141,15 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 		<!-- https://admin.exoclick.com/qc1 -->
 		<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3895130"></script>
 		<!-- https://admin.exoclick.com/qc2 -->
+		<script type="application/javascript">
+    var ad_idzone = "3895132",
+    ad_width = "300",
+    ad_height = "250",
+    v_pos = "bottom",
+    h_pos = "center";
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/js.php?t=17&idzone=3895132"></script>
+		<!-- https://admin.exoclick.com/qc3 -->
 	</div>
     <div>
  <h1 style="1">
