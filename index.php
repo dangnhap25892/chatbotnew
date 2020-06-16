@@ -151,14 +151,14 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 <script type="application/javascript" src="https://a.exdynsrv.com/js.php?t=17&idzone=3895132"></script>
 		<!-- https://admin.exoclick.com/qc3 -->
 		<script type="application/javascript">
-    var ad_idzone = "3895298",
-    ad_width = "120",
-    ad_height = "600"
+    pn_idzone = 3895306;
+    pn_sleep_seconds = 0;
+    pn_is_self_hosted = 1;
+    pn_soft_ask = 0;
+    pn_filename = "/worker.js";
 </script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3895298&output=noscript&type=120x600" width="120" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
+
+<script type="application/javascript" src="https://js.wpnsrv.com/pn.php"></script>
 		<!-- https://admin.exoclick.com/qc4 -->
 		
 		
