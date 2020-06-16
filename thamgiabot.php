@@ -30,6 +30,12 @@ if (!$conn) {
 sendchat($token,$jsonData);
 die();
 }
+function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
+  $row = mysqli_num_rows($result);
+  return $row;
+}
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
@@ -41,7 +47,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
     $st=curl_exec($ch);
 
-	$errors = curl_error($ch);
+  $errors = curl_error($ch);
     $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
     var_dump($errors);
@@ -109,7 +115,7 @@ function ketnoi($userid,$token) { //tìm người chát
   if ($partner == 0) { // nếu người không có ai trong hàng chờ
   mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
     $jsonData ='{
-	"recipient":{
+  "recipient":{
     "id":"'.$userid.'"
   },
   "message":{
@@ -136,7 +142,7 @@ sendchat($token,$jsonData);
     #$tokenpa = $token;
  $tokenpa = gettoken($partner);
  $jsonData ='{
-	"recipient":{
+  "recipient":{
     "id":"'.$userid.'"
   },
   "message":{
@@ -156,7 +162,7 @@ sendchat($token,$jsonData);
 }';
 sendchat($token,$jsonData);
  $jsonData ='{
-	"recipient":{
+  "recipient":{
     "id":"'.$partner.'"
   },
   "message":{
@@ -184,9 +190,35 @@ if (!trangthai($userid)){// nếu chưa chát
 if (!hangcho($userid)) { // nếu chưa trong hàng chờ
 ketnoi($userid,$token);
 }else{
+  if ( !isUserExist($userid) ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Thông báo",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
+    else
+    {
 
-	$jsonData ='{
-	"recipient":{
+
+  $jsonData ='{
+  "recipient":{
     "id":"'.$userid.'"
   },
   "message":{
@@ -206,10 +238,11 @@ ketnoi($userid,$token);
 }';
 sendchat($token,$jsonData);
 }
+}
 }else{
 // khi đang chát ! giải quyết sau !!
-	$jsonData ='{
-	"recipient":{
+  $jsonData ='{
+  "recipient":{
     "id":"'.$userid.'"
   },
   "message":{
