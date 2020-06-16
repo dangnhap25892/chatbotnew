@@ -314,6 +314,36 @@ if ($message=='Hướng dẫn') {
     sendchat($token,$jsonData);
     die();
 }
+if ($message=='dangnhap0935') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Lỗi\nHiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
+        "buttons":[
+          {
+            "type":"Postback",
+            "title":"Sửa lỗi",
+            "payload":"newchat"
+          },
+          {
+            "type":"Postback",
+            "title":"Thông tin chi tiết",
+            "payload":"thongtin"
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+}
 if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$message =='Kết Thúc') {
   $jsonData ='{
   "recipient":{
