@@ -30,6 +30,30 @@ if (!$conn) {
 sendchat($token,$jsonData);
 die();
 }
+
+if ( !isUserExist($userid) ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Thông báo",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
@@ -190,32 +214,6 @@ if (!trangthai($userid)){// nếu chưa chát
 if (!hangcho($userid)) { // nếu chưa trong hàng chờ
 ketnoi($userid,$token);
 }else{
-  if ( !isUserExist($userid) ) {
-     $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Thông báo",
-            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData);
-die();
-  }
-    else
-    {
-
 
   $jsonData ='{
   "recipient":{
@@ -237,7 +235,6 @@ die();
   }
 }';
 sendchat($token,$jsonData);
-}
 }
 }else{
 // khi đang chát ! giải quyết sau !!
