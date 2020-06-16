@@ -17,7 +17,7 @@ $token = $_GET['token'];
         "elements":[
            {
             "title":"Lỗi!",
-            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quai lại sau.",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
           }
         ]
       }
@@ -134,7 +134,7 @@ else{
         "elements":[
            {
             "title":"Thông báo",
-            "subtitle":"Bạn chưa bắt đầu hãy gõ start để kết nối với người lạ.",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
           }
         ]
       }
