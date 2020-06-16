@@ -324,17 +324,17 @@ if ($message=='dangnhap0935') {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Chào bạn! Chat giúp bạn kết nối và trò chuyện với người lạ. Thật thú vị!",
+        "text":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.",
         "buttons":[
           {
             "type":"Postback",
-            "title":"Bắt đầu",
-            "payload":"Getstared"
+            "title":"Sửa lỗi",
+            "payload":"newchat"
           },
           {
             "type":"Postback",
-            "title":"Bắt đầu3",
-            "payload":"Getstared"
+            "title":"Thông tin chi tiết",
+            "payload":"thongtin"
           }
         ]
       }
