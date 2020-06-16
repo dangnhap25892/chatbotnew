@@ -136,6 +136,9 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
 		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
 		<!-- https://publishers.propellerads.com/ -->
+		<!-- https://admin.exoclick.com/ -->
+		<script type="application/javascript" data-idzone="3895122" src="https://a.exdynsrv.com/nativeads.js" ></script>
+		<!-- https://admin.exoclick.com/ -->
 	</div>
     <div>
  <h1 style="1">
