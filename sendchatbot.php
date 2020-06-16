@@ -124,7 +124,7 @@ else{
   if ( !isUserExist($userid) ) {
      $jsonData ='{
   "recipient":{
-    "id": "'.$userID.'"
+    "id": "'.$userid.'"
   },
   "message":{
     "attachment":{
