@@ -229,7 +229,7 @@ sendchat($token,$jsonData);
 }';
 sendchat($token,$jsonData);
 }
-mysqli_close($conn);
+#mysqli_close($conn);
 die();
 
 ?>
