@@ -124,17 +124,24 @@ else{
   if ( !isUserExist($userid) ) {
      $jsonData ='{
   "recipient":{
-    "id":"'.$userid.'"
+    "id": "'.$userID.'"
   },
   "message":{
     "attachment":{
       "type":"template",
       "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Thông báo",
-            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
+        "template_type":"button",
+        "text":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.",
+        "buttons":[
+          {
+            "type":"Postback",
+            "title":"Sửa lỗi",
+            "payload":"newchat"
+          },
+          {
+            "type":"Postback",
+            "title":"Thông tin chi tiết",
+            "payload":"thongtin"
           }
         ]
       }
