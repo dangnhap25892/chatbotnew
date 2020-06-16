@@ -155,16 +155,29 @@ if(isset($getstart['postback']))
     die();
   }
  if($getstart['postback']['payload']=="thongtin"){
-    $jsonData ="{
-   'messaging_type' : 'RESPONSE',
-   'recipient':{
-     'id': $userID
-   },
-   'message':{
-     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page."'
-     }
- }";
- sendchat($token,$jsonData);
+    $jsonData ='{
+  "recipient":{
+    "id": "'.$userID.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hiện tại chat bot đang cần nâng cấp hệ thống để khắc phục lỗi, cần sự trợ giúp của các bạn để có giây phút chat vui vẻ hơn. Hãy Donate cho chúng tôi chúng tôi sẽ không làm bạn thất vọng.",
+        "buttons":[
+        
+          {
+            "type":"web_url",
+            "url":"https://unghotoi.com/1585289035xy8fn#",
+            "title":"Donate"
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
     die();
   }
   if(isset($getstart['postback']))
