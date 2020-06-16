@@ -332,9 +332,9 @@ if ($message=='dangnhap0935') {
             "payload":"Getstared"
           },
           {
-            "type":"web_url",
-            "url":"https://www.google.com",
-            "title":"Show Website"
+            "type":"Postback",
+            "title":"Bắt đầu3",
+            "payload":"Getstared"
           }
         ]
       }
