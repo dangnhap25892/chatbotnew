@@ -113,7 +113,18 @@ else
 }
 
 ?>
-
+<!-- https://beta.publishers.adsterra.com/ -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'f5dabdeaf9cb5fa7988ba26dba7f6710',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/f5dabdeaf9cb5fa7988ba26dba7f6710/invoke.js"></scr' + 'ipt>');
+</script>
+	<!-- https://beta.publishers.adsterra.com/ -->
 	<!-- ad now-->
 	
 		<div id="SC_TBlock_760383" class="SC_TBlock">loading...</div> 
