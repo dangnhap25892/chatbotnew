@@ -315,26 +315,26 @@ if ($message=='Hướng dẫn') {
     die();
 }
 if ($message=='dangnhap0935') {
-  $jsonData ='{
+ $jsonData ='{
   "recipient":{
-    "id":"'.$userid.'"
+    "id": "'.$userID.'"
   },
   "message":{
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Lỗi Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
+        "text":"Chào bạn! Chat giúp bạn kết nối và trò chuyện với người lạ. Thật thú vị!",
         "buttons":[
           {
             "type":"Postback",
-            "title":"Sửa lỗi",
-            "payload":"newchat"
+            "title":"Bắt đầu",
+            "payload":"Getstared"
           },
           {
-            "type":"Postback",
-            "title":"Thông tin chi tiết",
-            "payload":"thongtin"
+            "type":"web_url",
+            "url":"https://www.google.com",
+            "title":"Show Website"
           }
         ]
       }
