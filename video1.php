@@ -136,6 +136,8 @@ else
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/124be3111be4934545d76ca9a5694697/invoke.js"></scr' + 'ipt>');
 </script>
 	<!-- https://beta.publishers.adsterra.com/468 × 60 px -->
+	<script type='text/javascript' src='//pl15559899.passtechusa.com/b4/e8/45/b4e845eba3563a7a301a46373168890e.js'></script>
+	<!-- https://beta.publishers.adsterra.com/Social Bar -->
 	<!-- ad now-->
 	
 		<div id="SC_TBlock_760383" class="SC_TBlock">loading...</div> 
