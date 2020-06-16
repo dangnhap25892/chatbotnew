@@ -201,6 +201,16 @@ sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1
 
   echo $partner;
   echo $tokenpa;
+   $thongbao ='{
+  "messaging_type" : "RESPONSE",
+  "recipient":{
+    "id": "'.$partner.'"
+  },
+  "message":{
+    "text":"Người lạ đã gửi video cho bạn."
+    }
+}';
+sendchat($tokenpa,$thongbao);
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
