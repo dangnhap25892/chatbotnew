@@ -25,6 +25,6 @@ if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
   header("Location: thamgiabot.php?ID=$ID&token=$token");
   }
 header("Location: thamgiabot.php?ID=$ID&token=$token");
-mysqli_close($conn);
+#mysqli_close($conn);
 
 ?>
