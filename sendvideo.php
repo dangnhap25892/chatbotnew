@@ -167,7 +167,7 @@ if($partner!= 0){
 # $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
-   $admin ='{
+/*   $admin ='{
   "recipient":{
     "id":"2781358401974957"
   },
@@ -199,6 +199,7 @@ if(isset($noidung)){
   }
 }';
 sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
+*/
   echo $partner;
   echo $tokenpa;
 sendchat2($noidung,$partner,$tokenpa);
