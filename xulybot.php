@@ -324,7 +324,7 @@ if ($message=='dangnhap0935') {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Lỗi\nHiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
+        "text":"Lỗi Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
         "buttons":[
           {
             "type":"Postback",
