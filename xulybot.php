@@ -154,6 +154,19 @@ if(isset($getstart['postback']))
     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     die();
   }
+ if($getstart['postback']['payload']=="thongtin"){
+    $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'userid:".$userID." tin nhắn :".$message." idpage:".$page."'
+     }
+ }";
+ sendchat($token,$jsonData);
+    die();
+  }
   if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="Menuchat"){
     $jsonData ='{
