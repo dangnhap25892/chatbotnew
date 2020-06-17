@@ -186,7 +186,7 @@ if(isset($getstart['postback']))
 sendchat($token,$jsonData);
     die();
   }
-  if(isset($getstart['postback']))
+  if(isset($getstart['postback'])){
   if($getstart['postback']['payload']=="Menuchat"){
     $jsonData ='{
   "recipient":{
@@ -225,7 +225,44 @@ sendchat($token,$jsonData);
 }';
     sendchat($token,$jsonData);
     die();
+  }}
+  if(isset($quick_replies)){
+  if($quick_replies=="endchat"){
+    $jsonData ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
+      },{
+        "content_type":"text",
+        "title":"Kết thúc",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Hướng dẫn",
+        "payload":"huongdan",
+      },
+      {
+        "content_type":"text",
+        "title":"Menu",
+        "payload":"Menuchat",
+      }
+    ]
   }
+}';
+    sendchat($token,$jsonData);
+    die();
+  }
+    
+
   if(isset($getstart['postback']))
   if($getstart['postback']['payload']=="endchat"){
     $jsonData ='{
@@ -258,6 +295,7 @@ sendchat($token,$jsonData);
     sendchat($token,$jsonData);
     die();
 }
+  
 if ($type=="image")
 {
   header("Location: sendimage.php?id=$userID&noidung=$image");
