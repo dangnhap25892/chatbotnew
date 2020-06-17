@@ -19,6 +19,7 @@ $getstart = $input['entry'][0]['messaging'][0];
 $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
+$quick_replies = $input['entry'][0]['messaging'][0]['message']['quick_replies']['payload'];
 switch ($page)
 {
     case '103456168065673' :
@@ -208,6 +209,11 @@ sendchat($token,$jsonData);
         "content_type":"text",
         "title":"Hướng dẫn",
         "payload":"huongdan",
+      },
+      {
+        "content_type":"text",
+        "title":"không",
+        "payload":"test",
       },
       {
         "content_type":"text",
