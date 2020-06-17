@@ -139,27 +139,16 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 		<!-- https://admin.exoclick.com/qc1 -->
 		<script type="application/javascript" data-idzone="3895122" src="https://a.exdynsrv.com/nativeads.js" ></script>
 		<!-- https://admin.exoclick.com/qc1 -->
-		<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3895130"></script>
-		<!-- https://admin.exoclick.com/qc2 -->
 		<script type="application/javascript">
-    var ad_idzone = "3895132",
+    var ad_idzone = "3895904",
     ad_width = "300",
     ad_height = "250",
     v_pos = "bottom",
-    h_pos = "center";
+    h_pos = "right";
 </script>
-<script type="application/javascript" src="https://a.exdynsrv.com/js.php?t=17&idzone=3895132"></script>
-		<!-- https://admin.exoclick.com/qc3 -->
-		<script type="application/javascript">
-    pn_idzone = 3895306;
-    pn_sleep_seconds = 0;
-    pn_is_self_hosted = 1;
-    pn_soft_ask = 0;
-    pn_filename = "/worker.js";
-</script>
-
-<script type="application/javascript" src="https://js.wpnsrv.com/pn.php"></script>
-		<!-- https://admin.exoclick.com/qc4 -->
+<script type="application/javascript" src="https://a.exdynsrv.com/js.php?t=17&idzone=3895904"></script>
+		<!-- https://admin.exoclick.com/qc2 -->
+		
 		
 		
 	</div>
