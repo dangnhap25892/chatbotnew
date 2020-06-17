@@ -234,7 +234,13 @@ sendchat($token,$jsonData);
         "content_type":"text",
         "title":"Kết thúc",
         "payload":"endchat",
-      },{
+      },
+      {
+        "content_type":"text",
+        "title":"BLOCK",
+        "payload":"endchat",
+      },
+      {
         "content_type":"text",
         "title":"Không.",
         "payload":"Khong",
@@ -392,7 +398,13 @@ if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$messag
         "content_type":"text",
         "title":"Kết thúc",
         "payload":"endchat",
-      },{
+      },
+       {
+        "content_type":"text",
+        "title":"BLOCK",
+        "payload":"endchat",
+      },
+      {
         "content_type":"text",
         "title":"Không.",
         "payload":"Khong",
