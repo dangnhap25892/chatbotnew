@@ -212,7 +212,7 @@ sendchat($token,$jsonData);
       },
       {
         "content_type":"text",
-        "title":"không1",
+        "title":"không.",
         "payload":"test",
       },
       {
