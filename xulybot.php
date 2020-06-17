@@ -428,7 +428,7 @@ if ($message=='Cập nhập giới tính') {
     sendchat($token,$jsonData);
     die();
 }
-if ($message=='tìm theo giới tính') {
+if ($message=='Tìm theo giới tính') {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
