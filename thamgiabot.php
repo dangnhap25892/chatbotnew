@@ -30,6 +30,27 @@ if (!$conn) {
 sendchat($token,$jsonData);
 die();
 }
+$ktgt = ktgiotinh($userid);
+if ( $ktgt == 0 ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Vui lòng cập nhập giới tính.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Cập nhập giới tính",
+        "payload":"newchat",
+      },
+    ]
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
 
 if ( !isUserExist($userid) ) {
      $jsonData ='{
@@ -66,7 +87,7 @@ function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa
   $result = mysqli_query($conn, "SELECT `ID` from `gioitinh` WHERE `ID` = $userid LIMIT 1");
   $row = mysqli_num_rows($result);
   $relationship = $row['gioitinh'];
-  return $row;
+  return $relationship;
 }
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
