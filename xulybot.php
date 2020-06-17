@@ -172,6 +172,11 @@ if(isset($getstart['postback']))
             "url":"https://unghotoi.com/1585289035xy8fn#",
             "title":"Donate"
           }
+          {
+            "type":"web_url",
+            "url":"https://playerduo.com/5ee9d32c76bd436dd464a3d3",
+            "title":"Donate PlayerDuo"
+          }
         ]
       }
     }
