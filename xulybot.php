@@ -200,7 +200,13 @@ sendchat($token,$jsonData);
         "content_type":"text",
         "title":"Chat ngẫu nhiên",
         "payload":"newchat",
-      },{
+      },
+      {
+        "content_type":"text",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      },
+      {
         "content_type":"text",
         "title":"Kết Thúc",
         "payload":"endchat",
