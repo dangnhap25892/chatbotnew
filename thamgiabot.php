@@ -30,27 +30,7 @@ if (!$conn) {
 sendchat($token,$jsonData);
 die();
 }
-$ktgt = ktgiotinh($userid);
-if ( $ktgt == 0 ) {
-     $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "messaging_type": "RESPONSE",
-  "message":{
-    "text": "Vui lòng cập nhập giới tính.",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Cập nhập giới tính",
-        "payload":"newchat",
-      },
-    ]
-  }
-}';
-sendchat($token,$jsonData);
-die();
-  }
+
 
 if ( !isUserExist($userid) ) {
      $jsonData ='{
