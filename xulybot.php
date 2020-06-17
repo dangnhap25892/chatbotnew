@@ -212,8 +212,8 @@ sendchat($token,$jsonData);
       },
       {
         "content_type":"text",
-        "title":"không.",
-        "payload":"test",
+        "title":"Cập nhập giới tính",
+        "payload":"hihi",
       },
       {
         "content_type":"text",
