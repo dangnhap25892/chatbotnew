@@ -268,6 +268,10 @@ if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$mess
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
+if ($message=='block') {
+  header("Location: blockbot.php?ID=$userID&token=$token");
+  die();
+}
 if ($message=='Không.') {
   die();
 }
