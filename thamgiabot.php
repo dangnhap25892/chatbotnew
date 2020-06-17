@@ -158,7 +158,30 @@ function trangthai($userid) {
 
   return intval($row['trangthai']) !== 0;
 }
-function ketnoi($userid,$token) { //tìm người chát 
+function ketnoi($userid,$gioitinh,$token) { //tìm người chát 
+  global $conn;
+  
+  //tìm đối tượng theo giới tính 
+
+  if($gioitinh == "2"){// nếu giới tính là nữ thì kiếm người mang giới tính nam 
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2)AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  //echo "result : " . $result."<br>";
+  }else if($gioitinh == "1"){// giới tính là nam thì tìm kiếm người là nữ
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2) AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  }else if($gioitinh == "3"){ // không xác thì tìm kiếm người không xác định
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2) AND `gioitinh` = 3 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  }else{ // không xác thì tìm kiếm người không xác định
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2) AND `gioitinh` = 0 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  }
+  //echo $result;
+  $row = mysqli_fetch_assoc($result);
+  $partner = $row['ID'];
+  // xử lý kiểm tra
+  if ($partner == 0) {
+    ketnoi2($userid,$token);
+    }
+  }
+function ketnoi2($userid,$token) { //tìm người chát 
   global $conn;
   
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND `hangcho` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
@@ -267,7 +290,7 @@ sendchat($tokenpa,$jsonData);
 //// Xử lý //////
 if (!trangthai($userid)){// nếu chưa chát
 if (!hangcho($userid)) { // nếu chưa trong hàng chờ
-ketnoi($userid,$token);
+ketnoi($userid,$ktgt,$token);
 }else{
 
   $jsonData ='{
