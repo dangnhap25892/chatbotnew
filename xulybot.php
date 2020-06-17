@@ -260,7 +260,7 @@ sendchat($token,$jsonData);
 }';
     sendchat($token,$jsonData);
     die();
-  }
+  }}
     
 
   if(isset($getstart['postback']))
