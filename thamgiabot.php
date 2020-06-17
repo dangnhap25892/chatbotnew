@@ -31,7 +31,7 @@ sendchat($token,$jsonData);
 die();
 }
 
-if ( isUserExist($userid)==0 ) {
+if ( !isUserExist($userid) ) {
      $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -54,7 +54,7 @@ if ( isUserExist($userid)==0 ) {
 sendchat($token,$jsonData);
 die();
   }
-if ( !ktgiotinh($userid) ) {
+if ( ktgiotinh($userid)==0 ) {
      $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
