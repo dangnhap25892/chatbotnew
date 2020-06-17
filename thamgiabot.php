@@ -165,6 +165,18 @@ sendchat($token,$jsonData);
  # $tokenpa = gettoken($partner);
     #$tokenpa = $token;
  $tokenpa = gettoken($partner);
+       $jsonData1 ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  
+  "message":{
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    }
+  
+}';
+sendchat($token,$jsonData1);
  $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -185,6 +197,18 @@ sendchat($token,$jsonData);
   }
 }';
 sendchat($token,$jsonData);
+       $jsonData1 ='{
+  "recipient":{
+    "id":"'.$partner.'"
+  },
+  "messaging_type": "RESPONSE",
+  
+  "message":{
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    }
+  
+}';
+sendchat($tokenpa,$jsonData1);
  $jsonData ='{
   "recipient":{
     "id":"'.$partner.'"
