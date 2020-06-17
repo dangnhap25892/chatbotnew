@@ -157,6 +157,18 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
         <p>Ảnh người lạ đã gửi cho bạn</p>
 <img id="image" src= <?php echo "$hihi"?> >
 
+	 <!-- https://admin.exoclick.com/qc3 -->
+	 <script type="application/javascript">
+    var ad_idzone = "3895906",
+    ad_width = "300",
+    ad_height = "250"
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
+<noscript>
+    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3895906&output=noscript&type=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</noscript>
+	 <!-- https://admin.exoclick.com/qc3 -->
+	 
 </h1>
   <p>
     <small>This is the content sent from the user in
