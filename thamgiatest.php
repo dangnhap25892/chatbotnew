@@ -39,7 +39,7 @@ if ( $ktgt == 0 ) {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Vui lòng cập nhập giới tính. hu '.$ktgt.'",
+    "text": "Vui lòng cập nhập giới tính. hu1 '.$ktgt.'",
     "quick_replies":[
       {
         "content_type":"text",
