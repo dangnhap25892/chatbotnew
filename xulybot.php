@@ -404,6 +404,31 @@ if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$messag
     sendchat($token,$jsonData);
   die();
 }
+if ($message=='BLOCK') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Bạn muốn block đối phương khi đã block bạn sẽ không gặp lại người lạ này nữa",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"BLOCK",
+        "payload":"endchat",
+      },{
+        "content_type":"text",
+        "title":"Không.",
+        "payload":"Khong",
+      }
+      
+    ]
+  }
+}';
+    sendchat($token,$jsonData);
+  die();
+}
 if($message=='kiemtra2'){
    $jsonData ="{
    'messaging_type' : 'RESPONSE',
