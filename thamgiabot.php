@@ -55,6 +55,28 @@ if ( !isUserExist($userid) ) {
 sendchat($token,$jsonData);
 die();
   }
+$ktgt = ktgiotinh($userid);
+echo $ktgt;
+if ( $ktgt == 0 ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Vui lòng cập nhập giới tính.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Cập nhập giới tính",
+        "payload":"newchat",
+      },
+    ]
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
 
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
@@ -64,8 +86,8 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
 }
 function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa 
   global $conn;
-  $result = mysqli_query($conn, "SELECT `ID` from `gioitinh` WHERE `ID` = $userid LIMIT 1");
-  $row = mysqli_num_rows($result);
+  $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid");
+  $row = mysqli_fetch_assoc($result);
   $relationship = $row['gioitinh'];
   return $relationship;
 }
