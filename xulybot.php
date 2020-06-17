@@ -270,7 +270,7 @@ if ($type=="video")
 }
 
 
-if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$message =='endchat'||$message =='Endchat') {
+if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$message =='endchat'||$message =='Endchat'||$message =='END') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
   die();
 }
