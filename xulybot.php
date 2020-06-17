@@ -212,7 +212,7 @@ sendchat($token,$jsonData);
       },
       {
         "content_type":"text",
-        "title":"không",
+        "title":"không1",
         "payload":"test",
       },
       {
@@ -226,7 +226,7 @@ sendchat($token,$jsonData);
     sendchat($token,$jsonData);
     die();
   }}
-  if(isset($quick_replies)){
+  if(isset($quick_replies))
   if($quick_replies=="test"){
     $jsonData ='{
   "recipient":{
@@ -260,7 +260,7 @@ sendchat($token,$jsonData);
 }';
     sendchat($token,$jsonData);
     die();
-  }}
+  }
     
 
   if(isset($getstart['postback']))
