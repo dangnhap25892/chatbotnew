@@ -267,19 +267,17 @@ if(isset($quick_reply)){
      header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
-  }
-if(isset($quick_reply)){
   if($quick_reply=="nữ"){
      header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
-  }
-if(isset($quick_reply)){
   if($quick_reply=="gtt3"){
      header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
-  }
+
+  
+ }
     
 
   if(isset($getstart['postback']))
