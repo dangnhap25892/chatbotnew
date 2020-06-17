@@ -39,7 +39,7 @@ if ( $ktgt == 0 ) {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Vui lòng cập nhập giới tính. hu1 '.$ktgt.'",
+    "text": "Vui lòng cập nhập giới tính. hu2 '.$ktgt.'",
     "quick_replies":[
       {
         "content_type":"text",
@@ -85,7 +85,7 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
 }
 function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa 
   global $conn;
-  $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid LIMIT 1");
+  $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid");
   $row = mysqli_num_rows($result);
   $relationship = $row['gioitinh'];
   return $relationship;
