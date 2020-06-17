@@ -31,7 +31,7 @@ sendchat($token,$jsonData);
 die();
 }
 
-if ( !isUserExist($userid) ) {
+if ( isUserExist($userid)==0 ) {
      $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
