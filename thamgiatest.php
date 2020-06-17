@@ -31,6 +31,7 @@ sendchat($token,$jsonData);
 die();
 }
 $ktgt = ktgiotinh($userid);
+echo $ktgt;
 if ( $ktgt == 0 ) {
      $jsonData ='{
   "recipient":{
@@ -38,7 +39,7 @@ if ( $ktgt == 0 ) {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Vui lòng cập nhập giới tính. '.$ktgt.'",
+    "text": "Vui lòng cập nhập giới tính. hu '.$ktgt.'",
     "quick_replies":[
       {
         "content_type":"text",
