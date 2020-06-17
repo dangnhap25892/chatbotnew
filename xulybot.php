@@ -417,6 +417,35 @@ if ($message=='Cập nhập giới tính') {
     sendchat($token,$jsonData);
     die();
 }
+if ($message=='tìm theo giới tính') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Bạn muốn tìm giới tính nào",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Nam",
+        "payload":"timnam",
+      },{
+        "content_type":"text",
+        "title":"Nữ",
+        "payload":"timnu",
+      },
+      {
+        "content_type":"text",
+        "title":"Giới tính thứ 3",
+        "payload":"timgtt3",
+      }
+    ]
+  }
+}';
+    sendchat($token,$jsonData);
+    die();
+}
 if ($message=='Hướng dẫn'||$message =='HUONGDAN') {
   $jsonData ='{
   "recipient":{
