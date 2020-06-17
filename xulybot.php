@@ -227,7 +227,7 @@ sendchat($token,$jsonData);
     die();
   }}
   if(isset($quick_replies)){
-  if($quick_replies=="endchat"){
+  if($quick_replies=="test"){
     $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
