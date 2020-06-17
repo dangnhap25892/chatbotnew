@@ -102,11 +102,11 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 $jsonData ='{
   "recipient":{
-    "id":"'.$ID.'"
+    "id":"'.$userid.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Cập nhập giới tính thành công.Giới tính của bạn là",
+    "text": "Cập nhập giới tính thành công.Giới tính của bạn là'.$gt.'",
     "quick_replies":[
       {
         "content_type":"text",
