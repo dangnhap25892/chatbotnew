@@ -106,7 +106,7 @@ $jsonData ='{
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Cập nhập giới tính thành công.Giới tính của bạn là '.$gt.'",
+    "text": "Cập nhập giới tính thành công.Giới tính của bạn là",
     "quick_replies":[
       {
         "content_type":"text",
