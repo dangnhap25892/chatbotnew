@@ -321,7 +321,7 @@ if ($message=='Menu') {
     sendchat($token,$jsonData);
     die();
 }
-if ($message=='Hướng dẫn') {
+if ($message=='Hướng dẫn'||$message =='HUONGDAN') {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
