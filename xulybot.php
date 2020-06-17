@@ -19,7 +19,7 @@ $getstart = $input['entry'][0]['messaging'][0];
 $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
-$quick_replies = $input['entry'][0]['messaging'][0]['message']['quick_replies']['payload'];
+$quick_reply = $input['entry'][0]['messaging'][0]['message']['quick_reply']['payload'];
 switch ($page)
 {
     case '103456168065673' :
@@ -226,8 +226,8 @@ sendchat($token,$jsonData);
     sendchat($token,$jsonData);
     die();
   }}
-  if(isset($quick_replies))
-  if($quick_replies=="test"){
+  if(isset($quick_reply)){
+  if($quick_reply=="test"){
     $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
@@ -260,6 +260,7 @@ sendchat($token,$jsonData);
 }';
     sendchat($token,$jsonData);
     die();
+  }
   }
     
 
