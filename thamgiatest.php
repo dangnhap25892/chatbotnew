@@ -83,9 +83,17 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
   $row = mysqli_num_rows($result);
   return $row;
 }
+function gettoken($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `token` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['token'];
+  return $relationship;
+}
 function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa 
   global $conn;
-  $result = mysqli_query($conn, "SELECT `ID` from `gioitinh` WHERE `ID` = $userid LIMIT 1");
+  $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid LIMIT 1");
   $row = mysqli_num_rows($result);
   $relationship = $row['gioitinh'];
   return $relationship;
