@@ -415,7 +415,7 @@ if ($message=='BLOCK') {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"BLOCK",
+        "title":"block",
         "payload":"endchat",
       },{
         "content_type":"text",
