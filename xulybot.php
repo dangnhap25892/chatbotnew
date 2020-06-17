@@ -275,6 +275,19 @@ if(isset($quick_reply)){
      header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
+  if($quick_reply=="timnam"){
+     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+    die();
+  }
+  if($quick_reply=="timnu"){
+     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+    die();
+  }
+  if($quick_reply=="timgtt3"){
+     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+    die();
+  }
+    
 
   
  }
