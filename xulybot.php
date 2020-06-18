@@ -24,16 +24,19 @@ switch ($page)
 {
     case '103456168065673' :
         $token = 'EAADn4qwXcIQBAFHRcn1PVuyAjPrYaJbqRJZBAMPWJiVNH4IDnu2Q1zv1hNORLZBKj1MT0eYJudICNjQTaycesDiZBvtyhhOLqKuFgTapMm9Bt9tSNdPocIaC3aBcOAzHg8hUsxMrxnj9sZAQiBwVmzZBJOfu4WjgnvbU9igFuVQZDZD';
-        break;
+       
         $chatpage ='Test chatbot';
+     break;
     case '106013841142376' :
         $token = 'EAADn4qwXcIQBAPd61ca1Ee35hssJqhQz4qJFscbZCAXyeshGwCNmQl7hy6vpWqQB6uV8Vr97XTgmghTcMs1CeG7KrUJGHXeIP94PgUjJRfZBdyMDHMyDO7XI1HOHTFgUmAKWyDmJU2i5yFAvWN8YG0dPmzJpVcHSDwx8vGwgZDZD';
-        break;
+        
           $chatpage ='Test chatbot2';
+    break;
     case '103303021315529' :
         $token = 'EAADn4qwXcIQBAExg4ufcz8X1w4DgN6UP6ZAIEq6U9ZCodDzvFbZBkBsofbZBCGx29YU0ABV6YRRvZA8u6umZB71q7tOM7HpI4zRkrQasQs6CSHrpCMyj4yLaCHH34IGosUgljfEf4biZCAnZBsvlu3maLKoOn0dqEjCtZBsyBDit5zwZDZD';
-        break;
+        
         $chatpage ='Thính chat';
+    break;
     case '100514801700726' :
         $token = 'EAADn4qwXcIQBAHago30KtnDb4Leyy0y7xW1mWLB9FXTP8uo0sQieEZBKZBCZAI6JbjG2fGx8Gq7a10iPtiPqXgsAVn09RsZAKjslag7ZBC5KQ8PNzD8FQ2jqBecL4a3TyIWJqV8ZCwm9ELKArHNfiZALf9kbuzG0IIX2jK2WGwztAZDZD';
         break;
@@ -116,6 +119,10 @@ switch ($page)
     break;
     case '110643363990453' :
         $token = 'EAADn4qwXcIQBAIDCWQANHei7MufNk7FmLDd4sViH9p4KzmIME6BJZBzgC1yi9C5ns3aXhfSo5JgLu0Ulo0gLrPrXHlKeg2ZADcRuoKIZAVfYvcal7K24oZBWGMoFsI5qNs6I3fHgjbbrBBDUD2nMIkL02HHNxgEotNFedywuWAZDZD';
+        $chatpage ='Thả Thính';   
+    break;
+    case '114769690219396' :
+        $token = 'EAADn4qwXcIQBABiioieMGUuBBaFJvBC0JA5h2qqjFwWwftsWZBwpbyn510MIsYwZAsAXfLZAmK0xtzKcubXamPN3RuhqmrbZA5ZAJuK6tKx1k7KfZCLNRjE8e19gRdPnYDJ8DMmBbxAkZA8di5cqqC3dhqSGYscl6uEYsgKpAbHFwZDZD';
         $chatpage ='Thả Thính';   
     break;
     
