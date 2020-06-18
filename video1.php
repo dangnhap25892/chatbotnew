@@ -146,6 +146,11 @@ ExoVideoSlider.init(adConfig);
 
 <script type="application/javascript" src="https://js.wpnsrv.com/pn.php"></script>
 		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc2-->
+		<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3896940"></script>
+		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc3-->
+		
+		
+		
 	</div>
     <div>
  <h1 style="1">
