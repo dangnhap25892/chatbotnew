@@ -121,9 +121,9 @@ switch ($page)
         $token = 'EAADn4qwXcIQBAIDCWQANHei7MufNk7FmLDd4sViH9p4KzmIME6BJZBzgC1yi9C5ns3aXhfSo5JgLu0Ulo0gLrPrXHlKeg2ZADcRuoKIZAVfYvcal7K24oZBWGMoFsI5qNs6I3fHgjbbrBBDUD2nMIkL02HHNxgEotNFedywuWAZDZD';
         $chatpage ='Thả Thính';   
     break;
-    case '114769690219396' :
-        $token = 'EAADn4qwXcIQBABiioieMGUuBBaFJvBC0JA5h2qqjFwWwftsWZBwpbyn510MIsYwZAsAXfLZAmK0xtzKcubXamPN3RuhqmrbZA5ZAJuK6tKx1k7KfZCLNRjE8e19gRdPnYDJ8DMmBbxAkZA8di5cqqC3dhqSGYscl6uEYsgKpAbHFwZDZD';
-        $chatpage ='Thả Thính';   
+    case '106986154392261' :
+        $token = 'EAADn4qwXcIQBAJ6bAvXevNUj8YQIYRQ28yt50XdeRD3ZBJY7va6aSpiHLPHv8ZAtnrP00jjYH533iFCm2mNBydS4OAbmbhvZBslHhbGoT0bkmNQuTUoOtBg2TRi2mXUVaeO8ZCNSSNDd2konKDxNkvY8kbJ4rOY8SOOxhC854AZDZD';
+        $chatpage ='Chat với người lạ';   
     break;
     
     
