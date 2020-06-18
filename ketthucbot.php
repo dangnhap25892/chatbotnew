@@ -122,6 +122,16 @@ function outchat($userid,$token) {
         "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
+       {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Team 2K+",
+        "payload":"endchat",
+      },
       {
         "content_type":"text",
         "title":"Menu",
@@ -161,6 +171,22 @@ sendchat($tokenpa,$jsonData1);
         "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
+       {
+        "content_type":"text",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      }, 
+      {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Team 2K+",
+        "payload":"endchat",
+      },
+      
       {
         "content_type":"text",
         "title":"Menu",
@@ -192,6 +218,16 @@ $jsonData ='{
         "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
+       {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Team 2K+",
+        "payload":"endchat",
+      },
       {
         "content_type":"text",
         "title":"Menu",
@@ -215,9 +251,20 @@ $jsonData ='{
         "title":"Chat ngẫu nhiên",
         "payload":"newchat",
       },
+      
       {
         "content_type":"text",
         "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      },
+       {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       {
