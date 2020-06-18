@@ -114,9 +114,21 @@ else
 
 ?>
 	<div>
-<!-- https://beta.publishers.adsterra.com/160 × 300 px -->
-	
-	<!-- ad now-->
+<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc1 -->
+	<script type="application/javascript" src="https://a.exdynsrv.com/video-slider.js"></script>
+<script type="application/javascript">
+var adConfig = {
+    "idzone": 3896918,
+    "frequency_period": 1440,
+    "close_after": 3,
+    "sound_enabled": 0,
+    "on_complete": "hide",
+    "branding_enabled": 1,
+    "screen_density": 25
+};
+ExoVideoSlider.init(adConfig);
+</script>
+	<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc1-->
 	</div>
     <div>
  <h1 style="1">
