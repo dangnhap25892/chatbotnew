@@ -159,6 +159,7 @@ if(isset($getstart['postback']))
   }
 }';
     sendchat($token,$jsonData);
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     die();
   }
   if(isset($getstart['postback']))
@@ -628,7 +629,6 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     var_dump($errors);
     var_dump($response);
     curl_close($ch);
-    die();
 }
 function sendchat2($message,$userID,$token)
 {
