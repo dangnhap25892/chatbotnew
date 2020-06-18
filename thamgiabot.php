@@ -169,7 +169,7 @@ function ketnoi($userid,$gioitinh,$token) { //tìm người chát
   }else if($gioitinh == "1"){// giới tính là nam thì tìm kiếm người là nữ
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   }else if($gioitinh == "3"){ // không xác thì tìm kiếm người không xác định
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND `gioitinh` = 3 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND (`gioitinh` = 3 OR `gioitinh` = 0) AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   }else{ // không xác thì tìm kiếm người không xác định
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND `gioitinh` = 0 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   }
