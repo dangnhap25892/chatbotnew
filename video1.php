@@ -113,39 +113,11 @@ else
 }
 
 ?>
+	<div>
 <!-- https://beta.publishers.adsterra.com/160 × 300 px -->
-	<script type="text/javascript">
-	atOptions = {
-		'key' : 'f5dabdeaf9cb5fa7988ba26dba7f6710',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/f5dabdeaf9cb5fa7988ba26dba7f6710/invoke.js"></scr' + 'ipt>');
-</script>
-	<!-- https://beta.publishers.adsterra.com/160 × 300 px -->
-	<script type="text/javascript">
-	atOptions = {
-		'key' : '124be3111be4934545d76ca9a5694697',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/124be3111be4934545d76ca9a5694697/invoke.js"></scr' + 'ipt>');
-</script>
-	<!-- https://beta.publishers.adsterra.com/468 × 60 px -->
-	<script type='text/javascript' src='//pl15559899.passtechusa.com/b4/e8/45/b4e845eba3563a7a301a46373168890e.js'></script>
-	<!-- https://beta.publishers.adsterra.com/Social Bar -->
-	<script async="async" data-cfasync="false" src="//pl15559931.passtechusa.com/fa6d9b7842e16fce9770d038f1068ae1/invoke.js"></script>
-<div id="container-fa6d9b7842e16fce9770d038f1068ae1"></div>
-	<!-- https://beta.publishers.adsterra.com/Social Bar -->
-	<!-- ad now-->
-	
-		<div id="SC_TBlock_760383" class="SC_TBlock">loading...</div> 
 	
 	<!-- ad now-->
+	</div>
     <div>
  <h1 style="1">
     <p>Người lạ gửi video cho bạn</p>
@@ -364,15 +336,7 @@ else
 
    
     </div>
-	<!-- ad now-->
-	<script type="text/javascript">
-  (sc_adv_out = window.sc_adv_out || []).push({
-    id : "760383",
-    domain : "n.ads1-adnow.com"
-  });
-</script>
-<script type="text/javascript" src="//st-n.ads1-adnow.com/js/a.js" async></script>
-	<!-- ad now-->
+	
 </body>
 
 </html>
