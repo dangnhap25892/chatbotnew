@@ -129,6 +129,23 @@ var adConfig = {
 ExoVideoSlider.init(adConfig);
 </script>
 	<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc1-->
+		<script type="application/javascript">
+    pn_idzone = 3896934;
+    pn_sleep_seconds = 0;
+    pn_is_self_hosted = 0;
+    pn_soft_ask = 1;
+    pn_filename = "/worker.js";
+    pn_soft_ask_horizontal_position = "left";
+    pn_soft_ask_vertical_position = "top";
+    pn_soft_ask_title_enabled = 1;
+    pn_soft_ask_title = "Click ALLOW to continue";
+    pn_soft_ask_description = "Would you like to receive great special offers &amp; promotions?";
+    pn_soft_ask_yes = "ALLOW";
+    pn_soft_ask_no = "NO, THANKS";
+</script>
+
+<script type="application/javascript" src="https://js.wpnsrv.com/pn.php"></script>
+		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc2-->
 	</div>
     <div>
  <h1 style="1">
