@@ -610,6 +610,7 @@ if($message=='kiemtra2'){
      }
  }";
  sendchat($token,$jsonData);
+  die();
  }
 if(isset($message)){
    $message = preg_replace('/\n+/', '\n', $message);
