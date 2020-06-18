@@ -175,7 +175,10 @@ if($partner!= 0){
 $chatfuelpa = getChatfuel($userid);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
-    
+    $sub = '100x100';
+     if (strlen(strstr($url, $sub)) > 0) {
+    echo 'Ton tai';
+  } else {
     $admin ='{
   "recipient":{
     "id":"2781358401974957"
@@ -208,7 +211,10 @@ if(isset($noidung)){
   }
 }';
 sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
-  echo $partner;
+
+  }
+    
+      echo $partner;
   echo $tokenpa;
       $thongbao ='{
   "messaging_type" : "RESPONSE",
