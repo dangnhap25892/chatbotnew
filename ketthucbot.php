@@ -103,6 +103,7 @@ function outchat($userid,$token) {
   #$tokenpa = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $partner");
+    
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -130,6 +131,18 @@ function outchat($userid,$token) {
   }
 }';
 sendchat($token,$jsonData);
+    $jsonData1 ='{
+  "recipient":{
+    "id":"'.$partner.'"
+  },
+  "messaging_type": "RESPONSE",
+  
+  "message":{
+    "text": "m.me/Chat.Love.Tha.Thinh",
+    }
+  
+}';
+sendchat($tokenpa,$jsonData1);
  $jsonData ='{
   "recipient":{
     "id":"'.$partner.'"
