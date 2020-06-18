@@ -167,6 +167,11 @@ ExoVideoSlider.init(adConfig);
     </small>
   </p>
   </div>
+	<div>
+		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc4-->
+		<script type="application/javascript" data-idzone="3896948" src="https://a.exdynsrv.com/nativeads.js" ></script>
+		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc4-->
+	</div>
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
