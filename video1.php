@@ -148,6 +148,16 @@ ExoVideoSlider.init(adConfig);
 		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc2-->
 		<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3896940"></script>
 		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc3-->
+		<script type="application/javascript">
+    var ad_idzone = "3896950",
+    ad_width = "300",
+    ad_height = "250"
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
+<noscript>
+    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3896950&output=noscript&type=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</noscript>
+		<!-- https://www.exoclick.com/signup.php?login=dangnhap2589 qc5-->
 		
 		
 		
