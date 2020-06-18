@@ -381,6 +381,14 @@ if ($message=='tham gia test1') {
   header("Location: thamgialan1.php?ID=$userID&token=$token");
   die();
 }
+if ($message=='Team 2K+') {
+  header("Location: thamgiabot2k.php?ID=$userID&token=$token");
+  die();
+}
+if ($message=='9X Tâm Sự') {
+  header("Location: thamgiabot9x.php?ID=$userID&token=$token");
+  die();
+}
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
   header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
  
@@ -400,15 +408,26 @@ if ($message=='Menu') {
         "content_type":"text",
         "title":"Chat ngẫu nhiên",
         "payload":"newchat",
-      },{
+      },
+      {
         "content_type":"text",
-        "title":"Kết thúc",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Kết Thúc",
         "payload":"endchat",
       },
       {
         "content_type":"text",
         "title":"Hướng dẫn",
         "payload":"huongdan",
+      },
+      {
+        "content_type":"text",
+        "title":"Cập nhập giới tính",
+        "payload":"hihi",
       },
       {
         "content_type":"text",
