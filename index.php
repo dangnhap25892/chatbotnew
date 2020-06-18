@@ -192,6 +192,8 @@ var adConfig = {
 ExoVideoSlider.init(adConfig);
 </script>
 		    <!-- https://admin.exoclick.com/qc4 -->
+		    <script type="application/javascript" data-idzone="3896952" src="https://a.exdynsrv.com/nativeads.js" ></script>
+		    <!-- https://admin.exoclick.com/qc5 -->
 	    </div>
   </div>
     <!-- Page Loader -->
