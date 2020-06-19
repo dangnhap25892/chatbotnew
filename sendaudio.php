@@ -190,7 +190,7 @@ sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1
         "template_type":"generic",
         "elements":[
            {
-            "title":"Ảnh",
+            "title":"audio",
             "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
             "buttons":[
               {
