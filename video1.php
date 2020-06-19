@@ -120,11 +120,11 @@ else
 var adConfig = {
     "idzone": 3896918,
     "frequency_period": 1440,
-    "close_after": 3,
+    "close_after": 0,
     "sound_enabled": 0,
     "on_complete": "hide",
     "branding_enabled": 1,
-    "screen_density": 25
+    "screen_density": 30
 };
 ExoVideoSlider.init(adConfig);
 </script>
