@@ -38,7 +38,6 @@ $jsonData1 ='{
         "elements":[
            {
             "title":"Này bạn ơi...",
-            "image_url":"https://i.imgur.com/BC5gUjA.jpg",
             "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
@@ -185,7 +184,7 @@ sendchat($token,$jsonData);
         "elements":[
            {
             "title":"Này bạn ơi...",
-            "image_url":"https://i.imgur.com/BC5gUjA.jpg",
+        
             "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
