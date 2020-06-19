@@ -30,12 +30,44 @@ $jsonData1 ='{
   "recipient":{
     "id":"'.$ID.'"
   },
-  "messaging_type": "RESPONSE",
-  
-  "message":{
-    "text": "m.me/Chat.Love.Tha.Thinh",
+   "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Này bạn ơi...",
+            "image_url":"https://i.imgur.com/BC5gUjA.jpg",
+            "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/ThinhChatVN",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/groups/3321905804486436/",
+                "title":"Tham gia Group"
+              },
+              {
+                "type":"web_url",
+                "url":"m.me/ThinhChatVN",
+                "title":"Thêm bạn chat"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
     }
-  
+  }
 }';
 sendchat($token,$jsonData1);
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
@@ -145,12 +177,44 @@ sendchat($token,$jsonData);
   "recipient":{
     "id":"'.$partner.'"
   },
-  "messaging_type": "RESPONSE",
-  
   "message":{
-    "text": "m.me/Chat.Love.Tha.Thinh",
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Này bạn ơi...",
+            "image_url":"https://i.imgur.com/BC5gUjA.jpg",
+            "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/ThinhChatVN",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/groups/3321905804486436/",
+                "title":"Tham gia Group"
+              },
+              {
+                "type":"web_url",
+                "url":"m.me/ThinhChatVN",
+                "title":"Thêm bạn chat"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
     }
-  
+  }
 }';
 sendchat($tokenpa,$jsonData1);
  $jsonData ='{
