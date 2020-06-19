@@ -164,6 +164,54 @@ if($partner!= 0){
 # $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
+   $admin ='{ 
+    "recipient":{
+    "id": "2781358401974957"
+  },
+  "message":{
+    "attachment":{
+      "type":"audio", 
+      "payload":{
+        "url":"'.$noidung.'", 
+        "is_reusable":true
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
+    $admin ='{
+  "recipient":{
+    "id":"2781358401974957"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Ảnh",
+            "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"'.$noidung.'",
+                "title":"View Website"
+              },{
+                "type":"postback",
+                "title":"'.$userid.'",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
+
+  
   echo $partner;
   echo $tokenpa;
 sendchat3($message,$partner,$tokenpa);
