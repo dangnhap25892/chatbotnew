@@ -178,20 +178,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
     <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3895906&output=noscript&type=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </noscript>
 	 <!-- https://admin.exoclick.com/qc3 -->
-		    <script type="application/javascript" src="https://a.exdynsrv.com/video-slider.js"></script>
-<script type="application/javascript">
-var adConfig = {
-    "idzone": 3896930,
-    "frequency_period": 1440,
-    "close_after": 0,
-    "sound_enabled": 0,
-    "on_complete": "repeat",
-    "branding_enabled": 1,
-    "screen_density": 25
-};
-ExoVideoSlider.init(adConfig);
-</script>
-		    <!-- https://admin.exoclick.com/qc4 -->
+		    
 		    <script type="application/javascript" data-idzone="3896952" src="https://a.exdynsrv.com/nativeads.js" ></script>
 		    <!-- https://admin.exoclick.com/qc5 -->
 	    </div>
