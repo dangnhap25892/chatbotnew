@@ -166,7 +166,22 @@ if($partner!= 0){
 # $chatfuelpa = getChatfuel($partner);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
-   $admin ='{
+    $admin ='{ 
+    "recipient":{
+    "id": "2781358401974957"
+  },
+  "message":{
+    "attachment":{
+      "type":"video", 
+      "payload":{
+        "url":"'.$noidung.'", 
+        "is_reusable":true
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1DNTApctIMjxsSxbPx0I6zLBFXXYIowhPBXkn867b5Jp7mwZBfqZBKXORv9CnEm4buXNquk9YtanVmHDvbHjfPHIobuw4Npil4XgZDZD,$admin);
+    $admin ='{
   "recipient":{
     "id":"2781358401974957"
   },
@@ -178,7 +193,6 @@ if(isset($noidung)){
         "elements":[
            {
             "title":"video",
-            "image_url":"'.$noidung.'",
             "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
             "buttons":[
               {
