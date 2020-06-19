@@ -10,7 +10,19 @@
 	<!-- https://v2.panel.clickadu.com/ -->
 	<meta name="clckd" content="58700495b905702b43522dee4156d4bd" />
 	<!-- https://v2.panel.clickadu.com/ -->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170132701-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170132701-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!-- Google adsense -->
+	
 	<script data-ad-client="ca-pub-8784210033717367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Google adsense -->
     <meta charset="UTF-8">
