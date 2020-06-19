@@ -244,6 +244,45 @@ sendchat($token,$jsonData);
     sendchat($token,$jsonData);
     die();
   }}
+if($getstart['postback']['payload']=="donate"){
+    
+    $jsonData ='{
+  "recipient":{
+    "id": "'.$userID.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Chat bot đang cần nâng cấp và thêm 1 số tính năng nếu bạn ủng hộ thì hãy giúp team chúng tôi để làm tốt hơn😍\nHãy ủng hộ chúng tôi Link Donate : 0061001155911 Vietcombank ",
+        "buttons":[
+        
+          {
+            "type":"web_url",
+            "url":"https://unghotoi.com/1585289035xy8fn#",
+            "title":"Donate"
+          },
+          {
+            "type":"web_url",
+            "url":"https://playerduo.com/5ee9d32c76bd436dd464a3d3",
+            "title":"Donate PlayerDuo"
+          },
+          {
+            "type":"web_url",
+            "url":"https://forms.gle/sMv4tTyk9dSSW8rT9",
+            "title":"Góp ý kiến"
+          },
+        ]
+      }
+    }
+  }
+}';
+    sendchat($token,$jsonData);
+   
+    die();
+  }
+
   if(isset($quick_reply)){
   if($quick_reply=="test"){
     $jsonData ='{
