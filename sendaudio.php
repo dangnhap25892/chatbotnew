@@ -76,7 +76,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
     curl_close($ch);
-    die();
+ 
 }
 function sendchat2($message,$userID,$token)
 {
