@@ -176,7 +176,8 @@ $chatfuelpa = getChatfuel($userid);
   $tokenpa = gettoken($partner);
 if(isset($noidung)){
     $sub = '100x100';
-     if (strlen(strstr($url, $sub)) > 0) {
+    $uuu = 'https://scontent.xx.fbcdn.net/v/t39.1997-6/cp0/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1';
+     if (strlen(strstr($url, $sub)) > 0||strlen(strstr($url, $uuu)) > 0 ) {
     echo 'Ton tai';
   } else {
          $admin ='{ 
