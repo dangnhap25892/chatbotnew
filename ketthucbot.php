@@ -41,7 +41,7 @@ $jsonData1 ='{
             "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
-              "url": "m.me/ThinhChatVN",
+              "url": "m.me/106986154392261",
               "webview_height_ratio": "tall"
               
             },
@@ -67,6 +67,16 @@ $jsonData1 ='{
       }
     }
   }
+}';
+sendchat($token,$jsonData1);
+$jsonData1 ='{
+  "recipient":{
+    "id":"'.$ID.'"
+  },
+   "message":{
+    "text": "Tìm thêm bạn chat \nm.me/ThinhChatVN",
+    }
+  
 }';
 sendchat($token,$jsonData1);
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
@@ -200,7 +210,7 @@ sendchat($token,$jsonData);
               },
               {
                 "type":"web_url",
-                "url":"m.me/ThinhChatVN",
+                "url":"m.me/106986154392261",
                 "title":"Thêm bạn chat"
               },
               {
@@ -214,6 +224,16 @@ sendchat($token,$jsonData);
       }
     }
   }
+}';
+sendchat($tokenpa,$jsonData1);
+    $jsonData1 ='{
+  "recipient":{
+    "id":"'.$partner.'"
+  },
+  "message":{
+    "text": "Tìm thêm bạn chat \nm.me/ThinhChatVN",
+    }
+  
 }';
 sendchat($tokenpa,$jsonData1);
  $jsonData ='{
