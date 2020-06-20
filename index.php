@@ -150,7 +150,17 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 		<!-- https://publishers.propellerads.com/ -->
 		<!-- https://admin.exoclick.com/qc1 -->
 		<script type="application/javascript" data-idzone="3895122" src="https://a.exdynsrv.com/nativeads.js" ></script>
-		<!-- https://admin.exoclick.com/qc1 -->
+		<!-- https://admin.exoclick.com/qc6 -->
+		<script type="application/javascript">
+    var ad_idzone = "3899606",
+    ad_width = "120",
+    ad_height = "600"
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
+<noscript>
+    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3899606&output=noscript&type=120x600" width="120" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</noscript>
+		<!-- https://admin.exoclick.com/qc6 -->
 		<script type="application/javascript">
     var ad_idzone = "3895904",
     ad_width = "300",
