@@ -190,7 +190,7 @@ sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "text":"Video\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
         "buttons":[
           {
             "type":"Postback",
