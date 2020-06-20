@@ -20,6 +20,7 @@ $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
 $quick_reply = $input['entry'][0]['messaging'][0]['message']['quick_reply']['payload'];
+$hihi = $input['entry'][0]['messaging'][0]['postback'];
 switch ($page)
 {
     case '103456168065673' :
@@ -135,8 +136,7 @@ switch ($page)
     
 }
 
-if(isset($getstart['postback']))
-  if($getstart['postback']['payload']=="Getstared"){
+if($getstart['postback']['payload']=="Getstared"||$hihi['title']=="Get Started"||$getstart['postback']['payload']=="GetStared"||$getstart['postback']['payload']=="Get Stared"){
     $jsonData ='{
   "recipient":{
     "id": "'.$userID.'"
