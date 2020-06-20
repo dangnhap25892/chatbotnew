@@ -138,6 +138,10 @@ switch ($page)
         $token = 'EAADn4qwXcIQBADx1MyJnrJKTpTaxPgiejc0UbFpZAHs0PFFLomdBcauaJnpgI4fu0GArGByiF8DGq40M6xSE2ld4eMbj3BBm7GWi3wejJ5GgN2UYeHbqsU7LZACt5gAO3SDgV3fk0ZAJB5ZAOr9IjWIvcD5jbLBx6LsO61Wjk4Rx3KdSQZA0ZC';
         $chatpage ='Hẹn Hò';   
     break;
+    case '107049221059443' :
+        $token = 'EAADn4qwXcIQBAFlzW73p2ztrEOE1Lk0lrOS6kejdq3ODZCn1k3Sh0ZCc7iWsl7W5AGfZAMEjtc9IIqrA70eQyRZAzBqm7HM0ZAMs8bt9RGtoclnlfzTlJZCu7v7fG2aJQ1QdFF6a2DpyD9u9rk6Kp9dBTBVpZBZBZBRbrFc3NOKHJqJZCuqhBKgIxw';
+        $chatpage ='Hẹn Hò Với Người Lạ';   
+    break;
     
     
     
