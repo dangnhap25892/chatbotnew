@@ -189,22 +189,13 @@ sendchat(EAADn4qwXcIQBAJ6CvwIuNNKKrmMth45eZAAWGMIsk2DjkvgmtKpcc1Qx3YbxTpQROcIrj1
     "attachment":{
       "type":"template",
       "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"video",
-            "subtitle":"ID:'.$userid.' ... page '.$chatfuelpa.' ",
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"'.$noidung.'",
-                "title":"View Website"
-              },{
-                "type":"postback",
-                "title":"'.$userid.'",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }              
-            ]      
+        "template_type":"button",
+        "text":"Ảnh\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "buttons":[
+          {
+            "type":"Postback",
+            "title":"'.$userid.'",
+            "payload":"'.$userid.'"
           }
         ]
       }
