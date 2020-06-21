@@ -401,7 +401,7 @@ if(isset($quick_reply)){
     sendchat($token,$jsonData);
     die();
 }
-  
+   if(isset($type)){
 if ($type=="image")
 {
   header("Location: sendimage.php?id=$userID&noidung=$image");
@@ -428,7 +428,7 @@ if ($type=="video")
   header("Location: sendvideo.php?id=$userID&noidung=$image");
     die();
 }
-
+   }
 
 if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$message =='endchat'||$message =='Endchat'||$message =='END') {
   header("Location: ketthucbot.php?ID=$userID&token=$token");
