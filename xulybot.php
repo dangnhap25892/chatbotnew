@@ -415,7 +415,17 @@ if ($type=="audio")
 }
 if ($type=="video")
 {
-  header("Location: sendvideo.php?id=$userID&noidung=$image");
+  $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'Hiện đang lỗi gửi video chờ sửa lỗi trong vài phút'
+     }
+ }";
+ sendchat($token,$jsonData);
+  #header("Location: sendvideo.php?id=$userID&noidung=$image");
     die();
 }
 
