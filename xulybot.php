@@ -349,8 +349,9 @@ if(isset($quick_reply)){
     die();
   }
   if($quick_reply=="timnam"){
-     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
+    header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
     die();
   }
   if($quick_reply=="timnu"){
