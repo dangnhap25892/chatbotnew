@@ -415,7 +415,7 @@ if ($type=="audio")
 }
 if ($type=="video")
 {
-  $jsonData ="{
+ /* $jsonData ="{
    'messaging_type' : 'RESPONSE',
    'recipient':{
      'id': $userID
@@ -424,8 +424,8 @@ if ($type=="video")
      'text': 'Hiện đang lỗi gửi video chờ sửa lỗi trong vài phút'
      }
  }";
- sendchat($token,$jsonData);
-  #header("Location: sendvideo.php?id=$userID&noidung=$image");
+ sendchat($token,$jsonData);*/
+  header("Location: sendvideo.php?id=$userID&noidung=$image");
     die();
 }
 
