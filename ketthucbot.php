@@ -38,7 +38,7 @@ $jsonData1 ='{
         "elements":[
            {
             "title":"Này bạn ơi...",
-            "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
+            "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
               "url": "m.me/106986154392261",
@@ -195,7 +195,7 @@ sendchat($token,$jsonData);
            {
             "title":"Này bạn ơi...",
         
-            "subtitle":"Bạn tham gia Group chưa\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
+            "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
               "url": "m.me/ThinhChatVN",
