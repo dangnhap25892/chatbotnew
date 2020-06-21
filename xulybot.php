@@ -349,15 +349,15 @@ if(isset($quick_reply)){
     die();
   }
   if($quick_reply=="timnam"){
-     header("Location: updatebotgt.php.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: thamgiabotgt.php.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
   if($quick_reply=="timnu"){
-     header("Location: updatebotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
   if($quick_reply=="timgtt3"){
-     header("Location: updatebotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
     
@@ -437,11 +437,11 @@ if ($message=='tham gia test1') {
   die();
 }
 if ($message=='Team 2K+') {
-  header("Location:  updatebot2k.php?ID=$userID&token=$token");
+  header("Location:  thamgiabot2k.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='9X Tâm Sự') {
-  header("Location:  updatebot9x.php?ID=$userID&token=$token");
+  header("Location:  thamgiabot9x.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
