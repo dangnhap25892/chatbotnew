@@ -706,8 +706,8 @@ if($message=='kiemtra2'){
  }
 if(isset($message)){
    $message = preg_replace('/\n+/', '\n', $message);
-  #header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-  header("Location: sendchatbot.php?id=$userID&noidung=$message&token=$token");
+  header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+  #header("Location: sendchatbot.php?id=$userID&noidung=$message&token=$token");
   die();
  }
  function sendchat($token,$jsonData)
