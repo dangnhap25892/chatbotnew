@@ -51,7 +51,17 @@ else{
 $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
 ?>
-
+<div>
+	<script type="application/javascript">
+    var ad_idzone = "3901062",
+    ad_width = "160",
+    ad_height = "600"
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
+<noscript>
+    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901062&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</noscript>
+	     </div>
 <img id="image" src= <?php echo "$hihi"?> >
 
 </h1>
