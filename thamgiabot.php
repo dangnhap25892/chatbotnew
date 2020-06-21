@@ -362,6 +362,7 @@ sendchat($tokenpa,$jsonData);
 if (!trangthai($userid)){// nếu chưa chát
 if (!hangcho($userid)) { // nếu chưa trong hàng chờ
 ketnoi($userid,$ktgt,$token);
+     /*
 }else{
 
   $jsonData ='{
@@ -384,7 +385,7 @@ ketnoi($userid,$ktgt,$token);
   }
 }';
 sendchat($token,$jsonData);
-}
+}*/
 }else{
 // khi đang chát ! giải quyết sau !!
   $jsonData ='{
