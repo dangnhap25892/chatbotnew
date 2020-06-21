@@ -144,6 +144,16 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 
 ?>
 	<div>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-8784210033717367"
+     data-ad-slot="4273746457"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 		<!-- https://admin.exoclick.com/newqc1 -->
 		<script type="application/javascript">
     var ad_idzone = "3901062",
