@@ -5,7 +5,7 @@ if (isset($_REQUEST['hub_challenge']))
   $c = $_REQUEST['hub_challenge'];
   $v = $_REQUEST['hub_verify_token'];
 }
-$token = 'EAADupogSIckBAFYQRTPO4YRllOUHpJeLMjfU2iqBqYaPQjlPsqOUZBin5H6TsFwk2vWVWGhDwbTXZCKTM0XJ4DZBqcVpYaalOd9pnzL2OGwjOiLIFrWLXbBcReSk8sZBDTxp5PKPm34OBEUZCmlTcSU5UEXwtZAw3ctJjYM5uO9AZDZD';
+$token = 'EAADupogSIckBANZC7JHIE9EFbDdHm5b938E3K7wzdxJBzrWuIb19R8ZAZAd0L0yQ1tZBFhZBqiVPZCOq7AUwoOWRQ4EijFFLqb6oFk8eLiNN8wEZCfWcIh41yJjnGLcAM6qkJt3rlal7nLPTsjU6KfsNtk7qaBEo4TQOIPdZB5Sb6gZDZD';
 if($v =="123")
 {
   echo $c;
