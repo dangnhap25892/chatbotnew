@@ -2,7 +2,7 @@
 require_once 'config.php'; //lấy thông tin từ config
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME) or die ('Không thể kết nối tới database');
 $ID = $_GET['ID'];// lấy id từ chatfuel
-$gioitinh = $_GET['gt']; // lấy giới tính
+$gioitinh = '0'; // lấy giới tính
 $chatfuel = $_GET['chatfuel'];
 $token = $_GET['token'];
 $quick_reply = $_GET['gt']; // lấy giới tính
