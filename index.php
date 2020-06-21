@@ -155,7 +155,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
     <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901062&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </noscript>
 		<!-- https://admin.exoclick.com/newqc1 -->
-		<!-- https://publishers.propellerads.com/ 
+		<!-- https://publishers.propellerads.com/  -->
 		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
 		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
 		<!-- https://publishers.propellerads.com/ -->
