@@ -92,6 +92,161 @@
 }
 </style>
 <body class="theme-red">
+	<div class="choiGame-container">
+	<div class="centerBox-o-t-gamePage-gameplay">
+		<span class="tabLeft-o"></span> 
+		<span class="tabRight-o-single">
+			<span class="gamePage-Title"><a href="/" title="Trang chủ">Trang chủ</a> &gt;&gt; <a href="http://game24h.vn/game-ban-sung-c148.html" title="Bắn súng">Bắn súng</a> &gt;&gt; <h2>Game Đặc nhiệm Mỹ</h2></span>
+		</span>
+	</div>
+	<div class="centerBox-o-c-gamePage-gameplay">
+		<!-- XỬ LÝ QUẢNG CÁO -->
+		<!--<div class="gameContainer-loading" id="adv_nha_tai_tro" >
+			<div class="banner-loading">
+				<div id ='adv_tai_tro_id'>
+					<div class="banner-close"><a href="javascript: removeAds();" title="">Close</a></div>
+					<div id="mainContainer">
+					  <div id="content"><div id="contentElement"></div></div>
+					  <div id="adContainer"></div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- XỬ LÝ CHƠI GAME -->
+		<!-- Mặc định phần chơi game sẽ ẩn,sau khi load quảng cáo thì sẽ dùng js hiển thị -->
+		<div id="game_player_container">
+		<!--Hiển thị message kiểm duyệt dành cho game chưa được kiểm duyệt-->
+							<!--Hiển thị game đã được kiểm duyệt-->
+						<div id="playBtn" style="display: none;">
+				<div class="thuNoi">
+					<img src="http://static.game24h.vn/upload/2014/2014-4/game/2014-11-20/Game_DacNhiemMy.jpg">
+					<span class="playLabel">CHƠI NGAY</span>
+					<span class="gameName">Đặc nhiệm Mỹ</span>
+				</div>
+			</div>
+			<div class="adsbyvli" data-ad-slot="vi_20615086" style=""></div>
+			<div class="gameContainer" id="obj_flash_game"><embed src="http://static.game24h.vn/upload/2014/2014-4/game/2014-11-14/Game_DacNhiemMy.swf" wmode="direct" id="play_game" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer/" width="663" height="311.8752" name="preloader" align="middle" allowscriptaccess="always" allowfullscreen="false" flashvars="adTagUrl="></div> 
+			
+						<script>
+				var playBtn = document.getElementById("playBtn");
+				playBtn.addEventListener("click", function(){
+					playBtn.style.display = "none";
+					vitag.videoConfig = {
+						width: false,
+						height: false,
+						loadingText: "Loading advertisement..",
+						complete: function(){
+						},
+						error: function(){
+						},
+						hidden: function(){
+						}
+					};
+					vitag.videoInit.push(function () {viAPItag.startPreRoll('vi_20615086'); });
+				});
+			</script>
+						</div>
+		<div class="clear"></div>
+		<style>
+			.warning{
+				font-size: 10pt;
+				text-align: right;
+				padding: 0px 15px 15px 0px;
+				line-height: 30px
+			}
+			.warning img{float: left;}
+		</style>
+		<div class="warning" style="display: none;"><img src="http://static.game24h.vn/images/loadingtext.gif"> Game 24h khuyến cáo : Chơi game quá 180 phút mỗi ngày sẽ ảnh hướng xấu đến sức khỏe</div>
+		<script>
+			setTimeout(() => {
+				$('.warning').fadeOut();
+			}, 5000);
+		</script>
+		<div class="centerBox-o-c-gamePage" style="color:black; margin:0 0px 0 0px; padding:0px 0 0px 0;">
+			<div class="binhChonGame" style="width:100px !important;margin-top:6px;">
+				<b style="margin-left:10px;">CHƠI THÊM</b>
+			</div>
+			<div class="list-chuc-nang">					<a href="http://game24h.vn/hanh-dong/" style="margin-right:5px;font-weight:300" title="Hành động"><img src="http://static.game24h.vn/upload/2016/2016-4/2016-11-03/hanh-dong.png" width="25" height="25" alt="">&nbsp;Hành động</a>					<a href="http://game24h.vn/canh-sat/" style="margin-right:5px;font-weight:300" title="Cảnh sát"><img src="http://static.game24h.vn/upload/2016/2016-4/2016-11-02/canh-sat.png" width="25" height="25" alt="">&nbsp;Cảnh sát</a>					<a href="http://game24h.vn/con-trai/" style="margin-right:5px;font-weight:300" title="Con trai"><img src="http://static.game24h.vn/upload/2016/2016-4/2016-11-02/con-trai.png" width="25" height="25" alt="">&nbsp;Con trai</a>					<a href="http://game24h.vn/game-y8-ban-sung/" style="margin-right:5px;font-weight:300" title="Y8 Bắn Súng"><img src="http://static.game24h.vn/upload/2017/2017-1/2017-02-14/y8-ban-sung.jpg" width="25" height="25" alt="">&nbsp;Y8 Bắn Súng</a>					<a href="http://game24h.vn/ban-nhau/" style="margin-right:5px;font-weight:300" title="Bắn nhau"><img src="http://static.game24h.vn/upload/2016/2016-4/2016-11-02/ban-nhau.png" width="25" height="25" alt="">&nbsp;Bắn nhau</a>			<a href="http://game24h.vn/game-hot/" style="color:black;margin-right:5px;font-weight:300" title="all tag"><img src="../images/all-tag.png" width="25" height="25" alt="all tag">&nbsp;Xem thêm</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="centerBox-o-c-gamePage" style="color:black; margin:0 0px 0 0px; padding:0px 0 0px 0;">
+			<div class="binhChonGame" style="width:100px !important;">
+				<b style="margin-left:10px;">LƯỢT CHƠI :</b>
+			</div>
+			<div class="list-chuc-nang"><b>5</b></div>
+		</div>
+		<div class="binhChonGame">
+			<iframe name="iframe_show_binh_chon" id="iframe_show_binh_chon" width="642px" height="100px" src="/upload-php/game-play/dsp_form_binh_chon.php?game_id=2430&amp;box_id=220&amp;current_url=http://game24h.vn/game-ban-sung/dac-nhiem-my-c148g2430b220.html&amp;name=Đặc nhiệm Mỹ" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe>
+		</div>
+		<div class="list-chuc-nang">
+		<form name="frm_game_player" action="act_comment_for_game.php" method="post">
+			<input type="hidden" name="hdn_game_id" value="2430">
+			<input type="hidden" name="hdn_type" value="">
+			<input type="hidden" name="hdn_vote_score" value="">
+			<input type="hidden" name="hdn_box_id" value="">
+			<input type="hidden" name="isVote" value="">				<a href="javascript:void(0)" onclick="reload_game();removeAdSwf();"><img src="../images/icon-choi-lai.gif" width="25" height="25" alt="Chơi lại">&nbsp;Chơi lại</a>
+				<span id="game_out"><a href="javascript:void(0)" onclick="javascript:change_screen_game_player(0);"><img src="../images/icon-mo-lon.gif" width="25" height="25" alt="Mở lớn">Mở lớn</a></span>
+				<span id="game_in" style="display: none;"><a href="javascript:void(0)" onclick="javascript:change_screen_game_player(1);"><img src="../images/icon-mo-lon.gif" width="25" height="25" alt="Thu nhỏ" display:block;="">Thu nhỏ</a></span>			<!-- a href="#"><img src="../images/icon-bat-den.gif" width="25" height="25" alt="" />&nbsp;Bật/tắt đèn</a -->
+			<a href="javascript:void(0);" onclick="javascript:AccountInteractiveToGamePlayer('failure_update');" title="Báo lỗi game"><img src="../images/icon-error.gif" width="18" height="19" alt="Báo lỗi"></a><a href="javascript:void(0);" onclick="javascript:AccountInteractiveToGamePlayer('failure_update');" title="Báo lỗi game" class="bao-loi">&nbsp;Báo lỗi</a>
+			<a href="javascript:void(0);" title="Thêm vào danh sách yêu thích" onclick="javascript:AccountInteractiveToGamePlayer('favorite_update');"><img src="../images/icon-yeu-thich.gif" width="25" height="24" alt="Yêu thích">&nbsp;Yêu thích</a>
+		</form>
+		</div>
+		<div class="chiaSe">
+			<b style="float:left;">Chia sẻ game cho bạn bè qua:</b>
+			<table>
+				<tbody><tr>
+					<td style="min-width: 160px;">
+						<div class="fb-like fb_iframe_widget" data-href="http://game24h.vn/game-ban-sung/dac-nhiem-my-c148g2430b220.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=472994803093293&amp;container_width=160&amp;href=http%3A%2F%2Fgame24h.vn%2Fgame-ban-sung%2Fdac-nhiem-my-c148g2430b220.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 144px; height: 20px;"><iframe name="f33e4be0edf368" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.9/plugins/like.php?action=like&amp;app_id=472994803093293&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1278381c6805ec%26domain%3Dgame24h.vn%26origin%3Dhttp%253A%252F%252Fgame24h.vn%252Ff236306546d76fc%26relation%3Dparent.parent&amp;container_width=160&amp;href=http%3A%2F%2Fgame24h.vn%2Fgame-ban-sung%2Fdac-nhiem-my-c148g2430b220.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 144px; height: 20px;" class=""></iframe></span></div>
+					</td>
+					<td>
+						<!--a title="" href="javascript:;" onclick="MM_openBrWindow('https://www.facebook.com/sharer/sharer.php?u=http://game24h.vn/game-ban-sung/dac-nhiem-my-c148g2430b220.html', 'newstools', 'status=yes,scrollbars=yes,resizable=yes,width=600,height=350');">
+							<img src="../../../images/chiase_btn2.gif" height="18" width="67" alt="" align="absmiddle" />
+						</a-->
+					</td>
+					<td>
+						<div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 123px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 123px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1592846668512" name="I0_1592846668512" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCOjJUhWXai8e3HSENcBDk1A&amp;layout=default&amp;count=default&amp;hl=vi&amp;origin=http%3A%2F%2Fgame24h.vn&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.SvZL2nVfaDQ.O%2Fam%3DwQc%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCMKuAcBC5xxRZEXNQrOzjm-_xH7VA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1592846668512&amp;_gfid=I0_1592846668512&amp;parent=http%3A%2F%2Fgame24h.vn&amp;pfname=&amp;rpctoken=24162795" data-gapiattached="true"></iframe></div>
+					</td>
+					<!-- td>
+						<a title="Chia sẻ qua Zing" href="javascript:;" onclick="MM_openBrWindow('http://link.apps.zing.vn/pro/view/conn/share?u=http://game24h.vn/game-ban-sung/dac-nhiem-my-c148g2430b220.html&t=Đặc nhiệm Mỹ&desc=Đặc nhiệm Mỹ', 'newstools', 'status=yes,scrollbars=yes,resizable=yes,width=600,height=350');" target="blank"><img width="67" height="18" src="../../../images/zingme.jpg"/></a>
+					</td -->
+					<!-- td>
+						<a href="ymsgr:im?msg=http://game24h.vn/game-ban-sung/dac-nhiem-my-c148g2430b220.html" title="Chia sẻ qua yahoo"><img src="../../../images/iconYahoo.gif" alt="" width="25" height="25" /></a>
+					</td -->
+				</tr>
+			</tbody></table>
+			<div class="tag-txt-FB" style="float: none">
+				<table>
+					<tbody><tr>
+						<td>
+							Tham gia cộng đồng game 24h trên
+						</td>
+						<td>
+							<script type="text/javascript">
+								//<![CDATA[
+								document.write('<fb:like layout="button_count" href="https://www.facebook.com/gamehay24h" show_faces="true" data-width="70"></fb:like>');
+								//]]>
+							</script><fb:like layout="button_count" href="https://www.facebook.com/gamehay24h" show_faces="true" data-width="70" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=472994803093293&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgamehay24h&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;show_faces=true&amp;width=70"><span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f134698bff4d77c" width="70px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.9/plugins/like.php?app_id=472994803093293&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dff82bebd898bc4%26domain%3Dgame24h.vn%26origin%3Dhttp%253A%252F%252Fgame24h.vn%252Ff236306546d76fc%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgamehay24h&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;show_faces=true&amp;width=70" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span></fb:like>
+						</td>
+						<td> </td>
+						<td>
+							<!--a title="" href="https://plus.google.com/110786396882419465967/" rel="publisher" style="text-decoration:none;"><img src="../../../images/googlePlus.gif" alt="Google+" style="border:0;width:16px;height:16px;" /></a-->
+						</td>
+						<td>
+							<!--div class="g-follow" data-annotation="none" data-height="15" data-href="https://plus.google.com/110786396882419465967/" data-rel="author"></div-->
+							<!--div class="g-plusone" data-size="medium" data-href="https://plus.google.com/+game24h/"></div-->
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="centerBox-o-b-gamePage-gameplay"></div>
+	</div>
+	
     <?php
 $url = $_GET['url'];
 $v2 = '&_nc_sid=';
