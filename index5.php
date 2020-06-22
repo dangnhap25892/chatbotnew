@@ -94,10 +94,12 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
     </small>
   </p>
 	<!-- https://beta.propellerads.com/ -->
-	<script type="application/javascript" data-idzone="3901452" src="https://a.exdynsrv.com/nativeads.js" ></script>
-	<!-- https://beta.propellerads.com/ -->
 	<script async="async" data-cfasync="false" src="//pl15577867.passtechusa.com/ff3a32547adb4311f7dfa0aede354000/invoke.js"></script>
 <div id="container-ff3a32547adb4311f7dfa0aede354000"></div>
+	
+	<!-- https://beta.propellerads.com/ -->
+	<script type="application/javascript" data-idzone="3901452" src="https://a.exdynsrv.com/nativeads.js" ></script>
+	
 	<!-- https://beta.propellerads.com/ -->
 	<script type="application/javascript">
     var ad_idzone = "3901062",
