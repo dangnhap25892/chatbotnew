@@ -19,6 +19,7 @@
 	}
 </style>
 <body>
+	
 	<script type="application/javascript">
     var ad_idzone = "3901440",
     ad_width = "468",
@@ -28,6 +29,8 @@
 <noscript>
     <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901440&output=noscript&type=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </noscript>
+	
+	<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3901446&capping=0"></script>
 	
      <h1 style="1">
 	     
