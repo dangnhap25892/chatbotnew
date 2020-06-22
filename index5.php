@@ -35,8 +35,17 @@
 		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
 		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
 		<!-- https://publishers.propellerads.com/ -->
-	
-	
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'dc5121e073d0b5024c8851c4fa4579fc',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/dc5121e073d0b5024c8851c4fa4579fc/invoke.js"></scr' + 'ipt>');
+</script>
+	<!-- https://beta.propellerads.com/ -->
      <h1 style="1">
 	     
         <p>Ảnh người lạ đã gửi cho bạn</p>
