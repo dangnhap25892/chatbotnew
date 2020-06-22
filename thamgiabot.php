@@ -399,7 +399,7 @@ sendchat($token,$jsonData);
         "template_type":"generic",
         "elements":[
            {
-            "title":"⛔️ CẢNH BÁO",
+            "title":"THÔNG BÁO",
             "subtitle":"Bạn đang được kết nối chát với người khác ! Hãy gõ \'End\' để thoát",
           }
         ]
