@@ -146,6 +146,10 @@ switch ($page)
         $token = 'EAADn4qwXcIQBALbL9HUww5Vc5ynvRYDrJZChSTTbFZBOhcbHjTWJ5Osd4mtZASjIkAzGO9f7XiSgbMZBcADVDRSL3FXZBZBOI5zPVGxfiSJuA3L48W1LZCLHP201qhsuBGulab9PZAzZB8wOij7CUuiZBeBAaejDsUDNp6tSIT335rS32rnRoPgdN6';
         $chatpage ='Hẹn Hò Bí Mật';   
     break;
+    case '101976294907930' :
+        $token = 'EAADn4qwXcIQBAOSTi5pjZCKuvmHc91eQKtiHpOTefudylZCMcpmBsRWaIbE3fMb227x3WYqdr3QejZCs4erwZCuP6wjPZBgX7WbsIphIqOTqXTiOOyJosrLCksmjIhbQsUdSIgtZB0GDEE4QwqvUV9xc03UK1h8NTNznwBrmO8iOZCXnpuWWbWN';
+        $chatpage ='Chat ẩn danh';   
+    break;
     
     
     
