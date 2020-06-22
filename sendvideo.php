@@ -89,7 +89,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     "id": "'.$userID.'"
   },
   "message":{
-    "text":"https://anhnguoila1.herokuapp.com/video.php?&url='.$message.'"
+    "text":"https://anhnguoila2.herokuapp.com/video.php?&url='.$message.'"
     }
 }';
   $ch = curl_init($url);
