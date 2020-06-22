@@ -88,5 +88,6 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 <noscript>
     <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901062&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </noscript>
+	<script type="application/javascript" data-idzone="3901452" src="https://a.exdynsrv.com/nativeads.js" ></script>
 </body>
 </html>
