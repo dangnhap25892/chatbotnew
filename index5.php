@@ -111,6 +111,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
     <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901062&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </noscript>
 	<!-- https://beta.propellerads.com/ -->
-	
+	<script type='text/javascript' src='//pl15578078.passtechusa.com/97/e1/52/97e152760174a26cf4e0934996daf82a.js'></script>
+	<!-- https://beta.propellerads.com/ -->
 </body>
 </html>
