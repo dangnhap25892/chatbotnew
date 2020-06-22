@@ -19,7 +19,18 @@
 	}
 </style>
 <body>
+	<script type="application/javascript">
+    var ad_idzone = "3901440",
+    ad_width = "468",
+    ad_height = "60"
+</script>
+<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
+<noscript>
+    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901440&output=noscript&type=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</noscript>
+	
      <h1 style="1">
+	     
         <p>Ảnh người lạ đã gửi cho bạn</p>
 <?php	
 $url = $_GET['url'];
@@ -53,15 +64,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 }
 ?>
 
-	     <script type="application/javascript">
-    var ad_idzone = "3901440",
-    ad_width = "160",
-    ad_height = "600"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901440&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
+	     
 	
 	     
 <img id="image" src= <?php echo "$hihi"?> >
