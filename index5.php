@@ -28,13 +28,13 @@
 	<!-- https://beta.propellerads.com/ -->
 	<script type="text/javascript">
 	atOptions = {
-		'key' : '01a7d2ae60a14be7b40cec0a732f0ff6',
+		'key' : '5b8af646bd8073edd466651a45a066a8',
 		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
+		'height' : 50,
+		'width' : 320,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/01a7d2ae60a14be7b40cec0a732f0ff6/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/5b8af646bd8073edd466651a45a066a8/invoke.js"></scr' + 'ipt>');
 </script>
 	<!-- https://beta.propellerads.com/ -->
 	<script type="text/javascript">
