@@ -62,6 +62,34 @@ $noidung= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$ur
 //       }
 //     }
 //   }';
+
+function isNudeImage($url)
+{
+    $url = urlencode($url);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://api.sightengine.com/1.0/check.json?models=nudity&api_user=$NUDE_API_USER&api_secret=$NUDE_API_SECRET&url=$url");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    
+    $headers = array();
+    $headers[] = 'Content-Type: application/x-www-form-urlencoded';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    
+    $res = curl_exec($ch);
+    curl_close($ch);
+    $result = json_decode($res, true);
+    if($result['status'] == 'success'){
+       // echo 'Raw: '. $result['nudity']['raw'] . 'Safe: '. $result['nudity']['safe'] . 'Patial: '. $result['nudity']['partial'];
+        if($result['nudity']['raw'] >= max($result['nudity']['safe'], $result['nudity']['partial'])) return 1;
+        else if($result['nudity']['partial'] >= max($result['nudity']['raw'], $result['nudity']['safe'])) 
+        {
+            if($result['nudity']['partial_tag'] == 'bikini' || $result['nudity']['partial_tag'] == 'lingerie') return 1;
+        }
+    }
+    return 0;
+}
+
+
   ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
@@ -82,7 +110,15 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 }
 function sendchat2($message,$userID,$token)
 {
-
+    $isNude = isNudeImage($message);
+if($isNude == 0)
+{
+    $nude = 'không';
+}  
+else
+{
+    $nude = 'co';
+}
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
   $jsonData ='{
   "recipient":{
@@ -93,7 +129,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Người lạ đã gửi ảnh cho bạn.",
+        "text":"Người lạ đã gửi ảnh cho bạn.'.$nude.'",
         "buttons":[
           
               {
