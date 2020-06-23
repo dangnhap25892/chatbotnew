@@ -113,11 +113,11 @@ function sendchat2($message,$userID,$token)
     $isNude = isNudeImage($message);
 if($isNude == 0)
 {
-    $nude = 'không';
+    $nude = 'Người lạ đã gửi ảnh cho bạn.';
 }  
 else
 {
-    $nude = 'co';
+    $nude = 'Ảnh có chứa nội dụng nhạy cảm';
 }
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
   $jsonData ='{
@@ -129,7 +129,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Người lạ đã gửi ảnh cho bạn.'.$nude.'",
+        "text":"'.$nude.'",
         "buttons":[
           
               {
@@ -232,6 +232,7 @@ if(isset($noidung)){
      if (strlen(strstr($url, $sub)) > 0||strlen(strstr($url, $uuu)) > 0 ||strlen(strstr($url, $uu1)) > 0) {
     echo 'Ton tai';
   } else {
+         
          $admin ='{ 
     "recipient":{
     "id": "2781358401974957"
@@ -269,7 +270,52 @@ sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK
   }
 }';
 sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
-
+ $isNude = isNudeImage($message);
+if($isNude == 0)
+{
+    echo'không';
+}
+else
+{
+    $admin ='{ 
+    "recipient":{
+    "id": "103456168065673"
+  },
+  "message":{
+    "attachment":{
+      "type":"image", 
+      "payload":{
+        "url":"'.$noidung.'", 
+        "is_reusable":true
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZCM54htqV5wA4bmxZCZAkn3wAxkadEy4dzZAnec7BZBxOR3L6nY1QkEPIpd5gNgooDPFInyJBDVUUlHGTE45v11AizwV7J6KyvfbcpmgZDZD,$admin);
+    $admin ='{
+  "recipient":{
+    "id":"103456168065673"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Ảnh\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "buttons":[
+          {
+            "type":"Postback",
+            "title":"'.$userid.'",
+            "payload":"'.$userid.'"
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZCM54htqV5wA4bmxZCZAkn3wAxkadEy4dzZAnec7BZBxOR3L6nY1QkEPIpd5gNgooDPFInyJBDVUUlHGTE45v11AizwV7J6KyvfbcpmgZDZD,$admin);
+    
+}
   }
     
       echo $partner;
