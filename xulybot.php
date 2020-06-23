@@ -24,7 +24,7 @@ $hihi = $input['entry'][0]['messaging'][0]['postback'];
 switch ($page)
 {
     case '103456168065673' :
-        $token = 'EAADn4qwXcIQBAFHRcn1PVuyAjPrYaJbqRJZBAMPWJiVNH4IDnu2Q1zv1hNORLZBKj1MT0eYJudICNjQTaycesDiZBvtyhhOLqKuFgTapMm9Bt9tSNdPocIaC3aBcOAzHg8hUsxMrxnj9sZAQiBwVmzZBJOfu4WjgnvbU9igFuVQZDZD';
+        $token = 'EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZCM54htqV5wA4bmxZCZAkn3wAxkadEy4dzZAnec7BZBxOR3L6nY1QkEPIpd5gNgooDPFInyJBDVUUlHGTE45v11AizwV7J6KyvfbcpmgZDZD';
        
         $chatpage ='Test chatbot';
      break;
