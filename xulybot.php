@@ -713,11 +713,11 @@ if(isset($message)){
    $message = preg_replace('/\n+/', '\n', $message);
   if($hi == 1)
 {
- header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
 if($hi == 2)
 {
- header("Location: https://sendchatbot1.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot3.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 
 }
 
