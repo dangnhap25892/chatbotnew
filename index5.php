@@ -20,21 +20,23 @@
 </style>
 <body>
 	
-	<script type="application/javascript">
-    var ad_idzone = "3901440",
-    ad_width = "468",
-    ad_height = "60"
-</script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901440&output=noscript&type=468x60" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
 	
-	<script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=3901446&capping=0"></script>
 	<!-- https://publishers.propellerads.com/  -->
 		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
 		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
 		<!-- https://publishers.propellerads.com/ -->
+	<!-- https://beta.propellerads.com/ -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '01a7d2ae60a14be7b40cec0a732f0ff6',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/01a7d2ae60a14be7b40cec0a732f0ff6/invoke.js"></scr' + 'ipt>');
+</script>
+	<!-- https://beta.propellerads.com/ -->
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'dc5121e073d0b5024c8851c4fa4579fc',
