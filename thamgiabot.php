@@ -60,26 +60,17 @@ echo $ktgt;
 if ( $ktgt == 0 ) {
      $jsonData ='{
   "recipient":{
-    "id":"'.$userID.'"
+    "id":"'.$userid.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Giới tính của bạn là gì",
+    "text": "Vui lòng cập nhập giới tính. hu2 '.$ktgt.'",
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Nam",
-        "payload":"nam",
-      },{
-        "content_type":"text",
-        "title":"Nữ",
-        "payload":"nữ",
+        "title":"Cập nhập giới tính",
+        "payload":"newchat",
       },
-      {
-        "content_type":"text",
-        "title":"Giới tính thứ 3",
-        "payload":"gtt3",
-      }
     ]
   }
 }';
