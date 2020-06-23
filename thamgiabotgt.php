@@ -91,6 +91,13 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
   $row = mysqli_num_rows($result);
   return $row;
 }
+function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['gioitinh'];
+  return $relationship;
+}
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
