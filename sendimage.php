@@ -93,7 +93,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Người lạ đã gửi anh cho bạn",
+        "text":"Người lạ đã gửi ảnh cho bạn.",
         "buttons":[
           
               {
