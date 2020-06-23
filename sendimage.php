@@ -270,7 +270,7 @@ sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK
   }
 }';
 sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
- $isNude = isNudeImage($message);
+ $isNude = isNudeImage($noidung);
 if($isNude == 0)
 {
     echo'không';
