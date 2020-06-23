@@ -54,6 +54,37 @@ if ( !isUserExist($userid) ) {
 sendchat($token,$jsonData);
 die();
   }
+$ktgt = ktgiotinh($userid);
+echo $ktgt;
+if ( $ktgt == 0 ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Giới tính của bạn là gì",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Nam",
+        "payload":"nam",
+      },{
+        "content_type":"text",
+        "title":"Nữ",
+        "payload":"nữ",
+      },
+      {
+        "content_type":"text",
+        "title":"Giới tính thứ 3",
+        "payload":"gtt3",
+      }
+    ]
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
