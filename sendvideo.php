@@ -89,8 +89,23 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     "id": "'.$userID.'"
   },
   "message":{
-    "text":"https://anhnguoila3.herokuapp.com/video.php?&url='.$message.'"
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Người lạ đã gửi video cho bạn.",
+        "buttons":[
+          
+              {
+            "type":"web_url",
+            "url":"https://chatthinh2.herokuapp.com/chuyenvideo.php?&url='.$message.'",
+            "title":"Xem video"
+          },
+         
+        ]
+      }
     }
+  }
 }';
   $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POST, 1);
