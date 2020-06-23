@@ -98,7 +98,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           
               {
             "type":"web_url",
-            "url":"https://google.com",
+            "url":"https://chatthinh2.herokuapp.com/chuyenanh.php?&url='.$message.'",
             "title":"Xem ảnh"
           },
          
