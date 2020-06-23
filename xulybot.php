@@ -491,6 +491,17 @@ if ($message=='Menu') {
         "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
+       {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Team 2K+",
+        "payload":"endchat",
+      },
+      
       {
         "content_type":"text",
         "title":"Kết Thúc",
