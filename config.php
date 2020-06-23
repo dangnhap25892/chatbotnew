@@ -4,6 +4,9 @@ $DBUSER = getenv('DBUSER'); // Set your database user here
 $DBNAME = getenv('DBNAME'); // Set your database name here
 $DBPW =  getenv('DBPASS'); // Set your database password here
 
+$NUDE_API_USER = getenv('NUDE_API_USER');
+$NUDE_API_SECRET = getenv('NUDE_API_SECRET');
+
 
 
 $BLOCK_NAME = "uet_chat";
