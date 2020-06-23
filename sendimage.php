@@ -88,6 +88,15 @@ function isNudeImage($url)
     }
     return 0;
 }
+   $isNude = isNudeImage($message);
+if($isNude == 0)
+{
+    $nude = 'Người lạ đã gửi ảnh cho bạn.';
+}  
+else
+{
+    $nude = 'Ảnh có chứa nội dụng nhạy cảm';
+}
 
 
   ////// Hàm Gửi JSON //////////
@@ -110,15 +119,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 }
 function sendchat2($message,$userID,$token)
 {
-    $isNude = isNudeImage($message);
-if($isNude == 0)
-{
-    $nude = 'Người lạ đã gửi ảnh cho bạn.';
-}  
-else
-{
-    $nude = 'Ảnh có chứa nội dụng nhạy cảm';
-}
+  global $nude;
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
   $jsonData ='{
   "recipient":{
@@ -270,8 +271,8 @@ sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK
   }
 }';
 sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
- $isNude = isNudeImage($noidung);
-if($isNude == 0)
+
+  if($isNude == 0)
 {
     echo'không';
 }
