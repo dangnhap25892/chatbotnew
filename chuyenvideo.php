@@ -30,7 +30,9 @@ else
 {
 	$hihi = "".$url."".$v2."".$v3."".$v14."".$v15."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."".$v12."".$v13."";
 }
+	if (isset($url)){ 
 header("Location: https://chatthinh1.herokuapp.com/video.php?&url=$hihi");
+	}
 ?>
 <video id="player" controls="" loop="" autoplay="">
     <source id="video" type="video/mp4" src=<?php echo "$hihi"?> >
