@@ -136,12 +136,12 @@ function hangcho($userid) {
 //// Kết nối hai người /////
 function addketnoi($user1, $user2) {
   global $conn;
-
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
-       $i = date("j");
-     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$user1.", '$i')");
-     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$user2.", '$i')");
+     $h = 'h'.date('h');
+     $d = 'd'.date('j');
+      $i = "$h$d";
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2,`gioitinh` = $i, `hangcho` = 0 WHERE `ID` = $user1");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1,`gioitinh` = $i, `hangcho` = 0 WHERE `ID` = $user2");
+       
 }
 
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
