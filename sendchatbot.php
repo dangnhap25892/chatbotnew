@@ -33,6 +33,12 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
   $row = mysqli_num_rows($result);
   return $row;
 }
+function ktidtime($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `ID` from `thoigian` WHERE `ID` = $userid LIMIT 1");
+  $row = mysqli_num_rows($result);
+  return $row;
+}
 
 ////// Hàm Gửi JSON //////////
 
@@ -115,9 +121,16 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
-   $i = date("j");
+ $i = date("j");
+ if ( !ktidtime($userid) ) {
+   mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$userid.", '$i')");
+     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$partner.", '$i')");
+  
+ }
+ else{
   mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $userid");
   mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $partner");
+ }
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
