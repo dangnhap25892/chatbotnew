@@ -235,7 +235,7 @@ sendchat($token,$jsonData);
       },
       {
         "content_type":"text",
-        "title":"Tìm theo giới tính",
+        "title":"Chat ngẫu nhiên",
         "payload":"endchat",
       },
       {
@@ -488,17 +488,17 @@ if ($message=='Menu') {
       },
       {
         "content_type":"text",
-        "title":"Tìm theo giới tính",
+        "title":"Chat ngẫu nhiên",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"9X Tâm Sự",
+        "title":"Chat ngẫu nhiên",
         "payload":"endchat",
       },
       {
         "content_type":"text",
-        "title":"Team 2K+",
+        "title":"Chat ngẫu nhiên",
         "payload":"endchat",
       },
       
