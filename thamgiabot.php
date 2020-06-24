@@ -55,6 +55,7 @@ if ( !isUserExist($userid) ) {
 sendchat($token,$jsonData);
 die();
   }
+/*
 $ktgt = ktgiotinh($userid);
 echo $ktgt;
 if ( $ktgt == 0 ) {
@@ -86,7 +87,7 @@ if ( $ktgt == 0 ) {
 sendchat($token,$jsonData);
 die();
   }
-
+*/
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
