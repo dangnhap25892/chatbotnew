@@ -143,9 +143,7 @@ function outchat($userid,$token) {
   echo $tokenpa;
   #$tokenpa = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
-  mysqli_query($conn, "DELETE FROM `thoigian` WHERE `ID` = $userid");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $partner");
-  mysqli_query($conn, "DELETE FROM `thoigian` WHERE `ID` = $partner");  
     
   $jsonData ='{
   "recipient":{
