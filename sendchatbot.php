@@ -121,16 +121,7 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
- $i = date("j");
- if ( !ktidtime($userid) ) {
-   mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$userid.", '$i')");
-     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$partner.", '$i')");
-  
- }
- else{
-  mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $userid");
-  mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $partner");
- }
+ 
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
