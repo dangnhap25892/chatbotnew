@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
 
 	<?php
 	$test ='vgcrfx';
@@ -15,6 +10,3 @@
 	echo "The time is " . date("h:i:sa");
 
 	?>
-
-</body>
-</html>
