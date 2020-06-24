@@ -139,8 +139,8 @@ function addketnoi($user1, $user2) {
      $h = 'h'.date('h');
      $d = 'd'.date('j');
       $i = "$h$d";
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2,`gioitinh` = $i, `hangcho` = 0 WHERE `ID` = $user1");
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1,`gioitinh` = $i, `hangcho` = 0 WHERE `ID` = $user2");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
        
 }
 
