@@ -12,6 +12,8 @@
 	echo $ha;
 	echo $test;
 	echo "yvtgcfrxed";
+	echo "The time is " . date("h:i:sa");
+
 	?>
 
 </body>
