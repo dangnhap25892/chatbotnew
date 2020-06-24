@@ -115,6 +115,9 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
+   $i = date("j");
+  mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $userid");
+  mysqli_query($conn, "UPDATE `thoigian` SET `trangthai` = $i WHERE `ID` = $partner");
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
