@@ -82,6 +82,9 @@ else{
 $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
 	     echo date("l jS \of F Y h:i:s A");
+	     $i = date("j");
+	     echo $i;
+
 
 ?>
 
