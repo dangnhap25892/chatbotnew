@@ -135,6 +135,9 @@ function addketnoi($user1, $user2) {
 
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
+      $i = date("j");
+     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$user1.", '$i')");
+     mysqli_query($conn, "INSERT INTO `thoigian` (`ID`, `trangthai`) VALUES (".$user2.", '$i')");
 }
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
 function getRelationship($userid) {
