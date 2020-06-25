@@ -321,6 +321,7 @@ sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZC
     
       echo $partner;
   echo $tokenpa;
+    /*
       $thongbao ='{
   "messaging_type" : "RESPONSE",
   "recipient":{
@@ -331,6 +332,7 @@ sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZC
     }
 }';
 sendchat($tokenpa,$thongbao);
+*/
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
