@@ -4,7 +4,7 @@ $ID = $_GET['ID'];// lấy id từ chatfuel
 #$chatfuel = $_POST['chatfuel'];
 $token = $_GET['token'];
 require_once 'config.php'; //lấy thông tin từ config
-
+require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 if (!$conn) {
     echo'{
@@ -88,13 +88,13 @@ function getRelationship($userid) {
   $relationship = $row['ketnoi'];
   return $relationship;
 }
-/// Lấy token ////
-function gettoken($partner) {
+/// Lấy idpage ////
+function getidpage($partner) {
   global $conn;
 
-  $result = mysqli_query($conn, "SELECT `token` from `users` WHERE `ID` = $partner");
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
   $row = mysqli_fetch_assoc($result);
-  $relationship = $row['token'];
+  $relationship = $row['chatfuel'];
   return $relationship;
 }
 ////// Hàm Gửi JSON //////////
@@ -138,7 +138,10 @@ function outchat($userid,$token) {
   global $conn;
   $partner = getRelationship($userid);
   #$chatfuelpa = getChatfuel($partner);
-  $tokenpa = gettoken($partner);
+  $idpage = getidpage($partner);
+  $page = tokenpage($idpage);
+  $tokenpa = $page[0];
+
   echo $partner;
   echo $tokenpa;
   #$tokenpa = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
