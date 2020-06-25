@@ -725,7 +725,7 @@ if(isset($message)){
  
   if($hi == 1)
 {
- header("Location: https://sendchatbot3.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
 if($hi == 2)
 {
