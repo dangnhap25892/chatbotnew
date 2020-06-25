@@ -55,7 +55,7 @@ else{
 $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
 if (isset($url)){ 
-header("Location: https://chatthinh1.herokuapp.com/index5.php?&url=$hihi");
+header("Location: https://chatthinh11.herokuapp.com/index5.php?&url=$hihi");
 }
 ?>
 
