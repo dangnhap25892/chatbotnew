@@ -137,11 +137,11 @@ function hangcho($userid) {
 //// Kết nối hai người /////
 function addketnoi($user1, $user2) {
   global $conn;
-     $h = 'h'.date('h');
-     $d = 'd'.date('j');
-      $i = "$h$d";
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
+     $d = date(d);
+     $h = date(h);
+      $time = ("d".$d."h".$h."");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0,`token` = '$time' WHERE `ID` = $user1");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0,`token` = '$time' WHERE `ID` = $user2");
        
 }
 
