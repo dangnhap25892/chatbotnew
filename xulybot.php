@@ -609,12 +609,12 @@ if(isset($message)){
 }
 if($hi == 2)
 {
- header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot.herokuapp.com/sendchatbot1.php?id=$userID&noidung=$message&token=$token");
 
 }
   if($hi == 3)
 {
- header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
 
 }
 
