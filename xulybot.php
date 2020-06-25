@@ -107,7 +107,7 @@ if(isset($getstart['postback'])){
         },
         {
           "content_type":"text",
-          "title":"Chat ngẫu nhiên",
+          "title":"Tìm theo giới tính",
           "payload":"endchat",
         },
         {
@@ -254,25 +254,33 @@ if($getstart['postback']['payload']=="donate"){
      header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
-  if($quick_reply=="timnam"){
+  if($quick_reply=="namtimnu"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: upnamtimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
-  if($quick_reply=="timnu"){
+  if($quick_reply=="nutimnam"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: upnutimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
-  if($quick_reply=="timgtt3"){
+  if($quick_reply=="namtimnam"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: upnamtimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    die();
+  }
+    if($quick_reply=="nutimnu"){
+     #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
+    #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
+    #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
+    header("Location: upnutimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
     
@@ -333,13 +341,15 @@ if ($message=='tham gia test1') {
 if ($message=='Team 2K+') {
   #header("Location:  thamgiabot2k.php?ID=$userID&token=$token");
   #header("Location: updatebot2k.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
- header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: uptim2k.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='9X Tâm Sự') {
   #header("Location:  thamgiabot9x.php?ID=$userID&token=$token");
   #header("Location: updatebot9x.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
- header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+ #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: uptim9x.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
@@ -364,17 +374,17 @@ if ($message=='Menu') {
       },
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"9X Tâm Sự",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
       
@@ -412,18 +422,23 @@ if ($message=='Tìm theo giới tính') {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Nam",
-        "payload":"timnam",
+        "title":"Nam tìm nữ",
+        "payload":"namtimnu",
       },{
         "content_type":"text",
-        "title":"Nữ",
-        "payload":"timnu",
+        "title":"Nữ tìm nam",
+        "payload":"nutimnam",
       },
       {
         "content_type":"text",
-        "title":"Giới tính thứ 3",
-        "payload":"timgtt3",
-      }
+        "title":"Nam tìm nam",
+        "payload":"namtimnam",
+      },
+      {
+        "content_type":"text",
+        "title":"Nữ tìm Nữ",
+        "payload":"nutimnu",
+      },
     ]
   }
 }';
