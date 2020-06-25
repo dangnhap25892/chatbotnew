@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php'; //lấy thông tin từ config
+require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
@@ -104,20 +105,24 @@ function getRelationship($userid) {
   $relationship = $row['ketnoi'];
   return $relationship;
 }
-/// Lấy token ////
-function gettoken($partner) {
+/// Lấy idpage ////
+function getidpage($partner) {
   global $conn;
 
-  $result = mysqli_query($conn, "SELECT `token` from `users` WHERE `ID` = $partner");
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
   $row = mysqli_fetch_assoc($result);
-  $relationship = $row['token'];
+  $relationship = $row['chatfuel'];
   return $relationship;
 }
 $partner = getRelationship($userid);
 
 if($partner!= 0){
 # $chatfuelpa = getChatfuel($partner);
-  $tokenpa = gettoken($partner);
+  $idpage = getidpage($partner);
+ $page = tokenpage($idpage);
+ $tokenpa = $page[0];
+ $chatfuelpa = $page[1];
+ # $tokenpa = gettoken($partner);
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
