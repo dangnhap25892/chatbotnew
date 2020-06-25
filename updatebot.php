@@ -11,7 +11,10 @@ function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chư
   $row = mysqli_num_rows($result);
   return $row;
 }
-
+$d = date(d);
+$h = date(h);
+$time = ("d".$d."h".$h."");
+echo $time;
 /// Xét giới tính
 if ($gioitinh == 'male'){
 $gioitinh = 1;
@@ -20,7 +23,7 @@ $gioitinh = 2;
 }
 
 if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
-    $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 1 , $gioitinh,'$chatfuel','$token')";
+    $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 1 , $gioitinh,'$chatfuel','$time')";
    $info = mysqli_query($conn,$sql );
   header("Location: thamgiabot.php?ID=$ID&token=$token");
   }
