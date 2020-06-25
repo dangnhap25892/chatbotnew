@@ -137,8 +137,11 @@ function hangcho($userid) {
 //// Kết nối hai người /////
 function addketnoi($user1, $user2) {
   global $conn;
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0,  WHERE `ID` = $user1");
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0,  WHERE `ID` = $user2");
+     $h = 'h'.date('h');
+     $d = 'd'.date('j');
+      $i = "$h$d";
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
        
 }
 
@@ -178,104 +181,8 @@ function trangthai($userid) {
 
   return intval($row['trangthai']) !== 0;
 }
-function ketnoi($userid,$gioitinh,$token) { //tìm người chát 
-  global $conn;
-  
-  //tìm đối tượng theo giới tính 
 
-  if($gioitinh == "2"){// nếu giới tính là nữ thì kiếm người mang giới tính nam 
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND `hangcho` = 2 AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
-  //echo "result : " . $result."<br>";
-  }else if($gioitinh == "1"){// giới tính là nam thì tìm kiếm người là nữ
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
-  }else if($gioitinh == "3"){ // không xác thì tìm kiếm người không xác định
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND (`gioitinh` = 3 OR `gioitinh` = 0) AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
-  }else{ // không xác thì tìm kiếm người không xác định
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 2 AND `gioitinh` = 0 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
-  }
-  //echo $result;
-  $row = mysqli_fetch_assoc($result);
-  $partner = $row['ID'];
-  // xử lý kiểm tra
-  if ($partner == 0) {
-    ketnoi2($userid,$token);
-    }
-     else {  // neu co nguoi trong hàng chờ
-    addketnoi($userid, $partner);
-# $chatfuelpa = getChatfuel($partner);
- # $tokenpa = gettoken($partner);
-    #$tokenpa = $token;
- $idpage = getidpage($partner);
- $page = tokenpage($idpage);
- $tokenpa = $page[0];
- $chatfuelpa = $page[1];
-       $jsonData1 ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "messaging_type": "RESPONSE",
-  
-  "message":{
-    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
-    }
-  
-}';
-sendchat($token,$jsonData1);
- $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData);
-       $jsonData1 ='{
-  "recipient":{
-    "id":"'.$partner.'"
-  },
-  "messaging_type": "RESPONSE",
-  
-  "message":{
-    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
-    }
-  
-}';
-sendchat($tokenpa,$jsonData1);
- $jsonData ='{
-  "recipient":{
-    "id":"'.$partner.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($tokenpa,$jsonData);
- }
-  }
-function ketnoi2($userid,$token) { //tìm người chát 
+function ketnoi($userid,$token) { //tìm người chát 
   global $conn;
   
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND `hangcho` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
@@ -298,7 +205,7 @@ function ketnoi2($userid,$token) { //tìm người chát
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
           }
         ]
       }
@@ -312,7 +219,13 @@ sendchat($token,$jsonData);
 # $chatfuelpa = getChatfuel($partner);
  # $tokenpa = gettoken($partner);
     #$tokenpa = $token;
- $tokenpa = gettoken($partner);
+
+
+# $tokenpa = gettoken($partner);
+ $idpage = getidpage($partner);
+ $page = tokenpage($idpage);
+ $tokenpa = $page[0];
+ $chatfuelpa = $page[1];
        $jsonData1 ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -384,7 +297,7 @@ sendchat($tokenpa,$jsonData);
 //// Xử lý //////
 if (!trangthai($userid)){// nếu chưa chát
 //if (!hangcho($userid)) { // nếu chưa trong hàng chờ
-ketnoi($userid,$ktgt,$token);
+ketnoi($userid,$token);
      /*
 }else{
   $jsonData ='{
