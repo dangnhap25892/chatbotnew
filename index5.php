@@ -19,7 +19,7 @@
 	}
 </style>
 <body>
-	<!-- https://beta.propellerads.com/ -->
+	<!-- https://beta.propellerads.com/ Popunder
 	<script type='text/javascript' src='//pl15581752.profitablegate.com/de/96/95/de96957bc1028ca8e540943ac775062a.js'></script>
 	<!-- https://beta.propellerads.com/ -->
 	<!-- https://publishers.propellerads.com/  
@@ -99,7 +99,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
       <br> People can talk with each other, send messages, photos, videos to each other and share their interesting stories.
     </small>
   </p>
-	<!-- https://beta.propellerads.com/ -->
+	<!-- https://beta.propellerads.com/ 
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'fe68e43250345f57adacbd19c67b8d11',
