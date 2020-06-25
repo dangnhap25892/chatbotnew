@@ -4,7 +4,7 @@ require_once ('tokenpage.php');
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 #$noidung = $_GET['noidung'];
-$token = gettoken($userid);
+#$token = gettoken($userid);
 // if (!$conn) {
 //     echo'{
 //  "messages": [
