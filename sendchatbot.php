@@ -124,6 +124,12 @@ if($partner!= 0){
  $chatfuelpa = $page[1];
  # $tokenpa = gettoken($partner);
 if(isset($noidung)){
+ 
+ 
+      $d = date(d);
+      $h = date(h);
+      $time = ("d".$d."h".$h."");
+  mysqli_query($conn, "UPDATE `users` SET `token` = '$time' WHERE `ID` = $userid");
   echo $partner;
   echo $tokenpa;
  
