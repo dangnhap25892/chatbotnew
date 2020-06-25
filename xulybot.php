@@ -50,12 +50,12 @@ if(isset($getstart['postback'])){
     }
   }';
       sendchat($token,$jsonData);
-      header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+      header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
       die();
   }
 
   if($getstart['postback']['payload']=="newchat"){
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
 
@@ -262,21 +262,21 @@ if($getstart['postback']['payload']=="donate"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
   if($quick_reply=="timnu"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
   if($quick_reply=="timgtt3"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+    header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
     
@@ -337,17 +337,17 @@ if ($message=='tham gia test1') {
 if ($message=='Team 2K+') {
   #header("Location:  thamgiabot2k.php?ID=$userID&token=$token");
   #header("Location: updatebot2k.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
- header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+ header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='9X Tâm Sự') {
   #header("Location:  thamgiabot9x.php?ID=$userID&token=$token");
   #header("Location: updatebot9x.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
- header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+ header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
-  header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$page&gt=0");
+  header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
  
   die();
  
