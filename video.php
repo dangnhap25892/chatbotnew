@@ -11,6 +11,17 @@
     }
 		</style>
 <body>
+	
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'fe68e43250345f57adacbd19c67b8d11',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/fe68e43250345f57adacbd19c67b8d11/invoke.js"></scr' + 'ipt>');
+</script>
 
 <?php
 $url = $_GET['url'];
