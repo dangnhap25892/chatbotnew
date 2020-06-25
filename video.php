@@ -73,6 +73,16 @@ else
       <br> People can talk with each other, send messages, photos, videos to each other and share their interesting stories.
     </small>
   </p>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a38b790527179b97a7f7598b2f3028ce',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/a38b790527179b97a7f7598b2f3028ce/invoke.js"></scr' + 'ipt>');
+</script>
 	
 	<script async="async" data-cfasync="false" src="//pl15588055.profitablegate.com/afd0bff84920629a844bf1a7156e8a1d/invoke.js"></script>
 <div id="container-afd0bff84920629a844bf1a7156e8a1d"></div>
