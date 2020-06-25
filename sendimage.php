@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php'; //lấy thông tin từ config
+require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 #$noidung = $_GET['noidung'];
@@ -213,7 +214,7 @@ function gettoken($partner) {
   return $relationship;
 }
 //// Lấy Id chatfuel////
-function getChatfuel($partner) {
+function getidpage($partner) {
   global $conn;
 
   $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
@@ -224,8 +225,14 @@ function getChatfuel($partner) {
 $partner = getRelationship($userid);
 
 if($partner!= 0){
-$chatfuelpa = getChatfuel($userid);
-  $tokenpa = gettoken($partner);
+$idpage = getidpage($userid);
+$page = tokenpage($idpage);
+ $token = $page[0];
+ $chatfuelpa = $page[1];
+
+  $idpagepa = getidpage($partner);
+  $pagepa = tokenpage($idpagepa);
+ $tokenpa = $pagepa[0];
 if(isset($noidung)){
     $sub = '100x100';
     $uuu = 'https://scontent.xx.fbcdn.net/v/t39.1997-6/cp0/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1';
