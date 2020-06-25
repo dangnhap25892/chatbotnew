@@ -66,6 +66,7 @@ else
     <source id="video" type="video/mp4" src=<?php echo "$hihi"?> >
   </video>
 		</h1>
+	<script type='text/javascript' src='//pl15587779.profitablegate.com/62/01/f7/6201f7a5a3c8f50bcf9e87da249bfd2f.js'></script>
  <p>
     <small>This is the content sent from the user in
       <a href="https://m.me/102206461510133?ref=anh">Chatbot</a> on Facebook Messenger Platform
