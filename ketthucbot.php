@@ -163,17 +163,17 @@ function outchat($userid,$token) {
       },
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"9X Tâm Sự",
         "payload":"endchat",
       },
-      {
+       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       {
@@ -254,22 +254,17 @@ sendchat($tokenpa,$jsonData1);
       },
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"endchat",
-      }, 
-      {
-        "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"9X Tâm Sự",
         "payload":"endchat",
       },
-      {
+       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       
@@ -301,17 +296,17 @@ $jsonData ='{
       },
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"9X Tâm Sự",
         "payload":"endchat",
       },
-      {
+       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       {
@@ -340,17 +335,17 @@ $jsonData ='{
       
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
        {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"9X Tâm Sự",
         "payload":"endchat",
       },
-      {
+       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
+        "title":"Team 2K+",
         "payload":"endchat",
       },
       {
