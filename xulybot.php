@@ -120,11 +120,7 @@ if(isset($getstart['postback'])){
           "title":"Hướng dẫn",
           "payload":"huongdan",
         },
-        {
-          "content_type":"text",
-          "title":"Cập nhập giới tính",
-          "payload":"hihi",
-        },
+        
         {
           "content_type":"text",
           "title":"Menu",
@@ -392,11 +388,7 @@ if ($message=='Menu') {
         "title":"Hướng dẫn",
         "payload":"huongdan",
       },
-      {
-        "content_type":"text",
-        "title":"Cập nhập giới tính",
-        "payload":"hihi",
-      },
+      
       {
         "content_type":"text",
         "title":"Menu",
@@ -408,35 +400,7 @@ if ($message=='Menu') {
     sendchat($token,$jsonData);
     die();
 }
-if ($message=='Cập nhập giới tính') {
-  $jsonData ='{
-  "recipient":{
-    "id":"'.$userID.'"
-  },
-  "messaging_type": "RESPONSE",
-  "message":{
-    "text": "Giới tính của bạn là gì",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Nam",
-        "payload":"nam",
-      },{
-        "content_type":"text",
-        "title":"Nữ",
-        "payload":"nữ",
-      },
-      {
-        "content_type":"text",
-        "title":"Giới tính thứ 3",
-        "payload":"gtt3",
-      }
-    ]
-  }
-}';
-    sendchat($token,$jsonData);
-    die();
-}
+
 if ($message=='Tìm theo giới tính') {
   $jsonData ='{
   "recipient":{
