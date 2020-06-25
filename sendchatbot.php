@@ -129,7 +129,7 @@ if(isset($noidung)){
       $d = date(d);
       $h = date(h);
       $time = ("d".$d."h".$h."");
-  mysqli_query($conn, "UPDATE `users` SET `token` = '$time' WHERE `ID` = $userid");
+  mysqli_query($conn, "UPDATE `users` SET `token` = '$d',`gioitinh` = '$h' WHERE `ID` = $userid");
   echo $partner;
   echo $tokenpa;
  
