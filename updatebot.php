@@ -23,7 +23,7 @@ $gioitinh = 2;
 }
 
 if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
-    $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 1 , $gioitinh,'$chatfuel','$time')";
+    $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 1 , '$h','$chatfuel','$d')";
    $info = mysqli_query($conn,$sql );
   header("Location: thamgiabot.php?ID=$ID&token=$token");
   }
