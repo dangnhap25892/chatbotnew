@@ -49,7 +49,7 @@ $jsonData1 ='{
               {
                 "type":"web_url",
                 "url":"https://www.facebook.com/groups/3321905804486436/",
-                "title":"Tham gia Group"
+                "title":"Tìm lại bạn chat"
               },
               {
                 "type":"web_url",
@@ -206,7 +206,7 @@ sendchat($token,$jsonData);
               {
                 "type":"web_url",
                 "url":"https://www.facebook.com/groups/3321905804486436/",
-                "title":"Tham gia Group"
+                "title":"Tìm lại bạn chat"
               },
               {
                 "type":"web_url",
