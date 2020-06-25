@@ -137,7 +137,6 @@ function hangcho($userid) {
 //// Kết nối hai người /////
 function addketnoi($user1, $user2) {
   global $conn;
-    
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0,  WHERE `ID` = $user1");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0,  WHERE `ID` = $user2");
        
