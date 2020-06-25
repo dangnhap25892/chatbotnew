@@ -301,7 +301,7 @@ function ketnoi2($userid,$token) { //tìm người chát
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
           }
         ]
       }
