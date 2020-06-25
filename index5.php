@@ -100,6 +100,7 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
     </small>
   </p>
 	<!-- https://beta.propellerads.com/ 
+
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'fe68e43250345f57adacbd19c67b8d11',
@@ -109,6 +110,18 @@ $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8.
 		'params' : {}
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/fe68e43250345f57adacbd19c67b8d11/invoke.js"></scr' + 'ipt>');
+</script>
+
+	<!-- https://beta.propellerads.com/ -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '4bf0e2ab2f639cd82b8e0cb09bafba81',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/4bf0e2ab2f639cd82b8e0cb09bafba81/invoke.js"></scr' + 'ipt>');
 </script>
 	<!-- https://beta.propellerads.com/ -->
 	<script async="async" data-cfasync="false" src="//pl15577867.passtechusa.com/ff3a32547adb4311f7dfa0aede354000/invoke.js"></script>
