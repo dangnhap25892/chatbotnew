@@ -24,7 +24,7 @@
 </script>
 	<h1>
  <p>Video người lạ đã gửi cho bạn</p>
-	</h1>
+	
 <?php
 $url = $_GET['url'];
 $v2 = '&_nc_sid=';
@@ -54,6 +54,7 @@ else
 <video id="player" controls="" loop="" autoplay="">
     <source id="video" type="video/mp4" src=<?php echo "$hihi"?> >
   </video>
+		</h1>
  <p>
     <small>This is the content sent from the user in
       <a href="https://m.me/102206461510133?ref=anh">Chatbot</a> on Facebook Messenger Platform
