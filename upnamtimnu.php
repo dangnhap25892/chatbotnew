@@ -25,9 +25,9 @@ $gioitinh = 2;
 if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever nếu người không có ai trong hàng chờ nam tìm nữ 2 nữ tìm nam 3 nam tìm nam 4 nữ tìm nữ 5 tim 9x 6 tim 2k 7
     $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 2 , '$h','$chatfuel','$d')";
    $info = mysqli_query($conn,$sql );
-  header("Location: thamgiabot.php?ID=$ID&token=$token");
+  header("Location: thamgiabotnamtimnu.php?ID=$ID&token=$token");
   }
-header("Location: thamgiabot.php?ID=$ID&token=$token");
+header("Location: thamgiabotnamtimnu.php?ID=$ID&token=$token");
 #mysqli_close($conn);
 
 ?>
