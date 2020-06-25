@@ -3,6 +3,7 @@ $userid = $_GET['ID']; // lấy id từ chatfuel
 #$gioitinh = $_POST['gt'];// lấy giới tính
 $token = $_GET['token'];
 require_once 'config.php'; //lấy thông tin từ config
+require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 
 #$token = gettoken($userid);
@@ -30,28 +31,7 @@ if (!$conn) {
 sendchat($token,$jsonData);
 die();
 }
-$ktgt = ktgiotinh($userid);
-echo $ktgt;
-if ( $ktgt == 0 ) {
-     $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "messaging_type": "RESPONSE",
-  "message":{
-    "text": "Vui lòng cập nhập giới tính. hu2 '.$ktgt.'",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Cập nhập giới tính",
-        "payload":"newchat",
-      },
-    ]
-  }
-}';
-sendchat($token,$jsonData);
-die();
-  }
+
 
 if ( !isUserExist($userid) ) {
      $jsonData ='{
@@ -76,7 +56,39 @@ if ( !isUserExist($userid) ) {
 sendchat($token,$jsonData);
 die();
   }
-
+/*
+$ktgt = ktgiotinh($userid);
+echo $ktgt;
+if ( $ktgt == 0 ) {
+     $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Giới tính của bạn là gì",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Nam",
+        "payload":"nam",
+      },{
+        "content_type":"text",
+        "title":"Nữ",
+        "payload":"nữ",
+      },
+      {
+        "content_type":"text",
+        "title":"Giới tính thứ 3",
+        "payload":"gtt3",
+      }
+    ]
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
+*/
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
@@ -125,9 +137,12 @@ function hangcho($userid) {
 //// Kết nối hai người /////
 function addketnoi($user1, $user2) {
   global $conn;
-
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0 WHERE `ID` = $user1");
-  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0 WHERE `ID` = $user2");
+     $d = date(d);
+     $h = date(h);
+      $time = ("d".$d."h".$h."");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user2, `hangcho` = 0,`token` = '$time' WHERE `ID` = $user1");
+  mysqli_query($conn, "UPDATE `users` SET `trangthai` = 1, `ketnoi` = $user1, `hangcho` = 0,`token` = '$time' WHERE `ID` = $user2");
+       
 }
 
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
@@ -148,6 +163,15 @@ function gettoken($partner) {
   $relationship = $row['token'];
   return $relationship;
 }
+/// Lấy idpage ////
+function getidpage($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chatfuel'];
+  return $relationship;
+}
 //// hàm kiểm tra trạng thái
 function trangthai($userid) {
   global $conn;
@@ -157,6 +181,7 @@ function trangthai($userid) {
 
   return intval($row['trangthai']) !== 0;
 }
+
 function ketnoi($userid,$token) { //tìm người chát 
   global $conn;
   
@@ -194,7 +219,13 @@ sendchat($token,$jsonData);
 # $chatfuelpa = getChatfuel($partner);
  # $tokenpa = gettoken($partner);
     #$tokenpa = $token;
- $tokenpa = gettoken($partner);
+
+
+# $tokenpa = gettoken($partner);
+ $idpage = getidpage($partner);
+ $page = tokenpage($idpage);
+ $tokenpa = $page[0];
+ $chatfuelpa = $page[1];
        $jsonData1 ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -265,10 +296,10 @@ sendchat($tokenpa,$jsonData);
 
 //// Xử lý //////
 if (!trangthai($userid)){// nếu chưa chát
-if (!hangcho($userid)) { // nếu chưa trong hàng chờ
+//if (!hangcho($userid)) { // nếu chưa trong hàng chờ
 ketnoi($userid,$token);
+     /*
 }else{
-
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -289,7 +320,7 @@ ketnoi($userid,$token);
   }
 }';
 sendchat($token,$jsonData);
-}
+}*/
 }else{
 // khi đang chát ! giải quyết sau !!
   $jsonData ='{
@@ -303,7 +334,7 @@ sendchat($token,$jsonData);
         "template_type":"generic",
         "elements":[
            {
-            "title":"⛔️ CẢNH BÁO",
+            "title":"THÔNG BÁO",
             "subtitle":"Bạn đang được kết nối chát với người khác ! Hãy gõ \'End\' để thoát",
           }
         ]
