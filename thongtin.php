@@ -21,15 +21,7 @@ $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
 
-/// Lấy idpage ////
-function getidpage($partner) {
-  global $conn;
 
-  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
-  $row = mysqli_fetch_assoc($result);
-  $relationship = $row['chatfuel'];
-  return $relationship;
-}
 
 if($message=='hi'){
   $jsonData ='{
@@ -51,8 +43,7 @@ if(isset($message)){
 	$ketnoi = $row['ketnoi'];
 	$gioitinh = $row['gioitinh'];
 	$chatfuel = $row['chatfuel'];
-	$idpage = getidpage($chatfuel);
-	 $page = tokenpage($idpage);
+	 $page = tokenpage($chatfuel);
 	 $tokenpa = $page[0];
 	 $chatfuelpa = $page[1];
 
