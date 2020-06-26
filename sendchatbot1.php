@@ -126,6 +126,10 @@ if($partner!= 0){
 if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
+  $d = date(d);
+      $h = date(h);
+      $time = ("d".$d."h".$h."");
+  mysqli_query($conn, "UPDATE `users` SET `token` = '$d',`gioitinh` = '$h' WHERE `ID` = $userid");
  
 sendchat2($noidung,$partner,$tokenpa);
 die();
