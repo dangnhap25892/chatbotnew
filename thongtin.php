@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+require_once ('tokenpage.php'); 
 if (isset($_REQUEST['hub_challenge']))
 {
   $c = $_REQUEST['hub_challenge'];
@@ -20,6 +21,16 @@ $type = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['type'];
 $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['url'];
 $page = $input['entry'][0]['id'];
 
+/// Lấy idpage ////
+function getidpage($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chatfuel'];
+  return $relationship;
+}
+
 if($message=='hi'){
   $jsonData ='{
   "messaging_type" : "RESPONSE",
@@ -32,6 +43,7 @@ if($message=='hi'){
 }';
 sendchat($token,$jsonData);
 }
+
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 if(isset($message)){
 	$result = mysqli_query($conn, "SELECT trangthai, gioitinh, hangcho, ketnoi, chatfuel from users WHERE ID = $message");
@@ -39,8 +51,12 @@ if(isset($message)){
 	$ketnoi = $row['ketnoi'];
 	$gioitinh = $row['gioitinh'];
 	$chatfuel = $row['chatfuel'];
+	$idpage = getidpage($message);
+	 $page = tokenpage($idpage);
+	 $tokenpa = $page[0];
+	 $chatfuelpa = $page[1];
 
-	$noidung = "id:$message kết nối:$ketnoi Giới tính: $gioitinh chatfuel: $chatfuel ";
+	$noidung = "id:$message kết nối:$ketnoi Giới tính: $gioitinh chatfuel: $chatfuelpa ";
 	mysqli_close($conn);
    sendchat2($noidung,$userID,$token);
 
