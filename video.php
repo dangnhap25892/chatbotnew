@@ -14,6 +14,17 @@
 	
 	<script type="text/javascript">
 	atOptions = {
+		'key' : 'fe68e43250345f57adacbd19c67b8d11',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/fe68e43250345f57adacbd19c67b8d11/invoke.js"></scr' + 'ipt>');
+</script>
+	
+	<script type="text/javascript">
+	atOptions = {
 		'key' : 'bb80e142b04619715be076484834af02',
 		'format' : 'iframe',
 		'height' : 50,
@@ -23,16 +34,7 @@
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/bb80e142b04619715be076484834af02/invoke.js"></scr' + 'ipt>');
 </script>
 	
-	<script type="text/javascript">
-	atOptions = {
-		'key' : 'fe68e43250345f57adacbd19c67b8d11',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/fe68e43250345f57adacbd19c67b8d11/invoke.js"></scr' + 'ipt>');
-</script>
+	
 	<h1>
  <p>Video người lạ đã gửi cho bạn</p>
 	
