@@ -3,6 +3,7 @@
 $ID = $_GET['ID'];// lấy id từ chatfuel
 $token = $_GET['token'];
 require_once 'config.php'; //lấy thông tin từ config
+require_once ('tokenpage.php'); 
 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $errorChat = '{
@@ -42,6 +43,16 @@ function gettoken($partner) {
   return $relationship;
 }
 
+/// Lấy idpage ////
+function getidpage($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chatfuel` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chatfuel'];
+  return $relationship;
+}
+
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
@@ -69,7 +80,10 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 function outchat($userid,$token) {
   global $conn;
   $partner = getRelationship($userid);
-  $tokenpa = gettoken($partner);
+      $idpage = getidpage($partner);
+      $page = tokenpage($idpage);
+      $tokenpa = $page[0];
+ 
   echo $partner;
   echo $tokenpa;
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
