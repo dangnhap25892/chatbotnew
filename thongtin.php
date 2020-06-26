@@ -51,7 +51,7 @@ if(isset($message)){
 	$ketnoi = $row['ketnoi'];
 	$gioitinh = $row['gioitinh'];
 	$chatfuel = $row['chatfuel'];
-	$idpage = getidpage($message);
+	$idpage = getidpage($chatfuel);
 	 $page = tokenpage($idpage);
 	 $tokenpa = $page[0];
 	 $chatfuelpa = $page[1];
