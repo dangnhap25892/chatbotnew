@@ -131,6 +131,10 @@ switch ($page)
         $token = 'EAADn4qwXcIQBAOSTi5pjZCKuvmHc91eQKtiHpOTefudylZCMcpmBsRWaIbE3fMb227x3WYqdr3QejZCs4erwZCuP6wjPZBgX7WbsIphIqOTqXTiOOyJosrLCksmjIhbQsUdSIgtZB0GDEE4QwqvUV9xc03UK1h8NTNznwBrmO8iOZCXnpuWWbWN';
         $chatpage ='Chat ẩn danh';   
     break;
+    case '112976050469727' :
+          $token = 'EAADn4qwXcIQBALfFuZAheZAB4oLyOOVwfMIrziTO4ltu4hKDTzBjmQPBRPRl7R3ZBkypA7m0RHXmzajZCbY71tJ1gAD2g3HpaTq15V6TCip0yQDXAL1oxwmEcGwqegwOOLQWOCN1SvTlsSQ3ftwd5y9tKpq8pdzT68lcQ5djaQZDZD';
+          $chatpage ='Chatvn / Trò chuyện với người lạ';   
+      break;
     
 
   
