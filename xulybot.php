@@ -582,7 +582,7 @@ if($message=='kiemtra2'){
   die();
  }
 if(isset($message)){
-  $hi = (rand(1,5));
+  $hi = (rand(1,4));
    $message = preg_replace('/\n+/', '\n', $message);
  
   if($hi == 1)
@@ -601,10 +601,7 @@ if($hi == 2)
 {
  header("Location: https://sendchatbot11.herokuapp.com/sendchatbot1.php?id=$userID&noidung=$message&token=$token");
 }
-  if($hi == 5)
-{
- header("Location: https://sendchatbot11.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
-}
+  
 
  # header("Location: https://sendchatbot.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
  
