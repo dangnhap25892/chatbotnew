@@ -302,6 +302,7 @@ if ($type=="audio")
   header("Location: sendaudio.php?id=$userID&noidung=$image");
     die();
 }
+     if(isset($type)){
 if ($type=="video")
 {
  /* $jsonData ="{
@@ -314,10 +315,11 @@ if ($type=="video")
      }
  }";
  sendchat($token,$jsonData);*/
-   header("Location: sendimage.php?id=$userID&noidung=$image");
-  #header("Location: sendvideo.php?id=$userID&noidung=$image");
+  #header("Location: sendimage.php?id=$userID&noidung=$image");
+  header("Location: sendvideo.php?id=$userID&noidung=$image");
     die();
 }
+     }
    }
 
 if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$message =='endchat'||$message =='Endchat'||$message =='END') {
