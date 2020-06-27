@@ -69,7 +69,7 @@ if(isset($getstart['postback'])){
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Hiện tại chat bot đang cần nâng cấp hệ thống để khắc phục lỗi, cần sự trợ giúp của các bạn để có giây phút chat vui vẻ hơn. Hãy Donate cho chúng tôi chúng tôi sẽ không làm bạn thất vọng.",
+          "text":"Hiện tại chat bot đang cần nâng cấp hệ thống để khắc phục lỗi, cần sự trợ giúp của các bạn để có giây phút chat vui vẻ hơn. Hãy Donate cho chúng tôi chúng tôi sẽ không làm bạn thất vọng.\nHãy ủng hộ chúng tôi Link Donate : 0061001155911 Vietcombank",
           "buttons":[
           
             {
@@ -204,6 +204,10 @@ if($getstart['postback']['payload']=="donate"){
 
 
 
+}
+if ($message=='upxuloi') {
+  header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  die();
 }
 
   if(isset($quick_reply)){
