@@ -50,12 +50,12 @@ if(isset($getstart['postback'])){
     }
   }';
       sendchat($token,$jsonData);
-      header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+      header("Location: https://sendchatbot11.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
       die();
   }
 
   if($getstart['postback']['payload']=="newchat"){
-     header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+     header("Location: https://sendchatbot11.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
 
@@ -243,15 +243,15 @@ if($getstart['postback']['payload']=="donate"){
   }
 
   if($quick_reply=="nam"){
-     header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: https://sendchatbot11.herokuapp.com/capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
   if($quick_reply=="nữ"){
-     header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: https://sendchatbot11.herokuapp.com/capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
   if($quick_reply=="gtt3"){
-     header("Location: capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
+     header("Location: https://sendchatbot11.herokuapp.com/capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
   if($quick_reply=="namtimnu"){
@@ -259,28 +259,28 @@ if($getstart['postback']['payload']=="donate"){
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-    header("Location: upnamtimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/upnamtimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
   if($quick_reply=="nutimnam"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: upnutimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/upnutimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
   if($quick_reply=="namtimnam"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: upnamtimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/upnamtimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
     if($quick_reply=="nutimnu"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: upnutimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/upnutimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
   }
     
@@ -293,13 +293,13 @@ if($getstart['postback']['payload']=="donate"){
    if(isset($type)){
 if ($type=="image")
 {
-  header("Location: sendimage.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot11.herokuapp.com/sendimage.php?id=$userID&noidung=$image");
   #sendchat2($image,$userID,$token);
     die();
 }
 if ($type=="audio")
 {
-  header("Location: sendaudio.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot11.herokuapp.com/sendaudio.php?id=$userID&noidung=$image");
     die();
 }
      if(isset($type)){
@@ -316,18 +316,18 @@ if ($type=="video")
  }";
  sendchat($token,$jsonData);*/
   #header("Location: sendimage.php?id=$userID&noidung=$image");
-  header("Location: sendvideo.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot11.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
     die();
 }
      }
    }
 
 if ($message=='Kết thúc'||$message =='End chat'||$message =='end chat'||$message =='endchat'||$message =='Endchat'||$message =='END') {
-  header("Location: ketthucbot.php?ID=$userID&token=$token");
+  header("Location: https://sendchatbot11.herokuapp.com/ketthucbot.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='block') {
-  header("Location: blockbot.php?ID=$userID&token=$token");
+  header("Location: https://sendchatbot11.herokuapp.com/blockbot.php?ID=$userID&token=$token");
   die();
 }
 if ($message=='Không.') {
@@ -345,18 +345,18 @@ if ($message=='Team 2K+') {
   #header("Location:  thamgiabot2k.php?ID=$userID&token=$token");
   #header("Location: updatebot2k.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
   #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-  header("Location: uptim2k.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: https://sendchatbot11.herokuapp.com/uptim2k.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='9X Tâm Sự') {
   #header("Location:  thamgiabot9x.php?ID=$userID&token=$token");
   #header("Location: updatebot9x.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
  #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-  header("Location: uptim9x.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: https://sendchatbot11.herokuapp.com/uptim9x.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$message =='Bắt đầu') {
-  header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: https://sendchatbot11.herokuapp.com/updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
  
   die();
  
@@ -582,7 +582,7 @@ if($message=='kiemtra2'){
   die();
  }
 if(isset($message)){
-  $hi = (rand(1,4));
+  $hi = (rand(1,3));
    $message = preg_replace('/\n+/', '\n', $message);
  
   if($hi == 1)
@@ -591,16 +591,13 @@ if(isset($message)){
 }
 if($hi == 2)
 {
- header("Location: https://sendchatbot10.herokuapp.com/sendchatbot1.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
   if($hi == 3)
 {
- header("Location: https://sendchatbot11.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot11.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
-  if($hi == 4)
-{
- header("Location: https://sendchatbot11.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
-}
+
 
   
 
