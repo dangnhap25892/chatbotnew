@@ -200,7 +200,6 @@ if(isset($noidung)){
       "type":"video", 
       "payload":{
         "url":"'.$noidung.'", 
-        "is_reusable":true
       }
     }
   }
