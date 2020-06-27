@@ -587,13 +587,17 @@ if(isset($message)){
  
   if($hi == 1)
 {
- header("Location: sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
 if($hi == 2)
 {
  header("Location: https://sendchatbot10.herokuapp.com/sendchatbot1.php?id=$userID&noidung=$message&token=$token");
 }
   if($hi == 3)
+{
+ header("Location: https://sendchatbot11.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
+}
+  if($hi == 4)
 {
  header("Location: https://sendchatbot11.herokuapp.com/sendchatbot2.php?id=$userID&noidung=$message&token=$token");
 }
