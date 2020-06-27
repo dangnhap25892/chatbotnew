@@ -56,7 +56,27 @@ if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
     $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 0 , 0,'$chatfuel','$d')";
    $info = mysqli_query($conn,$sql );
    if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì 
-  header("Location: thamgiabot.php?ID=$ID&token=$token");
+   $jsonData ='{
+  "recipient":{
+    "id":"'.$ID.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Thông báo",
+            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn không làm gì và quay lại sau ít phút.",
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
 
   // lỗi
 	}
