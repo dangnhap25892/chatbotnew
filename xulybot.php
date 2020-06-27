@@ -314,6 +314,7 @@ if ($type=="video")
      }
  }";
  sendchat($token,$jsonData);*/
+   header("Location: sendimage.php?id=$userID&noidung=$image");
   header("Location: sendvideo.php?id=$userID&noidung=$image");
     die();
 }
