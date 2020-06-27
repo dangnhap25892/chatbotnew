@@ -201,7 +201,7 @@ if($getstart['postback']['payload']=="donate"){
     sendchat($token,$jsonData);
     die();
 }
-if($getstart['postback']['payload']=="xuloi"){
+if($getstart['postback']['payload']=="sualoi"){
     header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
 }
