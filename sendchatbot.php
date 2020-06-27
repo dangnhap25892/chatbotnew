@@ -154,7 +154,7 @@ else{
           {
             "type":"Postback",
             "title":"Sửa lỗi",
-            "payload":"newchat"
+            "payload":"sualoi"
           },
           {
             "type":"Postback",
