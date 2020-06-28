@@ -193,7 +193,7 @@ $page = tokenpage($idpage);
 if(isset($noidung)){
     $admin ='{ 
     "recipient":{
-    "id": "2781358401974957"
+    "id": "3814396765301728"
   },
   "message":{
     "attachment":{
@@ -204,10 +204,10 @@ if(isset($noidung)){
     }
   }
 }';
-sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"2781358401974957"
+    "id":"3814396765301728"
   },
   "message":{
     "attachment":{
@@ -226,7 +226,7 @@ sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK
     }
   }
 }';
-sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
 
   echo $partner;
   echo $tokenpa;
