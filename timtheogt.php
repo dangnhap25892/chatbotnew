@@ -172,7 +172,8 @@ function trangthai($userid) {
 }
 function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam tìm nữ 2 nữ tìm nam 3 nam tìm nam 4 nữ tìm nữ 5    tim 9x 6 tim 2k 7
   global $conn;
-  
+  echo $timgt;
+  echo $gioitinh;
   //tìm đối tượng theo giới tính 
 if($gioitinh == 1 AND $timgt =="timnu"  )//nam tìm nữ
 {
