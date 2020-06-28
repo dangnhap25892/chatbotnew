@@ -175,22 +175,22 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
   echo $timgt;
   echo $gioitinh;
   //tìm đối tượng theo giới tính 
-if($gioitinh == 1 AND $timgt =="timnu"  )//nam tìm nữ
+if($gioitinh == "1" AND $timgt =="timnu"  )//nam tìm nữ
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 3)AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
 
 }
-if($gioitinh == 2 AND $timgt =="timnu"  )// nữ tìm nữ
+if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 5)AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   
 }
-if($gioitinh == 1 AND $timgt =="timnam"  )// nam tìm nam
+if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 4)AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
 
 }
-if($gioitinh == 2 AND $timgt =="timnam"  )// nữ tìm nam
+if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2)AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   
@@ -204,23 +204,25 @@ if($gioitinh == 2 AND $timgt =="timnam"  )// nữ tìm nam
   $partner = $row['ID'];
   // xử lý kiểm tra
   if ($partner == 0) { // nếu người không có ai trong hàng chờ
-
-    if($gioitinh == 1 AND $timgt =="timnu"  )//nam tìm nữ
+       echo 'pa';
+     echo $timgt;
+  echo $gioitinh;
+    if($gioitinh == "1" AND $timgt =="timnu"  )//nam tìm nữ
 {
   mysqli_query($conn, "UPDATE `users` SET `hangcho` = 2 WHERE `ID` = $userid"); 
 
 }
-if($gioitinh == 2 AND $timgt =="timnu"  )// nữ tìm nữ
+if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 5 WHERE `ID` = $userid"); 
   
 }
-if($gioitinh == 1 AND $timgt =="timnam"  )// nam tìm nam
+if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 4 WHERE `ID` = $userid"); 
 
 }
-if($gioitinh == 2 AND $timgt =="timnam"  )// nữ tìm nam
+if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 3 WHERE `ID` = $userid"); 
 }
