@@ -448,6 +448,11 @@ if ($message=='Tìm theo giới tính') {
         "title":"Tìm Nữ",
         "payload":"timnu",
       },
+      {
+        "content_type":"text",
+        "title":"Cập nhập giới tính",
+        "payload":"capnhapgt",
+      },
       
     ]
   }
