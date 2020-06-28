@@ -257,39 +257,23 @@ if ($message=='upxuloi') {
      header("Location: https://sendchatbot11.herokuapp.com/capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
     die();
   }
-  if($quick_reply=="gtt3"){
-     header("Location: https://sendchatbot11.herokuapp.com/capnhapgt.php?ID=$userID&token=$token&gt=$quick_reply");
-    die();
-  }
-  if($quick_reply=="namtimnu"){
+  
+  if($quick_reply=="timnam"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-    header("Location: https://sendchatbot11.herokuapp.com/upnamtimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/uptimtheogt.php?ID=$userID&token=$token&chatfuel=$idpage&gt=$quick_reply");
     die();
   }
-  if($quick_reply=="nutimnam"){
+  if($quick_reply=="timnu"){
      #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
     #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
     #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: https://sendchatbot11.herokuapp.com/upnutimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: https://sendchatbot11.herokuapp.com/uptimtheogt.php?ID=$userID&token=$token&chatfuel=$idpage&gt=$quick_reply");
     die();
   }
-  if($quick_reply=="namtimnam"){
-     #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
-    #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
-    #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: https://sendchatbot11.herokuapp.com/upnamtimnam.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-    die();
-  }
-    if($quick_reply=="nutimnu"){
-     #header("Location: thamgiabotgt.php?ID=$userID&token=$token&gt=$quick_reply");
-    #header("Location: updatebot.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=0");
-    #header("Location: updatebotgt.php?ID=$userID&token=$token&chatfuel=$chatpage&gt=$quick_reply");
-    header("Location: https://sendchatbot11.herokuapp.com/upnutimnu.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
-    die();
-  }
+  
     
 
   
@@ -421,6 +405,31 @@ if ($message=='Menu') {
     die();
 }
 
+if ($message=='Cập nhập giới tính') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Giới tính của bạn là gì",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Nam",
+        "payload":"nam",
+      },{
+        "content_type":"text",
+        "title":"Nữ",
+        "payload":"nữ",
+      },
+      
+    ]
+  }
+}';
+sendchat($token,$jsonData);
+die();
+}
 if ($message=='Tìm theo giới tính') {
   $jsonData ='{
   "recipient":{
@@ -432,23 +441,14 @@ if ($message=='Tìm theo giới tính') {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Nam tìm nữ",
-        "payload":"namtimnu",
+        "title":"Tìm Nam",
+        "payload":"timnam",
       },{
         "content_type":"text",
-        "title":"Nữ tìm nam",
-        "payload":"nutimnam",
+        "title":"Tìm Nữ",
+        "payload":"timnu",
       },
-      {
-        "content_type":"text",
-        "title":"Nam tìm nam",
-        "payload":"namtimnam",
-      },
-      {
-        "content_type":"text",
-        "title":"Nữ tìm Nữ",
-        "payload":"nutimnu",
-      },
+      
     ]
   }
 }';
