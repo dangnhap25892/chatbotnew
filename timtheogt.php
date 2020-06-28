@@ -180,17 +180,17 @@ if($gioitinh == "1" AND $timgt =="timnu"  )//nam tìm nữ
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 3)AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
 
 }
-if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
+else if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 5)AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   
 }
-if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
+else if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 4)AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
 
 }
-if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
+else if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
 {
  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 1 OR `hangcho` = 2)AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   
@@ -212,17 +212,17 @@ if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
   mysqli_query($conn, "UPDATE `users` SET `hangcho` = 2 WHERE `ID` = $userid"); 
 
 }
-if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
+else if($gioitinh == "2" AND $timgt =="timnu"  )// nữ tìm nữ
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 5 WHERE `ID` = $userid"); 
   
 }
-if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
+else if($gioitinh == "1" AND $timgt =="timnam"  )// nam tìm nam
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 4 WHERE `ID` = $userid"); 
 
 }
-if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
+else if($gioitinh == "2" AND $timgt =="timnam"  )// nữ tìm nam
 {
  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 3 WHERE `ID` = $userid"); 
 }
@@ -310,7 +310,6 @@ if (!trangthai($userid)){// nếu chưa chát
 ketnoi($userid,$gioitinh,$timgt,$token);
 /*
 }else{
-
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
