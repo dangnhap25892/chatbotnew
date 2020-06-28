@@ -195,7 +195,7 @@ if($gioitinh == 2 AND $timgt =="timnam"  )// nữ tìm nam
   
 }
 
-  }else{ // không xác thì tìm kiếm người không xác định
+  else{ // không xác thì tìm kiếm người không xác định
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND `hangcho` = 1  AND `gioitinh` = 0 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   }
   //echo $result;
