@@ -243,7 +243,7 @@ if(isset($noidung)){
          
          $admin ='{ 
     "recipient":{
-    "id": "2781358401974957"
+    "id": "3814396765301728"
   },
   "message":{
     "attachment":{
@@ -255,17 +255,17 @@ if(isset($noidung)){
     }
   }
 }';
-sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"2781358401974957"
+    "id":"3814396765301728"
   },
   "message":{
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "text":"Ảnh\n page: '.$chatfuelpa.'\n ID:'.$userid.'  ",
         "buttons":[
           {
             "type":"Postback",
@@ -277,7 +277,7 @@ sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK
     }
   }
 }';
-sendchat(EAADn4qwXcIQBACB75LJVEPB6BiaJpjF7QzuQVKAxBZBHB5X8ng5A7aFKZBEVHvJTg2kORK2NsplClZAs3a4TAihDh5reXMNs9tU7maTNAjkR6Px1xfLB9ZBBtyK8KUZATdRCUWAI8uUPpctVBlxqiKImRWZC9RPtR9ZC7PjegrTHwZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
 
   if($isNude == 0)
 {
@@ -287,7 +287,7 @@ else
 {
     $admin ='{ 
     "recipient":{
-    "id": "2854449234652917"
+    "id": "3814396765301728"
   },
   "message":{
     "attachment":{
@@ -299,17 +299,17 @@ else
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZCM54htqV5wA4bmxZCZAkn3wAxkadEy4dzZAnec7BZBxOR3L6nY1QkEPIpd5gNgooDPFInyJBDVUUlHGTE45v11AizwV7J6KyvfbcpmgZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"2854449234652917"
+    "id":"3814396765301728"
   },
   "message":{
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "text":"Nude ảnh\n page: '.$chatfuelpa.'\n ID:'.$userid.'  ",
         "buttons":[
           {
             "type":"Postback",
@@ -321,7 +321,7 @@ sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZC
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAKSsMOUU47FIIFZAERrUvpikobbXRlyWNCjhnTN0qFu5dUq2z1C2VamYZCM54htqV5wA4bmxZCZAkn3wAxkadEy4dzZAnec7BZBxOR3L6nY1QkEPIpd5gNgooDPFInyJBDVUUlHGTE45v11AizwV7J6KyvfbcpmgZDZD,$admin);
+sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD,$admin);
     
 }
   }
