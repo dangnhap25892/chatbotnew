@@ -28,10 +28,10 @@ if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever
     $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 0 , 0,'$chatfuel','$d')";
    $info = mysqli_query($conn,$sql );
   #header("Location: thamgiabot.php?ID=$ID&token=$token");
-  header("Location: timtheogt.php?ID=$ID&token=$token&gt=$quick_reply");
+  #header("Location: timtheogt.php?ID=$ID&token=$token&gt=$quick_reply");
   }
 #header("Location: thamgiabot.php?ID=$ID&token=$token");
-header("Location: timtheogt.php?ID=$ID&token=$token&gt=$quick_reply");
+#header("Location: timtheogt.php?ID=$ID&token=$token&gt=$quick_reply");
 #mysqli_close($conn);
 die();
 
