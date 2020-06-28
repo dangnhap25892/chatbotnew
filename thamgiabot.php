@@ -203,7 +203,11 @@ function ketnoi($userid,$gioitinh,$token) { //tìm người chát
 # $chatfuelpa = getChatfuel($partner);
  # $tokenpa = gettoken($partner);
     #$tokenpa = $token;
- $tokenpa = gettoken($partner);
+ #$tokenpa = gettoken($partner);
+  $idpage = getidpage($partner);
+ $page = tokenpage($idpage);
+ $tokenpa = $page[0];
+ $chatfuelpa = $page[1];
        $jsonData1 ='{
   "recipient":{
     "id":"'.$userid.'"
