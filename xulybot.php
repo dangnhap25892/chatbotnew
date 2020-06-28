@@ -408,7 +408,7 @@ if ($message=='Menu') {
 if ($message=='Cập nhập giới tính') {
   $jsonData ='{
   "recipient":{
-    "id":"'.$userid.'"
+    "id":"'.$userID.'"
   },
   "messaging_type": "RESPONSE",
   "message":{
