@@ -207,7 +207,7 @@ if($getstart['postback']['payload']=="sualoi"){
 }
 
 }
-if($message=='iphone'){
+if($message=='iphone'||$getstart['postback']['payload']=="iphone" ){
   $jsonData ='{ 
     "recipient":{
     "id": "'.$userID.'"
