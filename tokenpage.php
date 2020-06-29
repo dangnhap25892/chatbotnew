@@ -147,6 +147,10 @@ switch ($page)
           $token = 'EAADn4qwXcIQBAF7Pvl8sszmjGqB2TP3XLZBtmtNOhnzJNcCL8QeZAU942o3uN8qE6Yb2LkrmycWZCnGGJjz1p917nAfwTRw4VIcAUzDebVCyuZAbzLlbs4cict5Punvhm5fdhMzAKE4vXiDLxV7ZBafLGDmN0BudDCHzxE9V0sEDsMPQ8hqy30C8BZAg2YK8kZD';
           $chatpage ='Chatible Việt Nam';   
       break;
+  case '102994474812846' :
+          $token = 'EAACuhZBJndfEBAKopQfyoLZCvVVGZCTB8HsCyzGbDcLU4Rh6QIzXxqTwJvfaiHvEhKPZCFwRsj1R1XV2c8lasBmIBbKDhbfr2Blw3ATrtLekNhiCAcFiYgYFaZBUiknV5BlBNZBl1KZADMCdHi1rtjLjhZCyvr3ZAYIDFG7yFhvEaCgZDZD';
+          $chatpage ='Test bot';   
+      break;
 
   
 }
