@@ -102,6 +102,11 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
             "url":"https://chatthinh12.herokuapp.com/chuyenvideo.php?&url='.$message.'",
             "title":"Xem video"
           },
+          {
+              "type":"Postback",
+              "title":"Hướng dẫn xem trên iphone",
+              "payload":"iphone"
+            }
          
         ]
       }
