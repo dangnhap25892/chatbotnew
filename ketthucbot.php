@@ -234,7 +234,7 @@ sendchat($tokenpa,$jsonData1);
     "id":"'.$partner.'"
   },
   "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n https://www.messenger.com/t/Tro.Chuyen.Voi.Nguoi.La.VN",
     }
   
 }';
