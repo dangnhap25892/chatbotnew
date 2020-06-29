@@ -345,7 +345,7 @@ sendchat($token,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nid:'.$partner.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$partner.'",
           }
         ]
       }
@@ -377,7 +377,7 @@ sendchat($tokenpa,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nid:'.$userid.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$userid.'",
           }
         ]
       }
@@ -407,7 +407,7 @@ ketnoi($userid,$gioitinh,$token);
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗\nId của bạn'.$userid.'",
           }
         ]
       }
