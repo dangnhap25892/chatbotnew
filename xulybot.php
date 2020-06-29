@@ -206,8 +206,26 @@ if($getstart['postback']['payload']=="sualoi"){
     die();
 }
 
-
 }
+if($message=='iphone'){
+  $jsonData ='{ 
+    "recipient":{
+    "id": "'.$userID.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"image", 
+      "payload":{
+        "url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/80790050_611484762822988_283072567831756379_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=2rsq9GEA5nkAX-e43OU&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=01ede6a5cabb1b97e57e0e2f4f95890b&oe=5F1F586F", 
+        "is_reusable":true
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+}
+
+
 if ($message=='upxuloi') {
   header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
