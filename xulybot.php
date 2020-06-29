@@ -205,9 +205,7 @@ if($getstart['postback']['payload']=="sualoi"){
     header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
 }
-
-}
-if($message=='iphone'||$getstart['postback']['payload']=="iphone" ){
+  if($getstart['postback']['payload']=="iphone" ){
   $jsonData ='{ 
     "recipient":{
     "id": "'.$userID.'"
@@ -223,7 +221,11 @@ if($message=='iphone'||$getstart['postback']['payload']=="iphone" ){
   }
 }';
 sendchat($token,$jsonData);
+  die();
 }
+
+}
+
 
 
 if ($message=='upxuloi') {
