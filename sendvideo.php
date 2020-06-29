@@ -219,7 +219,7 @@ sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDj
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Video\n page: '.$chatfuelpa.'\n ID:'.$userid.' \n page: '.$chatfuelpa.' ",
+        "text":"Video\n page: '.$chatfuelpa.'\n ID:'.$userid.' \n . ",
         "buttons":[
           {
             "type":"Postback",
