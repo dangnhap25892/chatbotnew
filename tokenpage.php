@@ -130,7 +130,23 @@ switch ($page)
           $token = 'EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD';
           $chatpage ='Test1';   
       break;
-    
+    // mới 29/6/2020
+    case '113221027112635' :
+          $token = 'EAADn4qwXcIQBABvgZABx892Qt2PYjSLZBvd6dDv26XBuJlD61ZBCvpRSX0yZAKDfmlXpmNbFp2ZCa4gjbVMtyZAmnh8bO09YK0oaNTfNmNPsRdA6iP8mRRJItMHrfLeSjzrOdlT0JEBqz5Sq5EnjygjZB432xSS5aRSZANr6djMCzAyTgGPBiZA9iotymNRHdjdMZD';
+          $chatpage ='Trò chuyện với người lạ';   
+      break;
+    case '100942361686683' :
+          $token = 'EAADn4qwXcIQBAEdZBzYuxRqZAr8CijEZBDd1X0bZAnpriXSlVU9OXfgnV8PSWHtCynNZBwOnuIB48THJI9nBRfqFOqISXwGTXUgZCfN5rXmcTg1hNXJz94QRZBXXe3MeySwwnx1Y9UINi6Qess5IjQVZBK6vw46GJ7eIRxyYZAbiH6wl0svPoc7ZCHg235NdBUIxEZD';
+          $chatpage ='Tâm sự với người lạ';   
+      break;
+  case '100830175031721' :
+          $token = 'EAADn4qwXcIQBAHq2SPQa4UhJO42sjisSIMzTQKTZCZBsh8sPjw6h3bPl9yFGh2vhOqfmYc14SMYJjMbMxjE5pM3DHGlmSGRDiNghfkU2BAyj4CPuOykTg8QMzsxdZAE1mRJvDykqAZAbDbTkzQL4W2kWJOByZBk7XCQQuAQIScyEBZC3iZBrhVt9scIYNqM93oZD';
+          $chatpage ='Chatvn / Trò chuyện với người lạ';   
+      break;
+   case '101331478314038' :
+          $token = 'EAADn4qwXcIQBAF7Pvl8sszmjGqB2TP3XLZBtmtNOhnzJNcCL8QeZAU942o3uN8qE6Yb2LkrmycWZCnGGJjz1p917nAfwTRw4VIcAUzDebVCyuZAbzLlbs4cict5Punvhm5fdhMzAKE4vXiDLxV7ZBafLGDmN0BudDCHzxE9V0sEDsMPQ8hqy30C8BZAg2YK8kZD';
+          $chatpage ='Chatible Việt Nam';   
+      break;
 
   
 }
