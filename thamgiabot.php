@@ -232,7 +232,7 @@ sendchat($token,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$partner.'",
           }
         ]
       }
@@ -264,7 +264,7 @@ sendchat($tokenpa,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$userid.'",
           }
         ]
       }
