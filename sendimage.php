@@ -270,7 +270,7 @@ sendchat(EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDj
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n page: '.$chatfuelpa.'\n ID:'.$userid.'  ",
+        "text":"Ảnh\n page: '.$chatfuelpa.'\n ID:'.$userid.'\n.  ",
         "buttons":[
           {
             "type":"Postback",
