@@ -327,7 +327,7 @@ if ($type=="video")
  }";
  sendchat($token,$jsonData);*/
   #header("Location: sendimage.php?id=$userID&noidung=$image");
-  header("Location: https://sendchatbot11.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot101.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
     die();
 }
      }
