@@ -151,6 +151,10 @@ switch ($page)
           $token = 'EAACuhZBJndfEBAKopQfyoLZCvVVGZCTB8HsCyzGbDcLU4Rh6QIzXxqTwJvfaiHvEhKPZCFwRsj1R1XV2c8lasBmIBbKDhbfr2Blw3ATrtLekNhiCAcFiYgYFaZBUiknV5BlBNZBl1KZADMCdHi1rtjLjhZCyvr3ZAYIDFG7yFhvEaCgZDZD';
           $chatpage ='Test bot';   
       break;
+  case '114167547018276' :
+          $token = 'EAADn4qwXcIQBAJgss6u41QWleKu6hpZCn5aDRitpaYv334eDB2Uxiy6gAt5ItgfZCrCZAvEkfshXZBc3YofJ8WZBCIiLB2txvyrzoQZCG2GH0GW7jZAK9JJClnzbMeMSwic5BKdcRaHJ1M9vZCZA9vDim9i4J2vvrXNFmtwZCkqsgIeAZDZD';
+          $chatpage ='Chatible(mới)';   
+      break;
 
   
 }
