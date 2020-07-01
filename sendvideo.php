@@ -69,6 +69,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 40);
     $st=curl_exec($ch);
 
   $errors = curl_error($ch);
@@ -119,6 +120,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 40);
     $st=curl_exec($ch);
 
     $errors = curl_error($ch);
