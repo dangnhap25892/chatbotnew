@@ -62,6 +62,10 @@ function sendchat($token,$jsonData)
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
   $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, html_entity_decode($jsonData));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+  curl_exec($ch);
+  /*
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
@@ -77,7 +81,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
     curl_close($ch);
- 
+ */
 }
 function sendchat2($message,$userID,$token)
 {
@@ -92,6 +96,10 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     }
 }';
   $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, html_entity_decode($jsonData));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+  curl_exec($ch);
+  /*
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
     curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
@@ -109,6 +117,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
     curl_close($ch);
+    */
     die();
 
 }
