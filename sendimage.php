@@ -148,7 +148,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           },
           {
               "type":"Postback",
-              "title":"Hướng dẫn xem trên iphone",
+              "title":"Hướngdẫnxemtrên iphone",
               "payload":"iphone"
             }
          
