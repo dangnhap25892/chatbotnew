@@ -270,7 +270,7 @@ if(isset($noidung)){
       "type":"image", 
       "payload":{
         "url":"'.$noidung.'", 
-        "is_reusable":true
+        
       }
     }
   }
