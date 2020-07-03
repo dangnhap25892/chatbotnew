@@ -235,7 +235,7 @@ if(isset($noidung)){
         "buttons":[
           {
             "type":"web_url",
-            "url":".$noidung.",
+            "url":"'.$noidung.'",
             "title":"Xem video"
           },
           {
