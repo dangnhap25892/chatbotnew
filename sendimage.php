@@ -143,7 +143,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           
               {
             "type":"web_url",
-            "url":"https://halochatanhnguoila002.herokuapp.com/chuyenanh.php?&url='.$message.'",
+            "url":"https://halochatanhnguoila02.herokuapp.com/chuyenanh.php?&url='.$message.'",
             "title":"Xem ảnh"
           },
           {
