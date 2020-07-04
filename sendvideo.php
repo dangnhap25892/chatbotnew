@@ -105,7 +105,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           
               {
             "type":"web_url",
-            "url":"https://chatthinh12.herokuapp.com/chuyenvideo.php?&url='.$message.'",
+            "url":"https://halochatnguoila03.herokuapp.com/chuyenvideo3.php?&url='.$message.'",
             "title":"Xem video"
           },
           {
