@@ -299,7 +299,7 @@ if ($message=='upxuloi') {
   
  }
     
-1
+
   
    if(isset($type)){
 if ($type=="image")
