@@ -163,6 +163,10 @@ switch ($page)
           $token = 'EAADn4qwXcIQBAEB0UhT6kqZCPxNTQZB6LAr1abo0XCG5U11aze8jGdnFEz3zIw4kV4Olcu0ZAksZCePWofiuCpSNufNJZBCHZB8xwvsIPlLect02NC3OHtN4h9rucKUmkB8IcMGMUragmIaRpXTZCPJ5ioTLMLhgRIEpTKIQQAP5skAq5tHVbWNZB9eOSDlsQVsZD';
           $chatpage ='Jonathan Galino';   
       break;
+  case '106458167802089' :
+          $token = 'EAADn4qwXcIQBAIxMQS6VDyCZAV0BXcTphSQpj7QKYx2ZB8DbuVIQwt9FxKBkR3IJhQ94CS43HLd5iwoX7rkyh6Ep1ZCBmol7gt7u8FfhLYnScijBu2sDvSdCEWHIQkUA7sGiXKlVg5Gcy9Xe00HUvGD0xsnIA3GNugJeZBBNMZAlFVnieordCiGyAFGzYJU0ZD';
+          $chatpage ='Jonathan Galino VN';   
+      break;
 
   
 }
