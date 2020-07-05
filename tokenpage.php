@@ -155,6 +155,10 @@ switch ($page)
           $token = 'EAADn4qwXcIQBAJgss6u41QWleKu6hpZCn5aDRitpaYv334eDB2Uxiy6gAt5ItgfZCrCZAvEkfshXZBc3YofJ8WZBCIiLB2txvyrzoQZCG2GH0GW7jZAK9JJClnzbMeMSwic5BKdcRaHJ1M9vZCZA9vDim9i4J2vvrXNFmtwZCkqsgIeAZDZD';
           $chatpage ='Chatible(mới)';   
       break;
+  case '113072477133695' :
+          $token = 'EAADn4qwXcIQBAD65duuuxiwJkifnyenywWRJ1eRiMSA8nKbZA1KxGUyfOMohwgwrempSSPEBs8wpg2Q3STIpTYBkREK4Tf0ZAZAVRalXXhBgppoNsg0rEzIr44p8MqqDkMuIV4ZCI8YCjnNMPCreRZA5MDWiQD2lou6gs4nJz8rgqbML7G7U05luZC9AsRhOUZD';
+          $chatpage ='Jonnathan Galino';   
+      break;
 
   
 }
