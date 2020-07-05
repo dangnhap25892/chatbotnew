@@ -304,13 +304,13 @@ if ($message=='upxuloi') {
    if(isset($type)){
 if ($type=="image")
 {
-  header("Location: https://sendchatbot11.herokuapp.com/sendimage.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot12.herokuapp.com/sendimage.php?id=$userID&noidung=$image");
   #sendchat2($image,$userID,$token);
     die();
 }
 if ($type=="audio")
 {
-  header("Location: https://sendchatbot11.herokuapp.com/sendaudio.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot12.herokuapp.com/sendaudio.php?id=$userID&noidung=$image");
     die();
 }
      if(isset($type)){
@@ -327,7 +327,7 @@ if ($type=="video")
  }";
  sendchat($token,$jsonData);*/
   #header("Location: sendimage.php?id=$userID&noidung=$image");
-  header("Location: https://sendchatbot11.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
+  header("Location: https://sendchatbot12.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
     die();
 }
      }
@@ -631,7 +631,7 @@ if($hi == 2)
 }
   if($hi == 4)
 {
- header("Location: https://sendchatbot12herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+ header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
   if($hi == 5)
 {
