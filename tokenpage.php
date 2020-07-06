@@ -171,7 +171,14 @@ switch ($page)
           $token = 'EAADn4qwXcIQBAKxXkQ6Je17KrDOmmFjSzzntVBUTVmU8MxNklnsU07FSdT1EHgFnLwr29mRFgm82FZBQy1ZCuZBJoIUxvtXH1sQdhYY03u9OszD0Iih7YVUjoT7RTAaGi3ZCrONAC87dqOGkwT5PGvirJoCNtqAuZCCCAWgfwGAWuh1soTejGgrS0oHNZBKS0ZD';
           $chatpage ='Jonnathan Galino VN';   
       break;
-
+  case '104945311288875' :
+          $token = 'EAADn4qwXcIQBAKxXkQ6Je17KrDOmmFjSzzntVBUTVmU8MxNklnsU07FSdT1EHgFnLwr29mRFgm82FZBQy1ZCuZBJoIUxvtXH1sQdhYY03u9OszD0Iih7YVUjoT7RTAaGi3ZCrONAC87dqOGkwT5PGvirJoCNtqAuZCCCAWgfwGAWuh1soTejGgrS0oHNZBKS0ZD';
+          $chatpage ='Jonnathan Galino VN';   
+      break;
+ case '100549118397625' :
+          $token = 'EAADn4qwXcIQBAF0kkmA3LojP77QuZASWTbCVQa68f6GejfS5kPY056wTs4SAHyyQ1jr15i1eWOlPrDZBiMtmvIKJ9IWa81C6lP2dyYNSVK26cSAnCb61oS2KQnFg52j92xTFujKZCmyx48ZBgj17wmlBoDgPscHuCiuRH0qDPjPGin4rmDD0fWeJ1IPsSOcZD';
+          $chatpage ='HaloChat';   
+      break;
   
 }
 $page = [$token,$chatpage];
