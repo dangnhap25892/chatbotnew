@@ -1,4 +1,5 @@
 <?php	
+/*
 $url = $_GET['url'];
 $url2 = '&_nc_sid=';
 $url3 = $_GET['_nc_sid'];
@@ -28,7 +29,7 @@ else{
 
 $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
-/*
+
 if (isset($url)){
 	
 }
@@ -42,7 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hihi = $_POST['fname'];
     if (empty($hihi)) {
         echo "Không có ảnh";
-	    die();
     } else {
         #echo $name;
 
