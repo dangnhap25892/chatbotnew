@@ -14,14 +14,14 @@ switch ($page)
           $chatpage ='Test chatbot2';
     break;
     case '103303021315529' :
-        $token = 'EAADn4qwXcIQBALjLRUmPBbQPVIlcFg1mCMXZCcspFU8ZBUqijVFhpYHQh8N3EnHk8ReZCoReWZBrswsd1rpjVMFMBFH9sn6pYAS8VZCvLNpcljGXOc51kQukJdWx0OS2SeHLRNo8Tmdv06S5PuZAnNctFRO2JZCEBwbtqYweb2Otos5TRFhz2KK';
+        $token = 'EAADn4qwXcIQBAOmCIlHepZBBZBpxcw8prdIlCBgBDZAYQ4THzQf2N10zHxHPrQZCmXUVouZCg4ZCCBezkFZCOKZAFAQWM11Abz1iE66CgId2k2DR9Ws1EIm8Aw187j0Qp9mzTyXcMWH0ZBdJHEeQ6ZCS55q5m284FuNwkR843ufoS1tqfo3I9BIWcJ83UZAN2eRruIZD';
         
         $chatpage ='Thính chat';
     break;
     
         
     case '101355291513790' :
-        $token = 'EAADn4qwXcIQBAMRDc7DUGTz57gNPX1QLN0PpkPZBaPUGMNorKbPPn7QdzGB1tLswkPnDhFKw0dgk7LSp0dF1TFnDfHu7G6AqQsxm49N1a7TtIscaqMuJme4iEoK2e2y1NlaftJ82vwgV78UpE2ZC8OqlCXq9uDZCxfGn6mZBiGzSdft0iX7s';
+        $token = 'EAADn4qwXcIQBACMEWc1zTDvmaYqgQcm2ztGwEaaHDw0zDSYTFjOe9Sxnsz7ZAZBrqushkzDIwIUjgYnFlnF9Ae9fqZBm2i6ZCV1APOvVzwXPfbCWtxFymZBQs8ZAejWsGNeA1fXEsh8m1ZBk1pzeeIJJA8MqNsPvVaDe6HCYG8xtA89xnlPk5st5jioO4cJEZBUZD';
         $chatpage ='Chat love';   
     break;
      case '103817501348244' :
@@ -29,73 +29,73 @@ switch ($page)
         $chatpage ='Chat love.';   
     break;
     case '104256927946178' :
-        $token = 'EAADn4qwXcIQBAMCaebOWlmBnBDE1pkkR0DKL97HnKDTpwSRub2ZBydbyNqwJ39ZBi1EwbOvGPBlx8m2r6vTRr90bZCfdzmNhNhw1b8POSRrIIslgYX0ouJjR1wjwZBiYaHSOc42iDfnuYJkVg3ljsP6B2QbYkP0CS4Ifu5RkMZB3p47jzd0Ci';
+        $token = 'EAADn4qwXcIQBAAr0IDU9EKVlisFhBluPCLySG8vAGJNHxVOq0oyXzLV6EwuSBIpWshI0debgVSuX779gQwdtq0U8vAgixRnU65A3LOytZC9tMlEZAmINklOh5KtTYXTFmZCMD2EMAZClns1zbKLZBm6ebx4N8Dd3jmQDmfu8DLDulx8HEqRf4cP1qZAhZB1cWgZD';
         $chatpage ='Chatbile';   
     break;
     case '114769690219396' :
-        $token = 'EAADn4qwXcIQBANA3i4a08D4SakKJw2k4amb0Fw6MC29RKVljuZBZBZBlTN84mY1lZCVaxLfo8oXVpe2Wyc1vxAkq109mlcI48eITycRfyjNrhbC1pNKyLeZB5fsZBMHg8ZAUmtBVdc4rJKvZCvD7KJUNgS96osApxbby2DzXfz1ZCJNUdG64i9QUJ';
+        $token = 'EAADn4qwXcIQBADlZCYtLKpMFZA0cgGO24qkZBNXmIOoZAmCzy8oR5QH9P8lrIRezBTQpYww9rKAl274q2M8omFFNrf7GbqAZB9wZAfjFkXNJixZC7OBQJabv6xnhPBIFGjbt80kZCxkLIHLb22LYutrUCFB2mfZBdqrQSeMGwUUz0No8hpRUFw2PeRyqKe7ua2wYZD';
         $chatpage ='Chatbot chat với người lạ';   
     break;
     case '110179824011282' :
-        $token = 'EAADn4qwXcIQBAImMfRYcCcuqpFCS6rQq0rTiItKlzF5T87qHkXGpIzZCB6wl8Bh4J0o4oOaflc4u3EMZCGYZCX55SphUdudwQDjJl3eETDNGYv7co8tZCmfaUojATiSY9HnXtv9zPpw95Ot419fyqtWiFXp04bpMDjZAOEJoRHzBy5qWqvEqs';
+        $token = 'EAADn4qwXcIQBANZByKUnIJbbJH6fSDHmzq7WXZBZApA3TRAqEiNtotgeZCoDvOh8yXJ9CZC35lkeR4JwfNFsll3sRWRds88ppcDK37ICOeth7GWBGZArlNDZAYvZCTlZAaj1l0qxraT6z7pihXRJ9ZCiT23rcPQWWgrg97bFbd2rk55ksgtAHtNnuCJi2AAAw5CCMZD';
         $chatpage ='Chatible';   
     break;
     
     case '110680147294195' :
-        $token = 'EAADn4qwXcIQBALkMUP1YQtZBpCdnv8tvgZB1oVe2JmF0CjZBWZCWklyFNGA37PZCz9lG117aAJpZAMmaeVkynZAOMv7ezewAvy4IhacM0vHGYKupb9DvdaqJTc2o2pwIfplzpeRp6OtpbKFgEIAZBcwQks7xpI0Wu9lyPhS8ZBOuMvZBSGbqicKoPO';
+        $token = 'EAADn4qwXcIQBACOThdZAV6pPfDQHri6iA0a1R6nxJ6pZAWZC7b8WLMnFhC0Wv5ZCGOOBxxETmgtxgZCEZCcCqGZBhMzoZCZBtXZB1BFZCrFFrpBTFnKYFICQrsfy5ZA2rlZCkY2luunEZCfsEwLDh4ZC5VzpSqjp62RNq8NfqrrjyA4lXtkrg34ci8L7iSMLOmIFRs26r8ZD';
         $chatpage ='Chatible / Trò chuyện với người lạ';   
     break;
     
      case '113246053701669' :
-        $token = 'EAADn4qwXcIQBAB7NyqYL2MHX8RkCBpPawbWdZCxfkckh5AGG95BUEjN0tBsR6bj2lToWqvp9Xjgsui5q9wZACJmtuqSc9KgKscHKUZAgcBZAQSHEjhTqHdaRr6KHB4CP9ZAtErZBFOliYiPeknwXUU3BWLeUPrPdS4JuGJbA8yM2klUbu2ZCXRs';
+        $token = 'EAADn4qwXcIQBAPCZAdgQjcFWPnmvKSlZAyZCYjiXOWx5P8O0lZBd1Y85pT3dVLPwH9r4GNozxd9MEIx8ZBZAJNurmlwTveZByUfD1eqJp5JmOeWtiOp2V8h0cOHmeZAg9TnkPVeBJ6pUOFX0rGzt8sGevMHHLDDsgcDlZA90UMNuElHxF08QhwvBZBerKnRNbxgp4ZD';
         $chatpage ='Chatible Friends';   
     break;
     case '105598234473922' :
-        $token = 'EAADn4qwXcIQBAECYfguj5EHUbtX1VBRZCLdaCapNMZAZCtayhvIH7RYTSx8TPtoSiTX2ZA9KNrXsWNyOZA2ikBYSWZBIZCvtxJuV0RSvmHj8XgcuTikZAZCJY2o1NxvayDCcGrZBigmOVlt3z5BCKbstDGdFClLSDSlvIsc1H3ABM9QbIWYaMoZChrX';
+        $token = 'EAADn4qwXcIQBAJSIVia7XJ4qwtiidQletrOMRZA4kOHKbr0YpFtv5c5ZArDMr3g0xWfNpIzCdPFBnvCDXydx76HBRmuDVc7RvMwW0GKpLfIVqUSPC3MmrAlwCYrs3AvIoZBeRZCUvOYr13EdtJrJQoSgEZBTULRogAaTNwEL8aeui2rlkd6FQCuLqtDoMlgoZD';
         $chatpage ='Chatible Love';   
     break;
     case '100427601688975' :
-        $token = 'EAADn4qwXcIQBAGabD6oYRaIjPxj8D2uP3k7St8yZABn3ebjOQlJPhaEMfsZCU1MXm6YS9n7lEcuAicLWNBH0TA5V5YnzGVdtCrzMqX0oe0LR7MMge5fZAjuNUvOaTzFZCC1rZA7TEKX5cB8RRxHFdzox9djpiwUUuRh2kaIi2RFWblCLu0DhW';
+        $token = 'EAADn4qwXcIQBAIrXnGeI1MHG271bDtliIT0WuvJLbUMJrw3JDxB9xhBBODfGvYZCulRLzBsSCwAAovsU9W4Lv5q70CBJmqYRFeUE3qa0wi0ZCOQMlO14CePNuKQKMkexetxuyPBIv0vFBp5bnH7WhXF8mZCZAG9dVwGB40JZAEZBd1yNKToiuR7O8VzcpYIOQZD';
         $chatpage ='Chatible/Trò chuyện với người lạ';   
     break;
     case '120069963047718' :
-        $token = 'EAADn4qwXcIQBACnkKycjhZCXyljIqk6InFrkqRxRQSdQVU84uo4pFGyyjMpHPf8BcsRf0IAp5CruZBiZBuZCZCMzNr8XnQBZAJBOETrJP7WzFUevxJ1DIIa4u0dEkTYoCqafZBWJewB0qjj6fXxlV2u74a92EMcajV5J0bXTBa7TBIzEC2pWDxT';
+        $token = 'EAADn4qwXcIQBANihV44syYPrCAUenwfjrHhWZB35VP7Y3jyPmBZBeeBijzrNoWk1rnc63VuiyHs5LrAz3hKyoaClF6qggMOUMZAD4jZAvWNAgFbsO3WzwGQfEL0FJ6Be32BZCAxZCvI49ywEi22iVtuKqUlwGkRdlh71AabGwUtGm9Onn4kgqlOReNJCBFrhwZD';
         $chatpage ='Chattible';   
     break;
     case '101487468218838' :
-        $token = 'EAADn4qwXcIQBAMmvfImKmW1Qcg6yfZAwLiTbH2LvPmCKPZBZCqJ5oSUUvhUhxZCbBMAQ8pVHDBf2uUay8xQh82kddbjBgr6IJeRoOaCZBva6vOcrdBzc9C3cJGu0YknjyLWsExZBNuXJlooGD5wmrvBDZCp88tAqhrg5kopaCLyRocMZCWcyruPj';
+        $token = 'EAADn4qwXcIQBAHyTe9b1p2OcjMhaKkCOOrg66WGfQ1FlmBjVQz7ZBNMSNB8x2XdrpH1hyT9PTEVeLW9ZCjDvrKuBaEtWUwzz0mibDQHSKb0kGkVMzoFRVwhKcEmdodAVvuqgJ6tgQVmeGwsyTMJnjCJld5COdtJN5brjquMcIBVNVamrwZAPa0dmSSvgcAZD';
         $chatpage ='Chatvn';   
     break;
     case '111898040524687' :
-        $token = 'EAADn4qwXcIQBAKpd435mmn7onKqFy0fyFqdS7ZAlMmGgU1GoLRy8k3pRZCEjBMZAlX6A8BnRca7HSnw1S9tn3N67lr3BrAdZBoOYfpuDJ1WE1ZBDLwzhiaXfBSFlVBLT4qu8ZBH7OsxSNJBaBrEQFukpOXQjFiwnwhe8H5UUep05mTpiffgCay';
+        $token = 'EAADn4qwXcIQBAOtJXbB0VPSGEZBkEXbyAJDerx1yNhJ2A8EBoFl0ZBqdPRCrJFe7ZCdec0ZBTaZCRYjTgXJY5RYGeZAkHr0I7gjj7ImQWFKKZCHrJXmDfyrdVx4Ui0peq5v6lc2zHlo03QFNLR9GmwCpZC9u9ohx0wZCihgaOgKAib7blMJ1CzaWf4iBhzJ1EmBAZD';
         $chatpage ='Chatvn / Chatible';   
     break;
     case '101737548228773' :
-        $token = 'EAADn4qwXcIQBAKZBZBXVJyo5ZAGlHXZCFCfGcfH0tdpkmkK01RGvQeTLQpwJ9WKouFautWqCDasseGy0f19jYIpHkH75XEGr0T8cOIhTo87cq9dRuRZAwHDNTatATh4DRADDJD4nggLqDal842hHW2bpVw8UC6WhShVFBQgjbTLuqOtw4BZCQj';
+        $token = 'EAADn4qwXcIQBANX2g39WKZCN9VIb0DOwcvGZAc9EXCArwdWQO1jKDd9iXqbNEfVQaZCw9NwxhKdpe7h8z97hxm3Mt7iVjgGND1T4QzxDtZBZAs6tZBNHn0uVHxrc8r3ZBn78UZATIS4yuxZBpWECCVmUp6XoEUIvaaKRZBa08Xsbq5YZAUE0InPOuMFl8abnTSOLgYZD';
         $chatpage ='Chatvn / Love';   
     break;
      case '106392681094996' :
-        $token = 'EAADn4qwXcIQBAF4qKSVfVGR1a4MqFF5bkq8uFhHlPHZA1tPbNcUPWVz7cE0ewfWkZCuZAc5hQHNLGyvEQRZCqZA8MKZAndEBVixWL9xJqXZAg13WPKBu0egEcOffNQ7Vpg8PeVHu9ZC8ClDHcV2XzkkI2hAcXf41s0MtD6IOHnDeUOFZADgJpr4ZAd';
+        $token = 'EAADn4qwXcIQBABvDaeEwZAzZBcrn1Ave0MiL5ezZAOWRa4sgr5MRnSYfqfSbvCIYqLD4WuLepC2CWYyaFrjxvYyKUj92Jf8jX7Gs9uJ3dLwJs4U6GvRQZArqqsAmPexmgqzZAiVb2E1pdFiYpjReK1unO6kAfCI6e2NygJ9KmNZBcoExCZCTpBtYhWQNtgWerkZD';
         $chatpage ='Chatvn / Trò chuyện với người lạ Love';   
     break;
     case '108756324190760' :
-        $token = 'EAADn4qwXcIQBAFXuhZCtSHGf0aTFiXMSHyqpM9vFDZAnqtwi8G9H0p1l2lCno9IE86K3gE3Hyhygj75ORvNhk7eQTofQHIMsVtgDlzu7DTntO5dde8QvkoUmk4JDPEnTd5wfbyl1FdMed75Y14cFTdZCYcK0iNGWYp9en6xyAGv0aZBEbRLf';
+        $token = 'EAADn4qwXcIQBAJkXn4ZCycPcelpA5UkoH0URhB090ZBDgIKjX2nZBysePAfZCavn9UlQno3mC0bVjBXoMHppg8S7X4hfok3pR76LVKCKqyLBAurDmU6dBChVv2Lbf6sV9yKPIcaVEc2XKGfzgZC03dCJiICZCrvfHPsZBAhUbBieP8ofgZBNrKJbmNx15UlHNIgZD';
         $chatpage ='Chatvn / Trò chuyện với người lạ Thả Thính';   
     break;
     case '102206461510133' :
-        $token = 'EAADn4qwXcIQBAN2EdDSisUriA5He0ixU6ClXg05I9ZBFqVAbCyOWTuw2uRtQUS0oKFr0uQ4RuC8ZAgB5zsxIAN37BxG25ztig3EJGOreaeGP2VgfwOJ9drqSidDsoxES2fcbXIHAQIGRpMmMjDA6zcqehllH7iT1jUsZAbyChh6jVmmwdI5';
+        $token = 'EAADn4qwXcIQBAGBBl87uYPfAPzfciTaBSygdX286m3dogfuPYUAlXsqMJZBMg4OXt9AkAnuRmywMjUwHB30Qp37Vfmhn56yP3EZBNp25E8Taah1EwRztTWXkBzWZBM2ecoWiz7oqKmIsYw1oISiKpzJY0OyehsCZC2ZBdEZCUes2lenxGvAKxljQ36Nnx4cXgZD';
         $chatpage ='Chatvn Thả Thính';   
     break;
     case '103768777982171' :
-        $token = 'EAADn4qwXcIQBADhM2Ky1lBZCDLAcIeQA8eTndO4ZBLUOGarZCQdKvSRQFZAz8v9ZC1LjEZBy5Cl48wGUpaueL6XDZCnqIYp3254q9YpMKmCx9NdUbxGkEqF390P4sxJHNDZByYHQ4cgCE0xZC5yBACaMoP0hbKCRbDA01sQxMOf7mGjmsMH1dZCnT9';
+        $token = 'EAADn4qwXcIQBAEZBi3nPWZB5nF4sDcPRHd1uQ89nUs1EY8vF3g2UzqvZAIiTT0AFsdCIHkER2xl1wmXf6chhlIX17ZBQKZALOCgR01UQ1nZCYWUkKdQAS8oqJZCz7MPu28hZB5bn3Q26cLxrI057HMRGq3BRML9dIEBHiJR59ZB0hi4qAsnS0pO32Yb2rZCZALgdLMZD';
         $chatpage ='Chatvn.';   
     break;
     case '110643363990453' :
-        $token = 'EAADn4qwXcIQBAPsfytdKQDSVUZA5c1zWhkK66aoVnRq823y9R3Vme5z1ksGwPYNdckPlC5HRjt1yonNZBztIEooTiw8za4nbcbc1mt2Hl2oOIhA281lgHs4b2N7K45VqVU2wrodpDR2aG43zD7ZCG89ZCdty0HXwGyPtLHwqYmZCK3rS3F4nh';
+        $token = 'EAADn4qwXcIQBADjxVK2XDIC0vtuFuc4TZAoIerDcLXzKQqdZAOlMu0YdON1JIGirMv7xR4VCcZCWYYZBu9M4FkcImvi5G0IIoLoA8XQPdI2UIbGW6SatoYRg3hXZCSRqydkpimTVNEZA8q5tYmdvRxME39R4ZAZCStqqZCczRCHQj9oS2sKZAWa7ysZBv43s8ZAHobAZD';
         $chatpage ='Thả Thính';   
     break;
     case '106986154392261' :
-        $token = 'EAADn4qwXcIQBAIUcA9bZAVY9H1AhZAdQ8cX3Bj7LCAiTaicayxrEz5NvcER6p9VFZCfXWzZC4SaLrvpj2xI898lPPnZArvANHgXRlJtRwD4QiZBdCIWCMiwU4y7lak30AedvL4aJsLMiwyOwOrADvzLIZCE4OwZASZACco6AI7JVwdKXuXzXuJGRp';
+        $token = 'EAADn4qwXcIQBAMkEYTQ7uf5e9W0Pibf9FIch4R0wdcNn9LwMSZBTeC8ZAx0nONsI9TkJi1ng9GWp4WOBoKzkwCQ1QJcvoGcmja6n6FrWsfAs2xE3zbVTqRDAS8sEvopeTt4KfKANKnpHCGToLzkRpFlrJ4ijk50MjEnKTWpQSd9hMWDQqBE4GneaFkIOgZD';
         $chatpage ='Chat với người lạ';   
     break;
     case '106525104438779' :
@@ -107,15 +107,15 @@ switch ($page)
         $chatpage ='Bạn Muốn Hẹn Hò ?';   
     break;
      case '105184504581236' :
-        $token = 'EAADn4qwXcIQBADx1MyJnrJKTpTaxPgiejc0UbFpZAHs0PFFLomdBcauaJnpgI4fu0GArGByiF8DGq40M6xSE2ld4eMbj3BBm7GWi3wejJ5GgN2UYeHbqsU7LZACt5gAO3SDgV3fk0ZAJB5ZAOr9IjWIvcD5jbLBx6LsO61Wjk4Rx3KdSQZA0ZC';
+        $token = 'EAADn4qwXcIQBAGIdiavxTmyibcpfm35fxYWxlKw5ZAgSnTu2tXZBOaeQctSnIkhNENiYcz2gnyReXLcB3ENJJYQmcWZCIxjL5jHBrIZCBDKXZA7T5asnxVyx3940DZBFJZAfuwZBcBRZBLwZBaZAJebQj4zzlf4XpvDbmYI5VGHPpIJczDEx0odSW4OvyJo67Sz4v0ZD';
         $chatpage ='Hẹn Hò';   
     break;
     case '107049221059443' :
-        $token = 'EAADn4qwXcIQBAFlzW73p2ztrEOE1Lk0lrOS6kejdq3ODZCn1k3Sh0ZCc7iWsl7W5AGfZAMEjtc9IIqrA70eQyRZAzBqm7HM0ZAMs8bt9RGtoclnlfzTlJZCu7v7fG2aJQ1QdFF6a2DpyD9u9rk6Kp9dBTBVpZBZBZBRbrFc3NOKHJqJZCuqhBKgIxw';
+        $token = 'EAADn4qwXcIQBAIK4bvvPZBnlZA26QVJ9iDHqmONkBSLrgeJbSS22rZC1ppVaWwWu4OWUAP7z0YRTh2aJWGpJd43nZC9dljjduBFldvNZAZAn1ZCj8fS0uxiTbZAZAB8GRtgUhKgrwMSpNnPSi5PJc77rCVv3OFPPlOfRtgwtd9AN9I4O8AbdaBo3WdHveqZBZCxVVAZD';
         $chatpage ='Hẹn Hò Với Người Lạ';   
     break;
     case '110807250679458' :
-        $token = 'EAADn4qwXcIQBALbL9HUww5Vc5ynvRYDrJZChSTTbFZBOhcbHjTWJ5Osd4mtZASjIkAzGO9f7XiSgbMZBcADVDRSL3FXZBZBOI5zPVGxfiSJuA3L48W1LZCLHP201qhsuBGulab9PZAzZB8wOij7CUuiZBeBAaejDsUDNp6tSIT335rS32rnRoPgdN6';
+        $token = 'EAADn4qwXcIQBABCan9VZAxZAN4BEi3ov75lTe2dS87MR9MBad0cj0hRw40yPAdlKlteJjeubNXntDr9c2jTMcFaSLwNXnF3jVHZBKBfbWu4SGlcmesyFBwnGtmoaI0Vhe0KWIY2C8BQu4xZC9MdpTuLLR88W6Bm9UfnRYpvZAQedfDwJqjvyiJ4hus3Jz02EZD';
         $chatpage ='Hẹn Hò Bí Mật';   
     break;
     case '101976294907930' :
@@ -136,15 +136,15 @@ switch ($page)
           $chatpage ='Trò chuyện với người lạ';   
       break;
     case '100942361686683' :
-          $token = 'EAADn4qwXcIQBAEdZBzYuxRqZAr8CijEZBDd1X0bZAnpriXSlVU9OXfgnV8PSWHtCynNZBwOnuIB48THJI9nBRfqFOqISXwGTXUgZCfN5rXmcTg1hNXJz94QRZBXXe3MeySwwnx1Y9UINi6Qess5IjQVZBK6vw46GJ7eIRxyYZAbiH6wl0svPoc7ZCHg235NdBUIxEZD';
+          $token = 'EAADn4qwXcIQBAIS3hahIjZCJgBjjkAfZAO941vYmXHPP7veG8sqIIJur99xTFZBMdNGTvqQoWHeKDrbq2eaX5EZAAfpri3SZCAyHOt9MV82hski0ZCC3uQXSpLkZCRFZCa2lMF8Od03uwhs1hEj7ZBUYtxMfGYZBS2fWmVo82EILG90crz8pIe0kbUR9iaGb1TVzQZD';
           $chatpage ='Tâm sự với người lạ';   
       break;
   case '100830175031721' :
-          $token = 'EAADn4qwXcIQBAHq2SPQa4UhJO42sjisSIMzTQKTZCZBsh8sPjw6h3bPl9yFGh2vhOqfmYc14SMYJjMbMxjE5pM3DHGlmSGRDiNghfkU2BAyj4CPuOykTg8QMzsxdZAE1mRJvDykqAZAbDbTkzQL4W2kWJOByZBk7XCQQuAQIScyEBZC3iZBrhVt9scIYNqM93oZD';
+          $token = 'EAADn4qwXcIQBAPkQegVOv5dvNqNn5i0Yar8zSOFD25LZCCwVUswAYZAXtANvw8pjmNZBXqtvHyeMJgOMRsMZBwsnUfIMjo8iurLI6oF88cKwZCq8eokahp12O5Se0xuZAwMDrc2DmADXqA1gIYghX9Tdj3HQiXttFNyV6gExIqFKkIIczuZBH0TA3lLZCO5gRasZD';
           $chatpage ='Chatvn / Trò chuyện với người lạ';   
       break;
    case '101331478314038' :
-          $token = 'EAADn4qwXcIQBAF7Pvl8sszmjGqB2TP3XLZBtmtNOhnzJNcCL8QeZAU942o3uN8qE6Yb2LkrmycWZCnGGJjz1p917nAfwTRw4VIcAUzDebVCyuZAbzLlbs4cict5Punvhm5fdhMzAKE4vXiDLxV7ZBafLGDmN0BudDCHzxE9V0sEDsMPQ8hqy30C8BZAg2YK8kZD';
+          $token = 'EAADn4qwXcIQBABCBMBTnNsLdfb7I81HYZBChSBFFw2kHecpLssDlZB0imqVBJzaNa4rWkWP9OC94Tle4Did5pyArvTb0vLzR2zXfMxTfkWnDwBSfmnWBEdjTTWKbVCXYbXyFKNq0UplvlW47ZBNclaBUl245Qi62YEv1B5DkWMqL8EdPaE5nRTOrZBACZAR0ZD';
           $chatpage ='Chatible Việt Nam';   
       break;
   case '102994474812846' :
@@ -156,19 +156,19 @@ switch ($page)
           $chatpage ='Chatible(mới)';   
       break;
   case '113072477133695' :
-          $token = 'EAADn4qwXcIQBAD65duuuxiwJkifnyenywWRJ1eRiMSA8nKbZA1KxGUyfOMohwgwrempSSPEBs8wpg2Q3STIpTYBkREK4Tf0ZAZAVRalXXhBgppoNsg0rEzIr44p8MqqDkMuIV4ZCI8YCjnNMPCreRZA5MDWiQD2lou6gs4nJz8rgqbML7G7U05luZC9AsRhOUZD';
+          $token = 'EAADn4qwXcIQBAJHfnu9qxeJwJK40YbVnZCRsyJwsbKZAG43kBpd0NQBRUMv2HIn1YpxjuWUdwHlFSTJdC8Q6HmXtWvmYQXV3jTfTH9rnz2QUn7lm5lZBm57SV0WWylwjePLC7xiJmK7TIw48jn31rg0EkaPHZCreifEjM6xpqZCrS8wKvBZBLZAkdSanGttHCQZD';
           $chatpage ='Jonnathan Galino';   
       break;
   case '113807047059856' :
-          $token = 'EAADn4qwXcIQBAEB0UhT6kqZCPxNTQZB6LAr1abo0XCG5U11aze8jGdnFEz3zIw4kV4Olcu0ZAksZCePWofiuCpSNufNJZBCHZB8xwvsIPlLect02NC3OHtN4h9rucKUmkB8IcMGMUragmIaRpXTZCPJ5ioTLMLhgRIEpTKIQQAP5skAq5tHVbWNZB9eOSDlsQVsZD';
+          $token = 'EAADn4qwXcIQBAAgsLKO5j8V8kgHPzLDSyX6nI7BgeQOwgNSO89phKpsN9yZBdXE5rdv2WE9KkCAsLWq8sawW91qIK8DsS0vyrJlA1TSNbvuzVsHZBDRDgPRj15sb5ZCOKwHZAMhgtg26vkwhn8bVqJOj4vZBu2b7rwRa3DO4lCmRWayimE1BWD1MRZBLWHOMoZD';
           $chatpage ='Jonathan Galino';   
       break;
   case '106458167802089' :
-          $token = 'EAADn4qwXcIQBAIxMQS6VDyCZAV0BXcTphSQpj7QKYx2ZB8DbuVIQwt9FxKBkR3IJhQ94CS43HLd5iwoX7rkyh6Ep1ZCBmol7gt7u8FfhLYnScijBu2sDvSdCEWHIQkUA7sGiXKlVg5Gcy9Xe00HUvGD0xsnIA3GNugJeZBBNMZAlFVnieordCiGyAFGzYJU0ZD';
+          $token = 'EAADn4qwXcIQBALcYtMMnuIRkftKlz58rLPgwTzqKTOYUZAUogzoGFNaTe3blACohnzO6ZB0PfmnpKZCgD6AHPavcTwToOpl8MmrRVdCDLZAjcysSC5L6VnnEVcXAsPOj8C2ErKSXHwR1UUqzH17b7aO3ufQwTzxRF02cvhBcdCIZCsZAZA2CZB49O8ZCHcTiDTOIZD';
           $chatpage ='Jonathan Galino VN';   
       break;
   case '104945311288875' :
-          $token = 'EAADn4qwXcIQBABUhPGASJoRm5OGkR48x2bJ3RFIhGn4TQxnGUN6pVfCAwTuP6CnmuZAHua8I1cphKAMNZAB1xe6wjpjZC8TN53ZCYE6PsabO4yrIOFhKqTUV7Vk94vBFev55pPc4Q9fQiaF19Mje75wjHz3Ra82DlRHSAwrjRvdcltIAvhKgQrcEQd3C8a8ZD';
+          $token = 'EAADn4qwXcIQBAKxXkQ6Je17KrDOmmFjSzzntVBUTVmU8MxNklnsU07FSdT1EHgFnLwr29mRFgm82FZBQy1ZCuZBJoIUxvtXH1sQdhYY03u9OszD0Iih7YVUjoT7RTAaGi3ZCrONAC87dqOGkwT5PGvirJoCNtqAuZCCCAWgfwGAWuh1soTejGgrS0oHNZBKS0ZD';
           $chatpage ='Jonnathan Galino VN';   
       break;
 
