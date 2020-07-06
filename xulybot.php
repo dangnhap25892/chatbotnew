@@ -255,6 +255,11 @@ if($getstart['postback']['payload']=="donate"){
           "title":"BLOCK",
           "payload":"endchat",
         },
+         {
+        "content_type":"text",
+        "title":"Tố cáo",
+        "payload":"endchat",
+      },
         {
           "content_type":"text",
           "title":"Không.",
@@ -627,6 +632,11 @@ if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$messag
        {
         "content_type":"text",
         "title":"BLOCK",
+        "payload":"endchat",
+      },
+       {
+        "content_type":"text",
+        "title":"Tố cáo",
         "payload":"endchat",
       },
       {
