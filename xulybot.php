@@ -666,6 +666,35 @@ if ($message=='BLOCK') {
     sendchat($token,$jsonData);
   die();
 }
+if ($message=='Tố cáo') {
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Bạn muốn tố cáo đối phương. Lưu ý nếu lạm dụng hoặc tố cáo sai bạn sẽ bị cấm chat.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"tố cáo",
+        "payload":"endchat",
+      },{
+        "content_type":"text",
+        "title":"Không.",
+        "payload":"Khong",
+      }
+      
+    ]
+  }
+}';
+    sendchat($token,$jsonData);
+  die();
+}
+if ($message=='tố cáo') {
+  header("Location: https://sendchatbot11.herokuapp.com/tocaobot.php?ID=$userID&token=$token");
+  die();
+}
 if($message=='kiemtra2'){
    $jsonData ="{
    'messaging_type' : 'RESPONSE',
