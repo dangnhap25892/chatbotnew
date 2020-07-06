@@ -60,6 +60,7 @@ if (isset($url)){
 }
 else{
     $hihi="Khôngcóảnh";
+	die();
 }
 ?>
 
