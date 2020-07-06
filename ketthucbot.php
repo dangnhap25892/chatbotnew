@@ -74,7 +74,7 @@ $jsonData1 ='{
     "id":"'.$ID.'"
   },
    "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/Tro.Chuyen.Voi.Nguoi.La.VN",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/tha.thinh.vn1",
     }
   
 }';
