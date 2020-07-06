@@ -201,7 +201,7 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
      //mới
       $chiase = getchiase($userid);
   echo $chiase;
-  if($chiase <10 )
+  if($chiase <5 )
   {
   $xu = getxu($userid);
        if($xu<10)
@@ -282,7 +282,7 @@ sendchat($token,$jsonData);
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Đang tìm kiếm theo giới tính bạn -10xu xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.'",
+          "text":"Đang tìm kiếm theo giới tính bạn -10xu xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.'\n Nếu đủ 5 lượt chia sẻ bạn sẽ mở tìm theo giới tính miễn phí.",
           "buttons":[
             {
               "type":"Postback",
