@@ -103,7 +103,7 @@ switch ($page)
         $chatpage ='Chatible Việt Nam';   
     break;
     case '105986961166650' :
-        $token = 'EAADn4qwXcIQBACmJGeSmrlV2KZCiSeKsMxQUXGvKlHFBVBaEOyRWqZCv0iBco50ZABKkClFdRimtns6RzeGK61fbZCc5JuQldA8Aann4YipO8MQrYx13nrY0zFEpf9WBVPSoZBgUkowxUeSuu05GA7V97cADzNz0ivudRcnxg9UhDDdYSV6Wc';
+        $token = 'EAADn4qwXcIQBAOztLTBoAobJ7ZB0UxGs8iOkMGXPVfOBYoILidL1ZAKw5lAOb4irGosDyTfzlj44ACpKt0AzpBE8LkWYeRxg5W2eyDxHIR6T8OPzRu6Lgn389PIZCNGgO9RG7gdTqsqsg147SMjHEX3PjEjtpbffX9uNZCzYyK3yZAZA00IugjvzS8WofwX8gZD';
         $chatpage ='Bạn Muốn Hẹn Hò ?';   
     break;
      case '105184504581236' :
@@ -119,7 +119,7 @@ switch ($page)
         $chatpage ='Hẹn Hò Bí Mật';   
     break;
     case '101976294907930' :
-        $token = 'EAADn4qwXcIQBAOSTi5pjZCKuvmHc91eQKtiHpOTefudylZCMcpmBsRWaIbE3fMb227x3WYqdr3QejZCs4erwZCuP6wjPZBgX7WbsIphIqOTqXTiOOyJosrLCksmjIhbQsUdSIgtZB0GDEE4QwqvUV9xc03UK1h8NTNznwBrmO8iOZCXnpuWWbWN';
+        $token = 'EAADn4qwXcIQBABKq9pMV5DRC41PPqsT4QZCCZBf5u3NTgcxfNngsoRzAIZBKWFYtKlTSDSW6dyNtnQAYHtoiGIiBkkZAcZB1FDg2R42Uje3rOgZAzxhUZC7ZCxvYdkEttxFVL88lHcOEbHluDVAqH2zU2M5He5JvWPNaAoGEZBJ2R6C2T1RFyCLGMR0Mgr8bTUqIZD';
         $chatpage ='Chat ẩn danh';   
     break;
     case '112976050469727' :
