@@ -52,7 +52,24 @@ function getidpage($partner) {
   $relationship = $row['chatfuel'];
   return $relationship;
 }
+//new
+function getxu($partner) {
+  global $conn;
 
+  $result = mysqli_query($conn, "SELECT `xu` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['xu'];
+  return $relationship;
+}
+function getchiase($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chiase` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chiase'];
+  return $relationship;
+}
+//new
 ////// Hàm Gửi JSON //////////
 function sendchat($token,$jsonData)
 {
@@ -83,7 +100,66 @@ function outchat($userid,$token) {
       $idpage = getidpage($partner);
       $page = tokenpage($idpage);
       $tokenpa = $page[0];
- 
+ //new
+     $chiase = getchiase($userid);
+  echo $chiase;
+  if($chiase <10 )
+  {
+  $xu = getxu($userid);
+        if($xu<10)
+       {
+            $jsonData ='{
+    "recipient":{
+      "id": "'.$userid.'"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"Bạn đã hết xu không thể thực hiện tính năng này xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.' chia sẻ để nhận thêm xu.",
+          "buttons":[
+            {
+              "type":"Postback",
+              "title":"Nhận xu",
+              "payload":"chiase"
+            }
+          ]
+        }
+      }
+    }
+  }';
+      sendchat($token,$jsonData);     
+            die();
+       }
+  $xu = $xu - 10;
+  echo $xu;
+    mysqli_query($conn, "UPDATE `users` SET `xu` = $xu WHERE `ID` = $userid");
+   $jsonData ='{
+    "recipient":{
+      "id": "'.$userid.'"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"Bạn đã block đối phương -10xu. \nXu của bạn còn:'.$xu.'xu. Số lần bạn chia sẻ '.$chiase.' đủ 10 lượt chia sẻ bạn mở block không giới hạn",
+          "buttons":[
+            {
+              "type":"Postback",
+              "title":"Nhận xu",
+              "payload":"chiase"
+            }
+          ]
+        }
+      }
+    }
+  }';
+      sendchat($token,$jsonData);
+}
+   //new  
+     
   echo $partner;
   echo $tokenpa;
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
