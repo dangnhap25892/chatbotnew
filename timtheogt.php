@@ -167,6 +167,24 @@ function getidpage($partner) {
   $relationship = $row['chatfuel'];
   return $relationship;
 }
+//moi
+function getxu($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `xu` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['xu'];
+  return $relationship;
+}
+function getchiase($partner) {
+  global $conn;
+
+  $result = mysqli_query($conn, "SELECT `chiase` from `users` WHERE `ID` = $partner");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['chiase'];
+  return $relationship;
+}
+//moi
 //// hàm kiểm tra trạng thái
 function trangthai($userid) {
   global $conn;
@@ -180,6 +198,106 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
   global $conn;
   echo $timgt;
   echo $gioitinh;
+     //mới
+      $chiase = getchiase($userid);
+  echo $chiase;
+  if($chiase <10 )
+  {
+  $xu = getxu($userid);
+       if($xu<10)
+       {
+            $jsonData ='{
+    "recipient":{
+      "id": "'.$userid.'"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"Bạn đã hết xu không thể thực hiện xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.' chia sẻ để nhận thêm xu.",
+          "buttons":[
+            {
+              "type":"Postback",
+              "title":"Nhận xu",
+              "payload":"chiase"
+            }
+          ]
+        }
+      }
+    }
+  }';
+      sendchat($token,$jsonData);
+            $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Cuộc trò chuyện đã kết thúc.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
+      },
+      
+      {
+        "content_type":"text",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      },
+       {
+        "content_type":"text",
+        "title":"9X Tâm Sự",
+        "payload":"endchat",
+      },
+       {
+        "content_type":"text",
+        "title":"Team 2K+",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Menu",
+        "payload":"Menuchat",
+      }
+    ]
+  }
+}';
+
+sendchat($token,$jsonData);
+            die();
+       }
+  $xu = $xu - 10;
+  echo $xu;
+
+  mysqli_query($conn, "UPDATE `users` SET `xu` = $xu WHERE `ID` = $userid");
+   $jsonData ='{
+    "recipient":{
+      "id": "'.$userid.'"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"Đang tìm kiếm theo giới tính bạn -10xu xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.'",
+          "buttons":[
+            {
+              "type":"Postback",
+              "title":"Nhận xu",
+              "payload":"chiase"
+            }
+          ]
+        }
+      }
+    }
+  }';
+      sendchat($token,$jsonData);
+}
+     //mới
+     
   //tìm đối tượng theo giới tính 
 if($gioitinh == "1" AND $timgt =="timnu"  )//nam tìm nữ
 {
