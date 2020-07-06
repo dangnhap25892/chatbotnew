@@ -21,10 +21,76 @@ $image = $input['entry'][0]['messaging'][0]['message']['attachments'][0]['payloa
 $idpage = $input['entry'][0]['id'];
 $quick_reply = $input['entry'][0]['messaging'][0]['message']['quick_reply']['payload'];
 $hihi = $input['entry'][0]['messaging'][0]['postback'];
+$ref = $input['entry'][0]['messaging'][0]['postback']['referral']['ref'];
 
 $page = tokenpage($idpage);
  $token = $page[0];
  $chatpage = $page[1];
+
+if(isset($ref))
+{
+   header("Location: https://sendchatbot11.herokuapp.com/chiaseref.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0&ref=$ref");
+  $jsonData ='{
+    "recipient":{
+      "id": "'.$userID.'"
+    },
+    "message":{
+      "attachment":{
+        "type":"template",
+        "payload":{
+          "template_type":"button",
+          "text":"Chào bạn! \nChat giúp bạn kết nối và trò chuyện với người lạ. Thật thú vị!.Bạn đến từ link chia sẻ.",
+          "buttons":[
+            {
+              "type":"Postback",
+              "title":"Bắt đầu",
+              "payload":"newchat"
+            }
+          ]
+        }
+      }
+    }
+  }';
+      sendchat($token,$jsonData);
+  die();
+  
+}
+if($getstart['postback']['payload']=="chiase" ){
+    $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'Sao chép liên kiết và mời bạn bè sử dụng Halochat. Khi có người mới tham gia Halochat qua liên kết giới thiệu này, bạn sẽ được thưởng 50 xu và 1 lần chia sẻ.Nếu đủ 5 lần chia sẻ bạn sẻ được mở miễn phí tìm kiếm theo giới tính.'
+     }
+ }";
+ sendchat($token,$jsonData);
+  $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'https://m.me/HaloChatVN?ref=".$userID."'
+     }
+ }";
+ sendchat($token,$jsonData);
+    die();
+}
+if($message=='chiase'){
+   $jsonData ="{
+   'messaging_type' : 'RESPONSE',
+   'recipient':{
+     'id': $userID
+   },
+   'message':{
+     'text': 'https://m.me/HaloChatVN?ref=".$userID."'
+     }
+ }";
+ sendchat($token,$jsonData);
+  die();
+ }
 
 if(isset($getstart['postback'])){
   if($getstart['postback']['payload']=="Getstared"||$hihi['title']=="Get Started"||$getstart['postback']['payload']=="GetStared"||$getstart['postback']['payload']=="Get Stared"){
