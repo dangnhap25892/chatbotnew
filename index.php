@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hihi = $_POST['fname'];
     if (empty($hihi)) {
         echo "Không có ảnh";
+	    die();
     } else {
         #echo $name;
 
