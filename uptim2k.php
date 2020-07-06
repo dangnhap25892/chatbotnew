@@ -23,7 +23,8 @@ $gioitinh = 2;
 }
 
 if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever nếu người không có ai trong hàng chờ nam tìm nữ 2 nữ tìm nam 3 nam tìm nam 4 nữ tìm nữ 5 tim 9x 6 tim 2k 7
-    $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 7 , 0,'$chatfuel','$d')";
+    #$sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`) VALUES (".$ID.", 0, 7 , 0,'$chatfuel','$d')";
+  $sql = "INSERT INTO `users` (`ID`, `trangthai`, `hangcho` ,`gioitinh`,`chatfuel`,`token`,`tocao`,`chiase`,`xu`) VALUES (".$ID.", 0, 7 , 0,'$chatfuel','$d',0,0,50)";
    $info = mysqli_query($conn,$sql );
   header("Location: thamgiabottim2k.php?ID=$ID&token=$token");
   }
