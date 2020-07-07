@@ -41,7 +41,7 @@ $jsonData1 ='{
             "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
             "default_action": {
               "type": "web_url",
-              "url": "m.me/106986154392261",
+              "url": "m.me/halochatvn2",
               "webview_height_ratio": "tall"
               
             },
@@ -219,7 +219,7 @@ sendchat($token,$jsonData);
               },
               {
                 "type":"web_url",
-                "url":"m.me/106986154392261",
+                "url":"m.me/halochatvn2",
                 "title":"Thêm bạn chat"
               },
               {
@@ -240,7 +240,7 @@ sendchat($tokenpa,$jsonData1);
     "id":"'.$partner.'"
   },
   "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/Tro.Chuyen.Voi.Nguoi.La.VN",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/halochatvn2",
     }
   
 }';
