@@ -14,14 +14,14 @@ switch ($page)
           $chatpage ='Test chatbot2';
     break;
     case '103303021315529' :
-        $token = 'EAADn4qwXcIQBAPGyai51lZAEBNArE9QXZAOtlHBElI7BoMQj1XxM3FSfbYbBf8YK4zOfxXoOMzVqWCJo21LmbB43RZCuRgGBjFHHxs0ZAXjWmZAjsG8TafsnkWnClLlFeAxJrMoNrH63DWRgpRGCxvgd0PAOUPRFNAD74dNXKzwZDZD';
+        $token = 'EAADn4qwXcIQBADZC1sirPfCZAqhZBBZCnEHz6zKlZBZCoSSfmUAgTvUZAkEucgJ7fhhoGls8MowkC0wUeHVymdGf8E9DIrVO3OXsO1LyLAx1D5O0SPpZBOkB9HhRHjGOhqIXVUufBnJl5pQkvq1dZCUEsyPZBwpiSyCwpY7YfOZABm9CWZBO0mtYN1GoPXoDpNTb3lQZD';
         
         $chatpage ='Thính chat';
     break;
     
         
     case '101355291513790' :
-        $token = 'EAADn4qwXcIQBAGgBXFKdGuIRZBsGw26vcyrGihlxPuJfDAq9zG07iZAzRKfiLDDaZBHSRUe03pRYCahhyDdvBNRrTyycWR3HEQEqQfs0wAc8eZBBHbbyQZC7UsWkqvx56NOOjqw26XUVbU4BOsIHj06m8w1pw2WydBiCOPpZBQZCAZDZD';
+        $token = 'EAADn4qwXcIQBAHqGD0UXNRSDGbf4TK4AB4dZAclyp90POtgidErKZCQzScjyToZCCnZAofRGdGzwTIWyTNzGSjNwv2Lxi1TZCcDhLZADwZAYjYZCCGHmMPvl3U8zlJ0xxYWUwdct7GrVlf1ViSvuFA9NTZAYsH4wyLBTMfQMZCbA5Fyu4ieQ0S8SwyYcsr3QDaKC4ZD';
         $chatpage ='Chat love';   
     break;
      case '103817501348244' :
@@ -136,7 +136,7 @@ switch ($page)
           $chatpage ='Trò chuyện với người lạ';   
       break;
     case '100942361686683' :
-          $token = 'EAADn4qwXcIQBAHQSTi4FqegGZAM9bcnXuirh6I5DzOoDPoIeZALuMnOlXnA4c0ElUsmus0wvf4YBCF6fiYEZAhuWCVQqnRfA6fk4ZBopF9fwOIpwZCF9WUXZCR2DTOJeEj5zL5P48BzXNNsuhmbZBxIyPoA72YrSgY4tVn1yHumowZDZD';
+          $token = 'EAADn4qwXcIQBAE81r75EzRL1Re3GgjRTTS60A7eU8xJMqV76UIygHioEVRL7lrmIGke0GsaWXXbH79ZBnUcYxhTZAWUZBpaW8WpAwGNx8ZCPCs4E7BBF2EcoUfS7wNwpfm8azMbNaDealOZC3DjEr3BM9xSfeU0oXTTUSnvWzF9ZCD7zZA0XiBZClntBpGBdh7wZD';
           $chatpage ='Tâm sự với người lạ';   
       break;
   case '100830175031721' :
@@ -152,7 +152,7 @@ switch ($page)
           $chatpage ='Test bot';   
       break;
   case '114167547018276' :
-          $token = 'EAADn4qwXcIQBAGZBWe0ZBlA7CvU98e72eJ8BQEjsDCZCj0ZAJmcpEYcGtnlmS7By6elmtQ770DFTQFZBOOZC45UEIw6dNKjypS60IhRBnmr0jPkMxZCiuLhtPiSMDmSlkkwbpt5BSpuYZCzPQkXA77tzNrPPhZCDRsZC3HBBYJ3DTnAQZDZD';
+          $token = 'EAADn4qwXcIQBAOILyqZBZBzOkdU6dHhPnbJKrN4UZAjxcsWdPzzGh8dPivdztrW4ZAgmrcZAf7u3f4oMK8bv3Pi5gfQSwCaiQPAEp2ZCZBZCsuZBFeRIuTHrB4R9h14xqFGlddgFuFefD1VxWE58ZBuU7eghRIkPrIM8Gk9cn6CnZCcmqFyaXg9sqCoLabwApoLns4ZD';
           $chatpage ='Chatible(mới)';   
       break;
   case '113072477133695' :
@@ -184,7 +184,7 @@ switch ($page)
           $chatpage ='Halo Chat';   
       break;
   case '108389334277236' :
-          $token = 'EAADn4qwXcIQBADXPYl0aUZBAIIuQViIgeRZCPhWVDUSvzIZBPSZBWn3UWyUdfwJMONeXMilbv0NnZC57tEQfgSMaedbdTsLqKQKY1S3ci84R6UNTUAmAb3ouf9aRBt3KoOif8JBDubqFez2SGYRQCipXXRhFke8cFj515vjHDlwZDZD';
+          $token = 'EAADn4qwXcIQBANXYnhq23VKWlf8lklRZB56nZC1BnZBOdXBBwP0MPBSWiSr6u41tbAkMeLyxRCkER2Q0FGTaQ9B8BHi00AZBhZAOZBGQiqZB0ijTuYFHbZAThbB50T68FZAdutqmwkHroqyFOkcZAr5sbyjJO1MurZAwrhOsFaVfj0YTBQyE2rqrbMLCcDcEeUEBGEZD';
           $chatpage ='Halochat';   
       break;
   
