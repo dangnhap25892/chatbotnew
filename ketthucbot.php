@@ -74,7 +74,7 @@ $jsonData1 ='{
     "id":"'.$ID.'"
   },
    "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/tha.thinh.vn1",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/halochatvn2",
     }
   
 }';
@@ -240,7 +240,7 @@ sendchat($tokenpa,$jsonData1);
     "id":"'.$partner.'"
   },
   "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/ThinhChatVN\n m.me/halochatvn2",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/halochatvn2",
     }
   
 }';
