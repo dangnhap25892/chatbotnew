@@ -72,7 +72,7 @@ if($getstart['postback']['payload']=="chiase" ){
      'id': $userID
    },
    'message':{
-     'text': 'https://m.me/HaloChatVN?ref=".$userID."'
+     'text': 'https://m.me/Halochat.VN1?ref=".$userID."'
      }
  }";
  sendchat($token,$jsonData);
