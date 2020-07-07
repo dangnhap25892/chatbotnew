@@ -176,7 +176,7 @@ switch ($page)
           $chatpage ='Jonnathan Galino VN';   
       break;
  case '100549118397625' :
-          $token = 'EAADn4qwXcIQBAF0kkmA3LojP77QuZASWTbCVQa68f6GejfS5kPY056wTs4SAHyyQ1jr15i1eWOlPrDZBiMtmvIKJ9IWa81C6lP2dyYNSVK26cSAnCb61oS2KQnFg52j92xTFujKZCmyx48ZBgj17wmlBoDgPscHuCiuRH0qDPjPGin4rmDD0fWeJ1IPsSOcZD';
+          $token = 'EAADn4qwXcIQBAHhz0ZAFZAll15estXrikaUZBp5JwdGn4NC1JRRo7yBAstUh9BlZB2nYAwWhXfGw2LrhJDqglRCd69OHlcpv23zXbQJ3I341syXFATQRDGy3xJM57JJsTUbboFDTThZADqkMZAxs4ysCA4968BGO7AKP93G19ZBl9MPMQWZAV9LW5YNdZCZBBBI6gZD';
           $chatpage ='HaloChat';   
       break;
   
