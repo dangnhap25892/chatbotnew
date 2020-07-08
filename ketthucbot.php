@@ -26,49 +26,7 @@ if (!$conn) {
   ]
 }';
 }
-$jsonData1 ='{
-  "recipient":{
-    "id":"'.$ID.'"
-  },
-   "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Này bạn ơi...",
-            "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
-            "default_action": {
-              "type": "web_url",
-              "url": "m.me/halochatvn2",
-              "webview_height_ratio": "tall"
-              
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.facebook.com/groups/3321905804486436/",
-                "title":"Tìm lại bạn chat"
-              },
-              {
-                "type":"web_url",
-                "url":"m.me/ThinhChatVN",
-                "title":"Thêm bạn chat"
-              },
-              {
-                "type":"postback",
-                "title":"Ủng hộ donate",
-                "payload":"donate"
-              }              
-            ]      
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData1);
+
 $jsonData1 ='{
   "recipient":{
     "id":"'.$ID.'"
@@ -191,50 +149,7 @@ function outchat($userid,$token) {
   }
 }';
 sendchat($token,$jsonData);
-    $jsonData1 ='{
-  "recipient":{
-    "id":"'.$partner.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Này bạn ơi...",
-        
-            "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
-            "default_action": {
-              "type": "web_url",
-              "url": "m.me/ThinhChatVN",
-              "webview_height_ratio": "tall"
-              
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.facebook.com/groups/3321905804486436/",
-                "title":"Tìm lại bạn chat"
-              },
-              {
-                "type":"web_url",
-                "url":"m.me/halochatvn2",
-                "title":"Thêm bạn chat"
-              },
-              {
-                "type":"postback",
-                "title":"Ủng hộ donate",
-                "payload":"donate"
-              }              
-            ]      
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($tokenpa,$jsonData1);
+   
     $jsonData1 ='{
   "recipient":{
     "id":"'.$partner.'"
