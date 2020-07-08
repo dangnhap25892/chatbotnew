@@ -301,7 +301,7 @@ sendchat($token,$jsonData);
 
 
 if ($message=='upxuloi') {
-  header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+  header("Location: $link1/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
   die();
 }
 
