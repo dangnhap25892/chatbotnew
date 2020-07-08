@@ -263,7 +263,7 @@ if(isset($noidung)){
          
          $admin ='{ 
     "recipient":{
-    "id": "3914040262003252"
+    "id": "3127373160717221"
   },
   "message":{
     "attachment":{
@@ -275,10 +275,10 @@ if(isset($noidung)){
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZBo11AcKyNhK1tqxayXyHSsQtZCk4ZAx0WFcsq17aixWO7Tnoxv5hvz8ALPt2d0mZBwiFQAxMx7ryw0tLCPlsgj5vx9NXiX0k4QiZCGnPIZAEg40wOwGpH3tAT0wZD,$admin);
+sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"3914040262003252"
+    "id":"3127373160717221"
   },
   "message":{
     "attachment":{
@@ -297,7 +297,7 @@ sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZ
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZBo11AcKyNhK1tqxayXyHSsQtZCk4ZAx0WFcsq17aixWO7Tnoxv5hvz8ALPt2d0mZBwiFQAxMx7ryw0tLCPlsgj5vx9NXiX0k4QiZCGnPIZAEg40wOwGpH3tAT0wZD,$admin);
+sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
 
   if($isNude == 0)
 {
@@ -307,7 +307,7 @@ else
 {
     $admin ='{ 
     "recipient":{
-    "id": "3914040262003252"
+    "id": "3127373160717221"
   },
   "message":{
     "attachment":{
@@ -319,10 +319,10 @@ else
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZBo11AcKyNhK1tqxayXyHSsQtZCk4ZAx0WFcsq17aixWO7Tnoxv5hvz8ALPt2d0mZBwiFQAxMx7ryw0tLCPlsgj5vx9NXiX0k4QiZCGnPIZAEg40wOwGpH3tAT0wZD,$admin);
+sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"3914040262003252"
+    "id":"3127373160717221"
   },
   "message":{
     "attachment":{
@@ -341,7 +341,7 @@ sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZ
     }
   }
 }';
-sendchat(EAADn4qwXcIQBAByih0f9R8zUu6ua5c1bPX5BrAucIL5pdx3RSLpvrpckatvzjHi9hoEHdZBo11AcKyNhK1tqxayXyHSsQtZCk4ZAx0WFcsq17aixWO7Tnoxv5hvz8ALPt2d0mZBwiFQAxMx7ryw0tLCPlsgj5vx9NXiX0k4QiZCGnPIZAEg40wOwGpH3tAT0wZD,$admin);
+sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
     
 }
   }
