@@ -160,44 +160,49 @@ if(isset($getstart['postback'])){
   }
   
   if($getstart['postback']['payload']=="Menuchat"){
-    $jsonData ='{
-    "recipient":{
-      "id":"'.$userID.'"
-    },
-    "messaging_type": "RESPONSE",
-    "message":{
-      "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.",
-      "quick_replies":[
-        {
-          "content_type":"text",
-          "title":"Chat ngẫu nhiên",
-          "payload":"newchat",
-        },
-        {
-          "content_type":"text",
-          "title":"Tìm theo giới tính",
-          "payload":"endchat",
-        },
-        {
-          "content_type":"text",
-          "title":"Kết Thúc",
-          "payload":"endchat",
-        },
-        {
-          "content_type":"text",
-          "title":"Hướng dẫn",
-          "payload":"huongdan",
-        },
-        
-        {
-          "content_type":"text",
-          "title":"Menu",
-          "payload":"Menuchat",
-        }
-      ]
+    $jsonData1 ='{
+  "recipient":{
+    "id":"'.$userID.'"
+  },
+   "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Này bạn ơi...",
+            "subtitle":"Bạn tham gia Group để tìm lại bạn chat\nGroup mới tạo nên bạn vào giúp Group lớn mạnh nhé.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/halochatvn2",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/groups/3321905804486436/",
+                "title":"Tìm lại bạn chat"
+              },
+              {
+                "type":"web_url",
+                "url":"m.me/ThinhChatVN",
+                "title":"Thêm bạn chat"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
     }
-  }';
-    sendchat($token,$jsonData);
+  }
+}';
+sendchat($token,$jsonData1);
     die();
   }
 if($getstart['postback']['payload']=="donate"){
