@@ -26,10 +26,11 @@ $ref = $input['entry'][0]['messaging'][0]['postback']['referral']['ref'];
 $page = tokenpage($idpage);
  $token = $page[0];
  $chatpage = $page[1];
+$link1='https://sendchatbot11.herokuapp.com';
 
 if(isset($ref))
 {
-   header("Location: https://sendchatbot11.herokuapp.com/chiaseref.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0&ref=$ref");
+   header("Location: $link1/chiaseref.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0&ref=$ref");
   $jsonData ='{
     "recipient":{
       "id": "'.$userID.'"
@@ -273,7 +274,7 @@ if($getstart['postback']['payload']=="donate"){
     die();
 }
 if($getstart['postback']['payload']=="sualoi"){
-    header("Location: https://sendchatbot11.herokuapp.com/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
+    header("Location: $link1/upxuloi.php?ID=$userID&token=$token&chatfuel=$idpage&gt=0");
     die();
 }
   if($getstart['postback']['payload']=="iphone" ){
