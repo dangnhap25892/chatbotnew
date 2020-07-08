@@ -683,7 +683,7 @@ if ($message=='Tố cáo') {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn muốn tố cáo đối phương. Lưu ý nếu lạm dụng hoặc tố cáo sai bạn sẽ bị cấm chat.",
+    "text": "Bạn muốn tố cáo đối phương.",
     "quick_replies":[
       {
         "content_type":"text",
