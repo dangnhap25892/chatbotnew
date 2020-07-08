@@ -127,7 +127,7 @@ switch ($page)
           $chatpage ='Chatvn / Trò chuyện với người lạ';   
       break;
     case '108476120868313' :
-          $token = 'EAADn4qwXcIQBAI6hNHyJsozNRbKK1EZAjZASlKawyjK0adKzu6bYsOeoOC1HpBnpor7SDjpqohEU912VFTxFHXY20BhfwBXCPzrElbHKDYOgpJC3DimDAVq9BBshfR7P7RL9juMUZCCd35ZBoy68lC6ZAmBaPa4Y8CRFZCoXZATguQGuLicHce8ZBsOddjfdlBUZD';
+          $token = 'EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD';
           $chatpage ='Test1';   
       break;
     // mới 29/6/2020
