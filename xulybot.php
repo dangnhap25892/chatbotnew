@@ -683,7 +683,7 @@ if ($message=='Tố cáo') {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn muốn tố cáo đối phương.",
+    "text": "Bạn muốn tố cáo đối phương. Những hành vi xấu như là show ảnh nhạy cảm chat gạ chịch.",
     "quick_replies":[
       {
         "content_type":"text",
