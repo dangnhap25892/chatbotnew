@@ -32,7 +32,7 @@ $jsonData1 ='{
     "id":"'.$ID.'"
   },
    "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/tam.su.voi.nguoi.la.vn1",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/tam.su.voi.nguoi.la.vn1\nm.me/HaloChatVN",
     }
   
 }';
@@ -155,7 +155,7 @@ sendchat($token,$jsonData);
     "id":"'.$partner.'"
   },
   "message":{
-    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/tam.su.voi.nguoi.la.vn1",
+    "text": "❤️❤️Tìm thêm bạn chat❤️❤️ \nm.me/tam.su.voi.nguoi.la.vn1\nm.me/HaloChatVN",
     }
   
 }';
