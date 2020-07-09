@@ -388,7 +388,7 @@ if ($type=="image")
 }
 if ($type=="audio")
 {
-  header("Location: $link1/sendaudio.php?id=$userID&noidung=$image");
+  header("Location: https://halochatbot1sendchat99.herokuapp.com/sendaudio.php?id=$userID&noidung=$image");
     die();
 }
      if(isset($type)){
