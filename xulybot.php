@@ -292,7 +292,7 @@ if($getstart['postback']['payload']=="sualoi"){
     "attachment":{
       "type":"image", 
       "payload":{
-        "url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/80790050_611484762822988_283072567831756379_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=2rsq9GEA5nkAX-e43OU&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=01ede6a5cabb1b97e57e0e2f4f95890b&oe=5F1F586F", 
+        "url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/107800634_275005093824055_7505363074398219503_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_ohc=wRKD2jJCx74AX-un3xB&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=2aaf26f4bc69587af1fd5feb22d93816&oe=5F2B0CE1", 
         "is_reusable":true
       }
     }
