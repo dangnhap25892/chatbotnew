@@ -14,7 +14,7 @@ switch ($page)
           $chatpage ='Test chatbot2';
     break;
     case '103303021315529' :
-        $token = 'EAADn4qwXcIQBADZC1sirPfCZAqhZBBZCnEHz6zKlZBZCoSSfmUAgTvUZAkEucgJ7fhhoGls8MowkC0wUeHVymdGf8E9DIrVO3OXsO1LyLAx1D5O0SPpZBOkB9HhRHjGOhqIXVUufBnJl5pQkvq1dZCUEsyPZBwpiSyCwpY7YfOZABm9CWZBO0mtYN1GoPXoDpNTb3lQZD';
+        $token = 'EAADn4qwXcIQBALFZBpgR0bEi3qHZBYAecmkK8SLZAAk2jd2ikIhhFVjX6qfAUcwEQRIYn5gDCQl0CGZC1A3Br5v79nttWPicVwvibXuEt8EJZBXAO5oSgQmnZBver3VbHXZBZARu2rHtzQsaAb2jrZA8a262tptZCiLx8ZB4wvvtSur33l0CPGWQk9PwIkZAZBGQ5SWMZD';
         
         $chatpage ='Thính chat';
     break;
