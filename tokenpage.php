@@ -136,7 +136,7 @@ switch ($page)
           $chatpage ='Trò chuyện với người lạ';   
       break;
     case '100942361686683' :
-          $token = 'EAADn4qwXcIQBAE81r75EzRL1Re3GgjRTTS60A7eU8xJMqV76UIygHioEVRL7lrmIGke0GsaWXXbH79ZBnUcYxhTZAWUZBpaW8WpAwGNx8ZCPCs4E7BBF2EcoUfS7wNwpfm8azMbNaDealOZC3DjEr3BM9xSfeU0oXTTUSnvWzF9ZCD7zZA0XiBZClntBpGBdh7wZD';
+          $token = 'EAADn4qwXcIQBAKXyZBWScz2iHWOuZBIkganmao7UgeaxZCT59dfBr4xL1y01vXPZCqGZAFiVqeID6fjHKDCftk052CZArtmovktUZCoZB1OavsC1Xa7UYhqG0T32hMSqLqO58EBw4NqCu4gZCZBrK9hBETRqMPyVVlK3mlnpt7xxQI5CNLSFdUusTVJlMVULCZAdSsZD';
           $chatpage ='Tâm sự với người lạ';   
       break;
   case '100830175031721' :
