@@ -263,7 +263,7 @@ if(isset($noidung)){
          
          $admin ='{ 
     "recipient":{
-    "id": "3127373160717221"
+    "id": "3687458354602826"
   },
   "message":{
     "attachment":{
@@ -278,7 +278,7 @@ if(isset($noidung)){
 sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"3127373160717221"
+    "id":"3687458354602826"
   },
   "message":{
     "attachment":{
@@ -307,7 +307,7 @@ else
 {
     $admin ='{ 
     "recipient":{
-    "id": "3127373160717221"
+    "id": "3687458354602826"
   },
   "message":{
     "attachment":{
@@ -322,7 +322,7 @@ else
 sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BMXWLcp1rWXZCNnGn6VcfLQ9DB4UsiWmyR4lX7kCL5bNmMszb8Y2XKmeCumZCJ2ZAoeRb7OgVRIRmFBs0byhotrGF9CwNiSsFnqguCbV73L4HKqQRAxyBtGgyU0sZD,$admin);
     $admin ='{
   "recipient":{
-    "id":"3127373160717221"
+    "id":"3687458354602826"
   },
   "message":{
     "attachment":{
