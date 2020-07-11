@@ -87,7 +87,7 @@ else
 		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
 		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
 		<!-- https://publishers.propellerads.com/ -->
-	<h2>Ảnh ở dưới</h2>
+	
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'dc5121e073d0b5024c8851c4fa4579fc',
