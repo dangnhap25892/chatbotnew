@@ -80,17 +80,8 @@ else
 	}
 </style>
 <body>
-	<!-- https://a-ads.com?partner=1428035 -->
-	<iframe data-aa="1428035" src="//ad.a-ads.com/1428035?size=120x60" scrolling="no" style="width:120px; height:60px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
-<!-- https://a-ads.com?partner=1428035 -->
-	<!-- https://beta.propellerads.com/ Popunder
-	<script type='text/javascript' src='//pl15581752.profitablegate.com/de/96/95/de96957bc1028ca8e540943ac775062a.js'></script>
-	<!-- https://beta.propellerads.com/ -->
-	<!-- https://publishers.propellerads.com/  
-		<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3364458,document.body||document.documentElement)</script>
-		<script src="https://propu.sh/pfe/current/tag.min.js?z=3367736" data-cfasync="false" async></script>
-		<!-- https://publishers.propellerads.com/ -->
-	
+	<!-- Quảng cáo -->
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  300x250_1 -->
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'dc5121e073d0b5024c8851c4fa4579fc',
@@ -99,10 +90,9 @@ else
 		'width' : 300,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/dc5121e073d0b5024c8851c4fa4579fc/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/dc5121e073d0b5024c8851c4fa4579fc/invoke.js"></scr' + 'ipt>');
 </script>
-	<!-- https://beta.propellerads.com/ -->
-	<!-- https://beta.propellerads.com/ -->
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  300x50_1 -->
 	<script type="text/javascript">
 	atOptions = {
 		'key' : '5b8af646bd8073edd466651a45a066a8',
@@ -111,10 +101,11 @@ else
 		'width' : 320,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/5b8af646bd8073edd466651a45a066a8/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/5b8af646bd8073edd466651a45a066a8/invoke.js"></scr' + 'ipt>');
 </script>
-	<!-- https://beta.propellerads.com/ -->
-	
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  300x50_1 -->
+	<!-- Quảng cáo -->
+	<!-- Quảng cáo -->
      <h1 style="1">
 	     
         <p>Ảnh người lạ đã gửi cho bạn</p>
@@ -132,18 +123,8 @@ else
       <br> People can talk with each other, send messages, photos, videos to each other and share their interesting stories.
     </small>
   </p>
-	<!-- https://beta.propellerads.com/ 
-	<script type="text/javascript">
-	atOptions = {
-		'key' : 'fe68e43250345f57adacbd19c67b8d11',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bestdisplayformats.com/fe68e43250345f57adacbd19c67b8d11/invoke.js"></scr' + 'ipt>');
-</script>
-	<!-- https://beta.propellerads.com/ -->
+	<!-- Quảng cáo -->
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  468x60_1 -->
 	<script type="text/javascript">
 	atOptions = {
 		'key' : '4bf0e2ab2f639cd82b8e0cb09bafba81',
@@ -152,28 +133,25 @@ else
 		'width' : 468,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/4bf0e2ab2f639cd82b8e0cb09bafba81/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/4bf0e2ab2f639cd82b8e0cb09bafba81/invoke.js"></scr' + 'ipt>');
 </script>
-	<!-- https://beta.propellerads.com/ -->
-	<script async="async" data-cfasync="false" src="//pl15577867.passtechusa.com/ff3a32547adb4311f7dfa0aede354000/invoke.js"></script>
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  NativeBanner_1 -->
+	<script async="async" data-cfasync="false" src="//w3plywbd72pf.com/ff3a32547adb4311f7dfa0aede354000/invoke.js"></script>
 <div id="container-ff3a32547adb4311f7dfa0aede354000"></div>
-	
-	<!-- https://beta.propellerads.com/ -->
-	<script type="application/javascript" data-idzone="3901452" src="https://a.exdynsrv.com/nativeads.js" ></script>
-	
-	<!-- https://beta.propellerads.com/ -->
-	<script type="application/javascript">
-    var ad_idzone = "3901062",
-    ad_width = "160",
-    ad_height = "600"
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  SocialBar_1 -->
+	<script type='text/javascript' src='//w3plywbd72pf.com/97/e1/52/97e152760174a26cf4e0934996daf82a.js'></script>
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  160x300_1 -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '01a7d2ae60a14be7b40cec0a732f0ff6',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/01a7d2ae60a14be7b40cec0a732f0ff6/invoke.js"></scr' + 'ipt>');
 </script>
-<script type="application/javascript" src="https://a.exdynsrv.com/ads.js"></script>
-<noscript>
-    <iframe src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=3901062&output=noscript&type=160x600" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
-	<!-- https://beta.propellerads.com/ -->
-	<script type='text/javascript' src='//pl15578078.passtechusa.com/97/e1/52/97e152760174a26cf4e0934996daf82a.js'></script>
-	<!-- https://beta.propellerads.com/ -->
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  728x90_1 -->
 	<script type="text/javascript">
 	atOptions = {
 		'key' : 'b8b283af2c12a9494dfd747f1c0f4729',
@@ -184,6 +162,7 @@ else
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/b8b283af2c12a9494dfd747f1c0f4729/invoke.js"></scr' + 'ipt>');
 </script>
+	<!-- Quảng cáo -->
 	<!-- https://beta.publishers.adsterra.com// -->
 	
 </body>
