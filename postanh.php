@@ -80,7 +80,7 @@ setTimeout("auto_sub()",0);
 
 <body onLoad="auto_sub1();">
 <form name="form" method="post" action="index.php">
-	<textarea type="text" name="fname" value=<?php echo "$hihi"?> >
+	<input type="text" name="fname" value=<?php echo "$hihi"?> >
 </form>
 <!--
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
