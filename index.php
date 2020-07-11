@@ -174,5 +174,17 @@ else
 	<!-- https://beta.propellerads.com/ -->
 	<script type='text/javascript' src='//pl15578078.passtechusa.com/97/e1/52/97e152760174a26cf4e0934996daf82a.js'></script>
 	<!-- https://beta.propellerads.com/ -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'b8b283af2c12a9494dfd747f1c0f4729',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/b8b283af2c12a9494dfd747f1c0f4729/invoke.js"></scr' + 'ipt>');
+</script>
+	<!-- https://beta.publishers.adsterra.com// -->
+	
 </body>
 </html>
