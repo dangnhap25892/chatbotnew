@@ -112,5 +112,16 @@ else
 	<script async="async" data-cfasync="false" src="//pl15588055.profitablegate.com/afd0bff84920629a844bf1a7156e8a1d/invoke.js"></script>
 <div id="container-afd0bff84920629a844bf1a7156e8a1d"></div>
 	
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'fadd456465c562262d019c0895272c8a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/fadd456465c562262d019c0895272c8a/invoke.js"></scr' + 'ipt>');
+</script>
+	
   </body>
 </html>
