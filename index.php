@@ -80,6 +80,9 @@ else
 	}
 </style>
 <body>
+	<!-- https://a-ads.com?partner=1428035 -->
+	<iframe data-aa="1428035" src="//ad.a-ads.com/1428035?size=120x60" scrolling="no" style="width:120px; height:60px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+<!-- https://a-ads.com?partner=1428035 -->
 	<!-- https://beta.propellerads.com/ Popunder
 	<script type='text/javascript' src='//pl15581752.profitablegate.com/de/96/95/de96957bc1028ca8e540943ac775062a.js'></script>
 	<!-- https://beta.propellerads.com/ -->
