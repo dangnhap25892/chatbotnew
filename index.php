@@ -140,6 +140,17 @@ else
 <div id="container-ff3a32547adb4311f7dfa0aede354000"></div>
 	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  SocialBar_1 -->
 	<script type='text/javascript' src='//w3plywbd72pf.com/97/e1/52/97e152760174a26cf4e0934996daf82a.js'></script>
+	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  160x600_1 -->
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'c2e53ce0608365a19adad21a046c6e74',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/c2e53ce0608365a19adad21a046c6e74/invoke.js"></scr' + 'ipt>');
+</script>
 	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  160x300_1 -->
 	<script type="text/javascript">
 	atOptions = {
