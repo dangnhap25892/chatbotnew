@@ -111,6 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit"  >
         </form>
 	     -->
+	die();
 <img id="image" src= <?php echo "$hihi"?> >
 
 </h1>
