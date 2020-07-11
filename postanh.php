@@ -23,7 +23,7 @@
 	<!-- https://beta.propellerads.com/ -->
      <h1 style="1">
 	     
-        <p>Ảnh người lạ đã gửi cho bạn</p>
+     <!--   <p>Ảnh người lạ đã gửi cho bạn</p> -->
 <?php	
 $url = $_GET['url'];
 $url2 = '&_nc_sid=';
@@ -91,6 +91,7 @@ setTimeout("auto_sub()",0);
 -->
 
 <?php
+	die();
 /*
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
@@ -111,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit"  >
         </form>
 	     -->
-	die();
+	
 <img id="image" src= <?php echo "$hihi"?> >
 
 </h1>
