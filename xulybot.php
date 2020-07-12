@@ -457,7 +457,7 @@ if ($message=='Menu') {
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.",
+    "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.\nhttps://www.facebook.com/groups/halochatvoinguoila/",
     "quick_replies":[
       {
         "content_type":"text",
