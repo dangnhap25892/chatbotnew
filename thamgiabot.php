@@ -189,10 +189,10 @@ function ketnoi($userid,$gioitinh,$token) { //tìm người chát
   //tìm đối tượng theo giới tính 
 
   if($gioitinh == 2){// nếu giới tính là nữ thì kiếm người mang giới tính nam hoăc giới tính nữ
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 2 OR `hangcho` = 5) AND `gioitinh` = 1 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND (`hangcho` = 2 OR `hangcho` = 5)  AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   //echo "result : " . $result."<br>";
   }else if($gioitinh == 1){// giới tính là nam thì tìm kiếm người là nữ
-  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  (`hangcho` = 3 OR `hangcho` = 4) AND `gioitinh` = 2 AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
+  $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  (`hangcho` = 3 OR `hangcho` = 4)  AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
   }
   else{ // không xác thì tìm kiếm người không xác định
   $result = mysqli_query($conn, "SELECT `ID` FROM `users` WHERE `ID` != $userid AND  `hangcho` = 1  AND `ID` NOT IN (SELECT `idBlocked` FROM `block` WHERE `idBlock` = $userid) LIMIT 1");
