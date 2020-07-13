@@ -5,29 +5,7 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
 $noidung = $_GET['noidung'];
 $token = $_GET['token'];
- if ($conn->connect_error)  {
-     $jsonData ='{
-  "recipient":{
-    "id":"'.$userid.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Lỗi!",
-            "subtitle":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau.",
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData);
-die();
-}
+
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
@@ -139,14 +117,14 @@ if($partner!= 0){
  # $tokenpa = gettoken($partner);
 if(isset($noidung)){
  
- 
+ /*
       $d = date(d);
       $h = date(h);
       $time = ("d".$d."h".$h."");
   mysqli_query($conn, "UPDATE `users` SET `token` = '$d' WHERE `ID` = $userid");
   echo $partner;
   echo $tokenpa;
- 
+ */
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
