@@ -187,6 +187,6 @@ sendchat($token,$jsonData);
 die();
     }
 }
-mysqli_close($conn);
+#mysqli_close($conn);
 die();
 ?>
