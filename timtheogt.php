@@ -360,7 +360,7 @@ else
         "template_type":"generic",
         "elements":[
            {
-            "title":"Đang tìm kiếm...",
+            "title":"Tìm kiếm sẽ mất 1 thời gian...",
             "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
           }
         ]
