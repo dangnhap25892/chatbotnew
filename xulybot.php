@@ -747,7 +747,7 @@ if($hi == 2)
   if($hi == 4)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-    header("Location: https://halochatbot1sendchat2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+    header("Location: https://halochatbot1sendchat1.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
 }
   if($hi == 5)
 {
