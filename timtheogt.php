@@ -457,20 +457,32 @@ sendchat($token,$jsonData);
     "id":"'.$userid.'"
   },
   "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"⛔️ CẢNH BÁO",
-            "subtitle":"Bạn đang được kết nối chát với người khác ! Hãy gõ \'End\' để thoát",
-          }
-        ]
-      }
+      "text": "Bạn phải kết thúc cuộc trò chuyện trước khi bắt đầu cuộc trò chuyện mới. Gõ pp hoặc end chat để kết thúc",
+      "quick_replies":[
+        {
+          "content_type":"text",
+          "title":"Kết thúc",
+          "payload":"endchat",
+        },
+        {
+          "content_type":"text",
+          "title":"BLOCK",
+          "payload":"endchat",
+        },
+         {
+        "content_type":"text",
+        "title":"Tố cáo",
+        "payload":"endchat",
+      },
+        {
+          "content_type":"text",
+          "title":"Không.",
+          "payload":"Khong",
+        }
+        
+      ]
     }
-  }
-}';
+  }';
 sendchat($token,$jsonData);
 }
 #mysqli_close($conn);
