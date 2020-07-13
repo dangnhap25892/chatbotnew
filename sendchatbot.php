@@ -44,7 +44,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
 
 
 */
-    curl_close($ch);
+   # curl_close($ch);
     die();
     
 }
