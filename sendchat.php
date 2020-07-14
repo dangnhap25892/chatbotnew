@@ -1,7 +1,5 @@
 <?php
-require_once 'config.php'; //lấy thông tin từ config
-require_once ('tokenpage.php'); 
-$conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
+
 $partner = $_GET['id'];
 $noidung = $_GET['noidung'];
 $tokenpa = $_GET['token'];
@@ -27,4 +25,5 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
    
 }
 sendchat2($noidung,$partner,$tokenpa);
+die();
 ?>
