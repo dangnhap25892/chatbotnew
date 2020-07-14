@@ -100,7 +100,7 @@ function outchat($userid,$token) {
       $idpage = getidpage($partner);
       $page = tokenpage($idpage);
       $tokenpa = $page[0];
-     /*
+     
  //new
      $chiase = getchiase($userid);
   echo $chiase;
@@ -160,7 +160,7 @@ function outchat($userid,$token) {
       sendchat($token,$jsonData);
 }
    //new  
-     */
+     
   echo $partner;
   echo $tokenpa;
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
