@@ -144,7 +144,7 @@ if($hi == 2)
   
 
   
-sendchat2($noidung,$partner,$tokenpa);
+#sendchat2($noidung,$partner,$tokenpa);
 die();
 }
 
