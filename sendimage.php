@@ -242,6 +242,12 @@ function getidpage($partner) {
   $relationship = $row['chatfuel'];
   return $relationship;
 }
+function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
+  $row = mysqli_num_rows($result);
+  return $row;
+}
 $partner = getRelationship($userid);
 
 if($partner!= 0){
@@ -366,7 +372,39 @@ die();
 
      }
 else{
-  mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
+  if ( !isUserExist($userid) ) {
+     $jsonData ='{
+  "recipient":{
+    "id": "'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Tin nhắn chưa gửi đi\nHiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.\nVui lòng ấn vào sửa lỗi.",
+        "buttons":[
+          {
+            "type":"Postback",
+            "title":"Sửa lỗi",
+            "payload":"sualoi"
+          },
+          {
+            "type":"Postback",
+            "title":"Thông tin chi tiết",
+            "payload":"thongtin"
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
+die();
+  }
+    else
+    {
+    mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
@@ -388,5 +426,6 @@ else{
 }';
 sendchat($token,$jsonData);
 die();
+    }
 }
 ?>
