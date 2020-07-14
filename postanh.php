@@ -83,7 +83,7 @@ setTimeout("auto_sub()",0);
 	<input type="hidden" name="fname" value=<?php echo "$hihi"?> >
 </form>
 <!--
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<form method="post" action="<?php die(); echo $_SERVER['PHP_SELF'];?>">
   Name: <input type="text" name="fname" value="jbgtyfrdesrdtyj" >
   
   <input type="submit" onLoad="auto_sub1();">
