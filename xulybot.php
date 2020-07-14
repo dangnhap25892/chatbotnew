@@ -382,13 +382,13 @@ if ($message=='upxuloi') {
    if(isset($type)){
 if ($type=="image")
 {
-  header("Location: https://halochatbot1sendchat99.herokuapp.com/sendimage.php?id=$userID&noidung=$image");
+  header("Location: $link1/sendimage.php?id=$userID&noidung=$image");
   #sendchat2($image,$userID,$token);
     die();
 }
 if ($type=="audio")
 {
-  header("Location: https://halochatbot1sendchat99.herokuapp.com/sendaudio.php?id=$userID&noidung=$image");
+  header("Location: $link1/sendaudio.php?id=$userID&noidung=$image");
     die();
 }
      if(isset($type)){
@@ -405,7 +405,7 @@ if ($type=="video")
  }";
  sendchat($token,$jsonData);*/
   #header("Location: sendimage.php?id=$userID&noidung=$image");
-  header("Location: https://halochatbot1sendchat99.herokuapp.com/sendvideo.php?id=$userID&noidung=$image");
+  header("Location: $link1/sendvideo.php?id=$userID&noidung=$image");
     die();
 }
      }
