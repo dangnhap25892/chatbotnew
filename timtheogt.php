@@ -215,7 +215,7 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã hết xu không thể thực hiện xu của bạn còn: '.$xu.'xu.\nSố lần bạn chia sẻ '.$chiase.'\n chia sẻ để nhận thêm xu.",
+          "text":"Bạn đã hết xu💰 không thể thực hiện xu của bạn còn: '.$xu.'xu💰.\nSố lần bạn chia sẻ '.$chiase.'\n chia sẻ để nhận thêm xu.",
           "buttons":[
             {
               "type":"Postback",
@@ -276,7 +276,7 @@ sendchat($token,$jsonData);
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Đang tìm kiếm theo giới tính bạn -10xu xu của bạn còn: '.$xu.'xu\n.Số lần bạn chia sẻ '.$chiase.'\n Nếu đủ 5 lượt chia sẻ bạn sẽ mở tìm theo giới tính miễn phí.\nNếu đủ 10 lượt chia sẻ bạn mở block không giới hạn\n Nếu đủ 15 lượt bạn xem ảnh và video trượt tiếp không quảng cáo.",
+          "text":"Đang tìm kiếm theo giới tính bạn -10xu 💰 xu của bạn còn: '.$xu.'xu💰\n.Số lần bạn chia sẻ '.$chiase.'\n Nếu đủ 5 lượt chia sẻ bạn sẽ mở tìm theo giới tính miễn phí.\nNếu đủ 10 lượt chia sẻ bạn mở block không giới hạn\n Nếu đủ 15 lượt bạn xem ảnh và video trượt tiếp không quảng cáo.",
           "buttons":[
             {
               "type":"Postback",
