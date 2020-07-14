@@ -141,7 +141,7 @@ else{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.\nVui lòng ấn vào sửa lỗi.",
+        "text":"Tin nhắn chưa gửi đi\nHiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.\nVui lòng ấn vào sửa lỗi.",
         "buttons":[
           {
             "type":"Postback",
