@@ -371,37 +371,7 @@ die();
 }
 
      }
-else{
-  if ( !isUserExist($userid) ) {
-     $jsonData ='{
-  "recipient":{
-    "id": "'.$userid.'"
-  },
-  "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Tin nhắn chưa gửi đi\nHiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.\nVui lòng ấn vào sửa lỗi.",
-        "buttons":[
-          {
-            "type":"Postback",
-            "title":"Sửa lỗi",
-            "payload":"sualoi"
-          },
-          {
-            "type":"Postback",
-            "title":"Thông tin chi tiết",
-            "payload":"thongtin"
-          }
-        ]
-      }
-    }
-  }
-}';
-sendchat($token,$jsonData);
-die();
-  }
+
     else
     {
     mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
@@ -427,5 +397,5 @@ die();
 sendchat($token,$jsonData);
 die();
     }
-}
+
 ?>
