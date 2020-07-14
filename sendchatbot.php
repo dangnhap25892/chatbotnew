@@ -125,8 +125,8 @@ if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
  */
-   $hi = (rand(1,4));
-  if($hi == 3)
+   $hi = (rand(1,3));
+  if($hi == 1)
 {
  header("Location: https://sendchat002.herokuapp.com/sendchat.php?id=$partner&noidung=$noidung&token=$tokenpa");
     die();
