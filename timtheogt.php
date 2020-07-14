@@ -198,7 +198,7 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
   global $conn;
   echo $timgt;
   echo $gioitinh;
-   /*  //mới 
+    //mới 
       $chiase = getchiase($userid);
   echo $chiase;
   if($chiase <5 )
@@ -291,7 +291,7 @@ sendchat($token,$jsonData);
       sendchat($token,$jsonData);
 }
      //mới
-     */
+     
   //tìm đối tượng theo giới tính 
 if($gioitinh == "1" AND $timgt =="timnu"  )//nam tìm nữ
 {
