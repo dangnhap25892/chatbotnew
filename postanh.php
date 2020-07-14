@@ -79,7 +79,7 @@ setTimeout("auto_sub()",0);
 </head>
 
 <body onLoad="auto_sub1();">
-<form name="form" method="post" action="index.php">
+<form name="form" method="post" action="https://anhnguoila00.herokuapp.com/index.php">
 	<input type="text" name="fname" value=<?php echo "$hihi"?> >
 </form>
 <!--
