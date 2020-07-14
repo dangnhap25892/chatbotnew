@@ -118,7 +118,7 @@ function outchat($userid,$token) {
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã hết xu không thể thực hiện tính năng này xu của bạn còn: '.$xu.'xu.số lần bạn chia sẻ '.$chiase.' chia sẻ để nhận thêm xu.",
+          "text":"Bạn đã hết xu💰 không thể thực hiện tính năng này xu💰 của bạn còn: '.$xu.'xu💰.số lần bạn chia sẻ '.$chiase.' chia sẻ để nhận thêm xu💰.",
           "buttons":[
             {
               "type":"Postback",
@@ -145,7 +145,7 @@ function outchat($userid,$token) {
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã block đối phương -10xu. \nXu của bạn còn:'.$xu.'xu. Số lần bạn chia sẻ '.$chiase.' đủ 10 lượt chia sẻ bạn mở block không giới hạn",
+          "text":"Bạn đã block đối phương -10xu💰. \nXu của bạn còn:'.$xu.'xu💰. Số lần bạn chia sẻ '.$chiase.' đủ 10 lượt chia sẻ bạn mở block không giới hạn",
           "buttons":[
             {
               "type":"Postback",
