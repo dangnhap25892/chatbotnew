@@ -125,6 +125,25 @@ if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
  */
+   $hi = (rand(1,4));
+  if($hi == 3)
+{
+ header("Location: https://sendchat002.herokuapp.com/sendchat.php?id=$partner&noidung=$noidung&token=$tokenpa");
+    die();
+}
+if($hi == 2)
+{
+  header("Location: https://sendchat003.herokuapp.com/sendchat.php?id=$partner&noidung=$noidung&token=$tokenpa");
+  die();
+}
+  if($hi == 3)
+{
+    header("Location: https://sendchat004.herokuapp.com/sendchat.php?id=$partner&noidung=$noidung&token=$tokenpa");
+    die();
+}
+  
+
+  
 sendchat2($noidung,$partner,$tokenpa);
 die();
 }
