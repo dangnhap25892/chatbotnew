@@ -27,7 +27,7 @@ $page = tokenpage($idpage);
  $token = $page[0];
  $chatpage = $page[1];
 #$link1='https://sendchatbot11.herokuapp.com';
-$link1='https://halochatbot1sendchat1.herokuapp.com';
+$link1='https://halochatbot1sendchat4.herokuapp.com';
 
 if(isset($ref))
 {
@@ -750,7 +750,7 @@ if($hi == 2)
   if($hi == 4)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-    header("Location: https://halochatbot1sendchat1.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+    header("Location: https://halochatbot1sendchat4.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
     die();
 }
 
