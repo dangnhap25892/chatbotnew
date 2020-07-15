@@ -5,6 +5,7 @@ $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $partner = $_GET['id'];
 $noidung = $_GET['noidung'];
 $tokenpa = $_GET['token'];
+$chatfuel = $_GET['chatfuel'];
 $chatfuelpa  = $_GET['chatfuelpa'];
 $userid = $_GET['idsend'];
 
@@ -120,7 +121,7 @@ sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BM
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n page: '.$chatfuelpa.'\n ID:'.$userid.'\n.  ",
+        "text":"Ảnh\n page: '.$chatfuel.'\n ID:'.$userid.'\n. Tới ID:'.$partner.'\npage:'.$chatfuelpa.'\n.",
         "buttons":[
           {
             "type":"Postback",

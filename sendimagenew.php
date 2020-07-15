@@ -247,11 +247,12 @@ if($partner!= 0){
 $idpage = getidpage($userid);
 $page = tokenpage($idpage);
  $token = $page[0];
- $chatfuelpa = $page[1];
+ $chatfuel = $page[1];
 
   $idpagepa = getidpage($partner);
   $pagepa = tokenpage($idpagepa);
  $tokenpa = $pagepa[0];
+ $chatfuelpa = $pagepa[1];
 if(isset($noidung)){
     
     
@@ -259,7 +260,7 @@ if(isset($noidung)){
   echo $tokenpa;
   
 #sendchat2($noidung,$partner,$tokenpa); //$chatfuelpa $userid
-header("Location: https://sendimage001.herokuapp.com/guianh.php?id=$partner&noidung=$noidung&token=$tokenpa&idsend=$userid&chatfuelpa=$chatfuelpa");
+header("Location: https://sendimage002.herokuapp.com/guianh.php?id=$partner&noidung=$noidung&token=$tokenpa&idsend=$userid&chatfuel=$chatfuel&chatfuelpa=$chatfuelpa");
 die();
 }
 
