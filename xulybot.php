@@ -199,7 +199,7 @@ if(isset($getstart['postback'])){
                 "type":"postback",
                 "title":"Menu",
                 "payload":"Menu1"
-              },   
+              }
             ]      
           }
         ]
