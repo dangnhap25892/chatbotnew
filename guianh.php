@@ -121,7 +121,7 @@ sendchat(EAADn4qwXcIQBAMDbT3Saxog8LRzDYIaRWipTBZAKCQJjoO2x0ra6jcBhdcHurzOyCZA6BM
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Ảnh\n page: '.$chatfuel.'\n ID:'.$userid.'\n. Tới ID:'.$partner.'\npage:'.$chatfuelpa.'\n.",
+        "text":"Ảnh\n page: '.$chatfuel.'\n ID:'.$userid.'\n.\nTới ID:'.$partner.'\npage:'.$chatfuelpa.'\n.",
         "buttons":[
           {
             "type":"Postback",
