@@ -405,7 +405,7 @@ if ($type=="video")
  }";
  sendchat($token,$jsonData);*/
   #header("Location: sendimage.php?id=$userID&noidung=$image");
-  header("Location: $link1/sendvideo.php?id=$userID&noidung=$image");
+  header("Location: $link1/sendvideonew.php?id=$userID&noidung=$image");
     die();
 }
      }
