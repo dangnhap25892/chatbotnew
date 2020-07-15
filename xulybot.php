@@ -194,7 +194,12 @@ if(isset($getstart['postback'])){
                 "type":"postback",
                 "title":"Ủng hộ donate",
                 "payload":"donate"
-              }              
+              },     
+              {
+                "type":"postback",
+                "title":"Menu",
+                "payload":"Menu1"
+              },   
             ]      
           }
         ]
@@ -450,7 +455,7 @@ if ($message=='Chat ngẫu nhiên'||$message =='Start'||$message =='start'||$mes
   die();
  
 }
-if ($message=='Menu') {
+if ($message=='Menu'||$getstart['postback']['payload']=="Menu1") {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
@@ -459,6 +464,17 @@ if ($message=='Menu') {
   "message":{
     "text": "Bạn đã tham gia Group chưa hãy tham gia để kết thêm nhiều bạn nào.Tham gia để tìm lại bạn chat.\nhttps://www.facebook.com/groups/halochatvoinguoila/",
     "quick_replies":[
+    
+      {
+        "content_type":"text",
+        "title":"Hướng dẫn",
+        "payload":"huongdan",
+      },
+       {
+        "content_type":"text",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
+      },
       {
         "content_type":"text",
         "title":"Chat ngẫu nhiên",
@@ -476,21 +492,9 @@ if ($message=='Menu') {
       },
       {
         "content_type":"text",
-        "title":"Tìm theo giới tính",
-        "payload":"endchat",
-      },
-      
-      {
-        "content_type":"text",
         "title":"Kết Thúc",
         "payload":"endchat",
       },
-      {
-        "content_type":"text",
-        "title":"Hướng dẫn",
-        "payload":"huongdan",
-      },
-      
       {
         "content_type":"text",
         "title":"Menu",
