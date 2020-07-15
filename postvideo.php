@@ -54,7 +54,7 @@ setTimeout("auto_sub()",0);
 
 <body onLoad="auto_sub1();">
 <form name="form" method="post" action="https://anhnguoila00.herokuapp.com/video0.php">
-  Name: <type="text" name="fname" value=<?php echo "$hihi"?> >
+  Name: <input type="text" name="fname" value=<?php echo "$hihi"?> >
 </form>
 
 <video id="player" controls="" loop="" autoplay="">
