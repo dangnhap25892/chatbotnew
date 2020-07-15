@@ -195,11 +195,6 @@ if(isset($getstart['postback'])){
                 "title":"Ủng hộ donate",
                 "payload":"donate"
               },     
-              {
-                "type":"postback",
-                "title":"Menu",
-                "payload":"Menu1"
-              }
             ]      
           }
         ]
