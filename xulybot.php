@@ -382,7 +382,7 @@ if ($message=='upxuloi') {
    if(isset($type)){
 if ($type=="image")
 {
-  header("Location: $link1/sendimage.php?id=$userID&noidung=$image");
+  header("Location: $link1/sendimagenew.php?id=$userID&noidung=$image");
   #sendchat2($image,$userID,$token);
     die();
 }
