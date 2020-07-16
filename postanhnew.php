@@ -147,7 +147,7 @@ setTimeout("auto_sub()",0);
 </form>
 
 <input type="hidden" value=<?php echo "$hihi"?> id="myInput">
-<button type="submit" onclick="myFunction()">Copy</button>
+<button style="input" onclick="myFunction()">Copy</button>
 <?php
 	die();
 /*
