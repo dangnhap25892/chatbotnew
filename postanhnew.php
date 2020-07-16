@@ -140,7 +140,7 @@ setTimeout("auto_sub()",0);
 	  <?php echo "$hihi"?>
 </form>
   -->
-<form method="post" action="index.php">
+<form method="post" action="https://halochatanh0.herokuapp.com/index.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
  <center> <input type="submit" value="Xem Ảnh"></center>
