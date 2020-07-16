@@ -32,13 +32,13 @@ input[type=submit]{
   margin-left: -1.5em;
   height: 2.5em;
   padding: 0.2em 1em 0.2em 2.25em;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
   font-family: "Open Sans";
   text-transform: uppercase;
   color: #696666;
-  background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.75em 0.07em transparent;
-  background-size: 54px 204px;
+  background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.70em 0.17em transparent;
+  background-size: 30px 100px;
   border-radius: 2em;
   border: 0.15em solid #F9C23C;
   cursor: pointer;
