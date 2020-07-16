@@ -107,10 +107,10 @@ function myFunction() {
   document.execCommand("copy");
 }
 </script>
-<form method="post" action="index.php">
+<form method="post" action="video0.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
- <center> <input type="submit" value="Xem Ảnh"></center>
+ <center> <input type="submit" value="Xem video"></center>
 </form>
 <br>Đối với điện thoại iphone vui lòng sao chép link mở trình duyệt để xem video</br>
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
