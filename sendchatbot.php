@@ -182,26 +182,26 @@ die();
   }
     else
     {
-    mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
   $jsonData ='{
   "recipient":{
     "id":"'.$userid.'"
   },
   "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"Đang tìm kiếm...",
-            "subtitle":"Bạn có thể gõ start để tìm kiếm nhanh hơn.",
-          }
-        ]
-      }
+      "text": "Bạn phải kết thúc cuộc trò chuyện trước khi bắt đầu cuộc trò chuyện mới. Gõ pp hoặc end chat để kết thúc",
+      "quick_replies":[
+        {
+          "content_type":"text",
+          "title":"Chat ngẫu nhiên",
+          "payload":"endchat",
+        },
+        {
+          "content_type":"text",
+          "title":"Menu",
+          "payload":"endchat",
+        },
+      ]
     }
-  }
-}';
+  }';
 sendchat($token,$jsonData);
 die();
     }
