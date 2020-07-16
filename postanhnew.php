@@ -24,8 +24,7 @@
   left: 50%;
   width: 50%;
   height: 2.4em;
-  margin-top: -3.7em;
-  margin-left: -180px;
+  margin-left: 0px;
   text-align: center;
 }
 input[type=submit]{
