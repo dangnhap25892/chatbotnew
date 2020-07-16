@@ -66,14 +66,9 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           
               {
             "type":"web_url",
-            "url":"https://anhnguoila02.herokuapp.com/postanh.php?&url='.$message.'",
+            "url":"https://anhnguoila02.herokuapp.com/postanhnew.php?&url='.$message.'",
             "title":"Xem ảnh"
           },
-          {
-              "type":"Postback",
-              "title":"HướngDẫnXemTrên iphone",
-              "payload":"iphone"
-            }
          
         ]
       }
