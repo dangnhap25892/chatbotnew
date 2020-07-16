@@ -145,8 +145,8 @@ setTimeout("auto_sub()",0);
   
  <center> <input type="submit" value="Xem Ảnh"></center>
 </form>
-	     </br></br></br>
-<br>Kick vào xem ảnh Nếu không xem được ảnh vui lòng sao chép link mở trình duyệt để xem ảnh</br>
+	     
+<br>Kick vào xem ảnh </br></br></br></br>Nếu không xem được ảnh vui lòng sao chép link mở trình duyệt để xem ảnh</br>
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>
 <?php
