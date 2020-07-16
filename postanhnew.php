@@ -68,7 +68,7 @@ input[type="submit"]:focus {
 </style>
 <body>
 	
-	<!-- https://beta.propellerads.com/
+	<!-- https://beta.propellerads.com/-->
      <h1 style="1">
 	     
      <!--   <p>Ảnh người lạ đã gửi cho bạn</p> -->
@@ -180,5 +180,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </small>
   </p>
 	-->
+</h1>
 </body>
 </html>
