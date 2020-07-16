@@ -17,6 +17,55 @@
 	    text-decoration: none;
 	    color: #1c639e;
 	}
+  body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 2.4em;
+  margin-top: -3.7em;
+  margin-left: -180px;
+  text-align: center;
+}
+input[type=submit]{
+  margin-left: 0.5em;
+  height: 2.5em;
+  padding: 0.2em 1em 0.2em 2.25em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: #696666;
+  background: url(https://i.imgur.com/Th606mh.png) no-repeat scroll 0.75em 0.07em transparent;
+  background-size: 54px 204px;
+  border-radius: 2em;
+  border: 0.15em solid #F9C23C;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #EAA502;
+    border-color: #EAA502;
+    background-position: 0.75em bottom;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:focus {
+    background-position: 2em -4em;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/* Webfonts */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
 </style>
 <body>
 	
