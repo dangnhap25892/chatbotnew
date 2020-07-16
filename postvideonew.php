@@ -66,7 +66,7 @@ input[type="submit"]:focus {
 }
 </style>
 <body>
-
+<h1>
 <?php
 $url = $_GET['url'];
 $v2 = '&_nc_sid=';
@@ -115,11 +115,11 @@ function myFunction() {
 <br>Đối với điện thoại iphone vui lòng sao chép link mở trình duyệt để xem video</br>
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>
-
+</h1>
 <!--
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="JavaScript">
-function auto_sub()
+function auto_sub()ư
 {
 document.form.submit();
 }
