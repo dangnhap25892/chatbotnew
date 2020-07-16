@@ -20,11 +20,10 @@
   body{
     max-width: 100%;
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 50%;
   width: 50%;
   height: 2.4em;
-  margin-left: 0px;
   text-align: center;
 }
 input[type=submit]{
