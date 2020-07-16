@@ -20,9 +20,9 @@
   body{
     max-width: 100%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  width: 300px;
+  width: 50%;
   height: 2.4em;
   margin-top: -3.7em;
   margin-left: -180px;
@@ -137,7 +137,7 @@ setTimeout("auto_sub()",0);
 <form method="post" action="index.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
-  <input type="submit" value="Xem Ảnh">
+ <center> <input type="submit" value="Xem Ảnh"></center>
 </form>
 
 
