@@ -111,6 +111,14 @@ else{
 	die();
 }
 ?>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
  <!--
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="JavaScript">
@@ -138,7 +146,8 @@ setTimeout("auto_sub()",0);
  <center> <input type="submit" value="Xem Ảnh"></center>
 </form>
 
-
+<input type="text" value="Hello World" id="myInput">
+<button onclick="myFunction()">Copy text</button>
 <?php
 	die();
 /*
