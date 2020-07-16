@@ -29,7 +29,6 @@
   text-align: center;
 }
 input[type=submit]{
-  max-width: 100%;
   margin-left: -1.5em;
   height: 2.5em;
   padding: 0.2em 1em 0.2em 2.25em;
