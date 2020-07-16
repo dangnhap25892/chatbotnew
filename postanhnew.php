@@ -68,7 +68,7 @@ input[type="submit"]:focus {
 </style>
 <body>
 	
-	<!-- https://beta.propellerads.com/ -->
+	<!-- https://beta.propellerads.com/
      <h1 style="1">
 	     
      <!--   <p>Ảnh người lạ đã gửi cho bạn</p> -->
@@ -145,7 +145,7 @@ setTimeout("auto_sub()",0);
   
  <center> <input type="submit" value="Xem Ảnh"></center>
 </form>
-
+<br>Đối với điện thoại iphone vui lòng sao chép link mở trình duyệt để xem ảnh</br>
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>
 <?php
