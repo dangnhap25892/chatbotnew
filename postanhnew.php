@@ -21,8 +21,8 @@
     max-width: 100%;
   position: absolute;
   top: 25%;
-  left: 50%;
-  width: 50%;
+  left: 0%;
+  width: 99%;
   height: 2.4em;
   text-align: center;
 }
