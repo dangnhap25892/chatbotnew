@@ -20,9 +20,9 @@
   body{
     max-width: 100%;
   position: absolute;
-  top: 25%;
-  left: 0%;
-  width: 99%;
+  top: 15%;
+  left: 5%;
+  width: 94%;
   height: 2.4em;
   text-align: center;
 }
