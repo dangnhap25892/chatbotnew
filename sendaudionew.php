@@ -164,7 +164,7 @@ if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
 #sendchat3($message,$partner,$tokenpa);
-  header("Location: https://sendvoid001.herokuapp.com/guiviod.php?id=$partner&noidung=$noidung&token=$tokenpa");
+  header("Location: https://sendvoid001.herokuapp.com/guivoid.php?id=$partner&noidung=$noidung&token=$tokenpa");
 die();
 }
 
