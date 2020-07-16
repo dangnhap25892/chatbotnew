@@ -27,7 +27,7 @@ $page = tokenpage($idpage);
  $token = $page[0];
  $chatpage = $page[1];
 #$link1='https://sendchatbot11.herokuapp.com';
-$link1='https://halochatbot1sendchat2.herokuapp.com';
+$link1='https://halochatbot1sendchat11.herokuapp.com';
 
 if(isset($ref))
 {
@@ -731,25 +731,25 @@ if(isset($message)){
   if($hi == 1)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
- header("Location: https://halochatbot1sendchat2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token"); 
+ header("Location: https://halochatbot1sendchat21.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token"); 
     die();
 }
 if($hi == 2)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-  header("Location: https://halochatbot1sendchat2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+  header("Location: https://halochatbot1sendchat21.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
   die();
 }
   if($hi == 3)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-    header("Location: https://halochatbot1sendchat2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+    header("Location: https://halochatbot1sendchat21.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
     die();
 }
   if($hi == 4)
 {
  #header("Location: https://sendchatbot10.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
-    header("Location: https://halochatbot1sendchat2.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
+    header("Location: https://halochatbot1sendchat21.herokuapp.com/sendchatbot.php?id=$userID&noidung=$message&token=$token");
     die();
 }
 
