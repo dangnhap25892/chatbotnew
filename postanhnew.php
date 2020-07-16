@@ -18,6 +18,7 @@
 	    color: #1c639e;
 	}
   body{
+    max-width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,7 +29,8 @@
   text-align: center;
 }
 input[type=submit]{
-  margin-left: 0.5em;
+  max-width: 100%;
+  margin-left: -1.5em;
   height: 2.5em;
   padding: 0.2em 1em 0.2em 2.25em;
   font-size: 2em;
