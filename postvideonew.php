@@ -107,7 +107,7 @@ function myFunction() {
   document.execCommand("copy");
 }
 </script>
-<form method="post" action="video0.php">
+<form method="post" action="https://halochatanh0.herokuapp.com/video0.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
  <center> <input type="submit" value="Xem video"></center>
