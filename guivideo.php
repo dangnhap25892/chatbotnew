@@ -63,14 +63,10 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
           
               {
             "type":"web_url",
-            "url":"https://anhnguoila02.herokuapp.com/postvideo.php?&url='.$message.'",
+            "url":"https://anhnguoila02.herokuapp.com/postvideonew.php?&url='.$message.'",
             "title":"Xem video"
           },
-          {
-              "type":"Postback",
-              "title":"Hướng dẫn xem trên iphone",
-              "payload":"iphone"
-            }
+         
          
         ]
       }
