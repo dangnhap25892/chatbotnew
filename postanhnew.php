@@ -85,7 +85,7 @@ setTimeout("auto_sub()",0);
 </form>
   -->
 <form method="post" action="index.php">
-  Name: <input type="text" name="fname" value=<?php echo "$hihi"?> >
+  <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
   <input type="submit"">
 </form>
