@@ -31,7 +31,7 @@ input[type=submit]{
   margin-left: 0.5em;
   height: 2.5em;
   padding: 0.2em 1em 0.2em 2.25em;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   font-family: "Open Sans";
   text-transform: uppercase;
@@ -136,7 +136,7 @@ setTimeout("auto_sub()",0);
 <form method="post" action="index.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
-  <input type="submit"">
+  <input type="submit" value="Xem Ảnh">
 </form>
 
 
