@@ -187,7 +187,7 @@ die();
     "id":"'.$userid.'"
   },
   "message":{
-      "text": "Bạn phải kết thúc cuộc trò chuyện trước khi bắt đầu cuộc trò chuyện mới. Gõ pp hoặc end chat để kết thúc",
+      "text": "Bạn chưa bắt đầu cuộc trò chuyện gõ start để bắt đầu",
       "quick_replies":[
         {
           "content_type":"text",
