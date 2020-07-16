@@ -59,7 +59,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     "attachment":{
       "type":"audio", 
       "payload":{
-        "url":"'.$noidung.'", 
+        "url":"'.$message.'", 
       }
     }
   }
