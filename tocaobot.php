@@ -130,7 +130,7 @@ sendchat($token,$jsonData);
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn bị người lạ tố cáo nếu còn vi phạm chúng tôi sẽ cấm chat bạn.",
+    "text": "Bạn bị người lạ tố cáo Chúng tôi sẽ xem xét nếu có vi phạm chúng tôi sẽ cấm chat bạn.\n Nếu bạn bị tố cáo quá 3 lần sẽ bị cấm chat.",
     "quick_replies":[
       {
         "content_type":"text",
