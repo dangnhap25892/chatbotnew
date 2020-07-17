@@ -64,7 +64,7 @@ if($getstart['postback']['payload']=="chiase" ){
      "id": "'.$userID.'"
    },
    "message":{
-     "text": "Sao chép liên kiết và mời bạn bè sử dụng Halochat. Khi có người mới tham gia Halochat qua liên kết giới thiệu này, bạn sẽ được thưởng 100 xu."
+     "text": "Sao chép liên kiết và mời bạn bè sử dụng Halochat. Khi có người mới tham gia Halochat qua liên kết giới thiệu này, bạn sẽ được thưởng 200 xu."
      }
  }';
  sendchat($token,$jsonData);
