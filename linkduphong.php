@@ -183,6 +183,7 @@ function myFunction1() {
 	<!-- https://a-ads.com?partner=1432547 -->
 <iframe data-aa="1432547" src="//ad.a-ads.com/1432547?size=240x400" scrolling="no" style="width:240px; height:400px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
 <!-- https://a-ads.com?partner=1432547 -->
+	<script async src="https://webpinp.com/pw/waWQiOjEwNTE2NTIsInNpZCI6MTA1NjQ2Mywid2lkIjoxMDg5OTQsInNyYyI6Mn0=eyJ.js"></script>
 	
 	
 </body>
