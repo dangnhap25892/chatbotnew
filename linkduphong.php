@@ -131,6 +131,14 @@ else
 
 <!-- new -->
 	<script>
+function myFunction1() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+	<script>
 	var myVar;
 
 	function myFunction() {
@@ -157,7 +165,7 @@ else
 	     
 <div style="display:none;" id="myDiv" class="animate-bottom" >
 	     <input type="text" value=<?php echo "$hihi"?> id="myInput">
-		<button  onclick="myFunction()">Copy</button>
+		<button  onclick="myFunction1()">Copy</button>
 
 
 </div>
