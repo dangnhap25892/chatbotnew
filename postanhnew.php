@@ -147,8 +147,15 @@ setTimeout("auto_sub()",0);
 </form>
 	     
 <br>Kick vào xem ảnh </br></br></br></br>Nếu không xem được ảnh vui lòng sao chép link mở trình duyệt để xem ảnh</br>
+<form method="post" action="https://halochatanh0.herokuapp.com/linkduphong.php">
+  <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
+  
+ <center> <input type="submit" value="Xem Ảnh"></center>
+</form>
+<!--
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>
+-->
 <?php
 	die();
 /*
