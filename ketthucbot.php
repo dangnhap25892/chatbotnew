@@ -37,6 +37,45 @@ $jsonData1 ='{
   
 }';
 sendchat($token,$jsonData1);
+ $jsonData ='{
+  "recipient":{
+    "id":"'.$ID.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Quảng cáo",
+            "image_url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/109559025_304474290747717_343722034921086264_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=BuquTGHl8tkAX87zE0q&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=b4ef103cdd9f8f8cc13cd69d6239d08c&oe=5F373222",
+            "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/DongLeuLeu",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"m.me/DongLeuLeu",
+                "title":"Tham gia"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
 function getRelationship($userid) {
   global $conn;
@@ -160,6 +199,45 @@ sendchat($token,$jsonData);
   
 }';
 sendchat($tokenpa,$jsonData1);
+    $jsonData ='{
+  "recipient":{
+    "id":"'.$partner.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Quảng cáo",
+            "image_url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/109559025_304474290747717_343722034921086264_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=BuquTGHl8tkAX87zE0q&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=b4ef103cdd9f8f8cc13cd69d6239d08c&oe=5F373222",
+            "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/DongLeuLeu",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"m.me/DongLeuLeu",
+                "title":"Tham gia"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($tokenpa,$jsonData);
  $jsonData ='{
   "recipient":{
     "id":"'.$partner.'"
