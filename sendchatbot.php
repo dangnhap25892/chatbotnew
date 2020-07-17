@@ -194,11 +194,7 @@ die();
           "title":"Chat ngẫu nhiên",
           "payload":"endchat",
         },
-        {
-          "content_type":"text",
-          "title":"Menu",
-          "payload":"endchat",
-        },
+       
       ]
     }
   }';
