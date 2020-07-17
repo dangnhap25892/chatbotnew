@@ -162,7 +162,7 @@ function myFunction1() {
      <h1 style="1">
 	     
        
-
+</br>vui lòng sao chép link mở trình duyệt để xem ảnh</br>
 <div id="loader"></div>
 	     
 <div style="display:none;" id="myDiv" class="animate-bottom" >
