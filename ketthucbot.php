@@ -75,7 +75,7 @@ sendchat($token,$jsonData1);
     }
   }
 }';
-sendchat($token,$jsonData);
+#sendchat($token,$jsonData);
 //////// LẤY ID NGƯỜI CHÁT CÙNG ////////////
 function getRelationship($userid) {
   global $conn;
@@ -237,7 +237,7 @@ sendchat($tokenpa,$jsonData1);
     }
   }
 }';
-sendchat($tokenpa,$jsonData);
+#sendchat($tokenpa,$jsonData);
  $jsonData ='{
   "recipient":{
     "id":"'.$partner.'"
