@@ -53,14 +53,14 @@ sendchat($token,$jsonData1);
             "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
             "default_action": {
               "type": "web_url",
-              "url": "m.me/DongLeuLeu",
+              "url": "m.me/DongChatLeuLeu",
               "webview_height_ratio": "tall"
               
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"m.me/DongLeuLeu",
+                "url":"m.me/DongChatLeuLeu",
                 "title":"Tham gia"
               },
               {
@@ -215,14 +215,14 @@ sendchat($tokenpa,$jsonData1);
             "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
             "default_action": {
               "type": "web_url",
-              "url": "m.me/DongLeuLeu",
+              "url": "m.me/DongChatLeuLeu",
               "webview_height_ratio": "tall"
               
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"m.me/DongLeuLeu",
+                "url":"m.me/DongChatLeuLeu",
                 "title":"Tham gia"
               },
               {
