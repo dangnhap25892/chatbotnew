@@ -110,18 +110,18 @@ $jsonData ='{
         "elements":[
            {
             "title":"Quảng cáo",
-            "image_url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/109559025_304474290747717_343722034921086264_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=BuquTGHl8tkAX87zE0q&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=b4ef103cdd9f8f8cc13cd69d6239d08c&oe=5F373222",
-            "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
+            "image_url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/106172885_681131429109549_6534314368925002486_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=mvq8TKyT8lsAX_g0bHi&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=8b8e643e23e722d094af712d86051873&oe=5F35D72F",
+            "subtitle":"Nhóm chat trò chuyện về người lạ .",
             "default_action": {
               "type": "web_url",
-              "url": "m.me/DongLeuLeu",
+              "url": "m.me/101976294907930",
               "webview_height_ratio": "tall"
               
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"m.me/DongLeuLeu",
+                "url":"m.me/101976294907930",
                 "title":"Tham gia"
               },
               {
