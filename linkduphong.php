@@ -50,7 +50,7 @@ if (isset($hihi)){
 else
 {
 	echo'Không có ảnh';
-	die();
+	
 }  
 
 
