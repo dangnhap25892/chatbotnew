@@ -83,7 +83,68 @@ if ( $ktgt == 0 ) {
 sendchat($token,$jsonData);
 die();
   }
+//new
+$tocao = kttocao($userid);
+echo $tocao;
+if($tocao > 3 )
+{
+  $jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "messaging_type": "RESPONSE",
+  "message":{
+    "text": "Tài khoản bạn bị tố cáo quá nhiều nên bị cấm chat.",
+    
+  }
+}';
+sendchat($token,$jsonData);
+$jsonData ='{
+  "recipient":{
+    "id":"'.$userid.'"
+  },
+  "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Quảng cáo",
+            "image_url":"https://scontent.xx.fbcdn.net/v/t1.15752-9/109559025_304474290747717_343722034921086264_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=BuquTGHl8tkAX87zE0q&_nc_ad=z-m&_nc_cid=0&_nc_zor=&_nc_ht=scontent.xx&oh=b4ef103cdd9f8f8cc13cd69d6239d08c&oe=5F373222",
+            "subtitle":"Nhóm chat trò chuyện về người lạ tìm hiểu về những vấn đề tình dục. Bạn có thể chia sẻ kinh nghiệm cho mọi người.",
+            "default_action": {
+              "type": "web_url",
+              "url": "m.me/DongLeuLeu",
+              "webview_height_ratio": "tall"
+              
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"m.me/DongLeuLeu",
+                "title":"Tham gia"
+              },
+              {
+                "type":"postback",
+                "title":"Ủng hộ donate",
+                "payload":"donate"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}';
+sendchat($token,$jsonData);
 
+
+die();
+
+
+}
+//new
 function isUserExist($userid) { //hàm kiểm tra xem user đã tồn tại chưa 
   global $conn;
   $result = mysqli_query($conn, "SELECT `ID` from `users` WHERE `ID` = $userid LIMIT 1");
@@ -95,6 +156,13 @@ function ktgiotinh($userid) { //hàm kiểm tra xem gt đã tồn tại chưa
   $result = mysqli_query($conn, "SELECT `gioitinh` from `users` WHERE `ID` = $userid");
   $row = mysqli_fetch_assoc($result);
   $relationship = $row['gioitinh'];
+  return $relationship;
+}
+function kttocao($userid) { //hàm kiểm tra xem gt đã tồn tại chưa 
+  global $conn;
+  $result = mysqli_query($conn, "SELECT `tocao` from `users` WHERE `ID` = $userid");
+  $row = mysqli_fetch_assoc($result);
+  $relationship = $row['tocao'];
   return $relationship;
 }
 ////// Hàm Gửi JSON //////////
