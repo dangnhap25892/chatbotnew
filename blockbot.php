@@ -102,10 +102,12 @@ function outchat($userid,$token) {
       $tokenpa = $page[0];
      
  //new
+     /*
      $chiase = getchiase($userid);
   echo $chiase;
   if($chiase <10 )
   {
+  */
   $xu = getxu($userid);
         if($xu<10)
        {
@@ -118,7 +120,7 @@ function outchat($userid,$token) {
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã hết xu💰 không thể thực hiện tính năng này \nXu💰 của bạn còn: '.$xu.'xu💰.\nSố lần bạn chia sẻ '.$chiase.'\n chia sẻ để nhận thêm xu💰.\nĐủ 10 lượt chia sẻ bạn mở block không giới hạn",
+          "text":"Bạn đã hết xu💰 không thể thực hiện tính năng này \nXu💰 của bạn còn: '.$xu.'xu💰.",
           "buttons":[
             {
               "type":"Postback",
@@ -145,7 +147,7 @@ function outchat($userid,$token) {
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã block đối phương -10xu💰. \nXu của bạn còn:'.$xu.'xu💰. \nSố lần bạn chia sẻ '.$chiase.' \nĐủ 10 lượt chia sẻ bạn mở block không giới hạn",
+          "text":"Bạn đã block đối phương -10xu💰. \nXu của bạn còn:'.$xu.'xu💰. ",
           "buttons":[
             {
               "type":"Postback",
@@ -158,7 +160,7 @@ function outchat($userid,$token) {
     }
   }';
       sendchat($token,$jsonData);
-}
+#}
    //new  
      
   echo $partner;
