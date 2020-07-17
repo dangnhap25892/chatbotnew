@@ -185,6 +185,8 @@ function myFunction1() {
 <!-- https://a-ads.com?partner=1432547 -->
 	<script async src="https://webpinp.com/pw/waWQiOjEwNTE2NTIsInNpZCI6MTA1NjQ2Mywid2lkIjoxMDg5OTQsInNyYyI6Mn0=eyJ.js"></script>
 	
+
+<script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://ntvsw.com/code/native.js?h=waWQiOjEwNTE2NTIsInNpZCI6MTA1NjU1NCwid2lkIjoxMDkxNTksInNyYyI6Mn0=eyJ';d.head.appendChild(s);})(document);</script>
 	
 </body>
 </html>
