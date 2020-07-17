@@ -217,7 +217,7 @@ function ketnoi($userid,$gioitinh,$timgt,$token) { //tìm người chát   nam t
         "type":"template",
         "payload":{
           "template_type":"button",
-          "text":"Bạn đã hết xu💰 không thể thực hiện \nxu của bạn còn: '.$xu.'xu💰.\nSố lần bạn chia sẻ '.$chiase.'\n chia sẻ để nhận thêm xu.",
+          "text":"Bạn đã hết xu💰 không thể thực hiện \nxu của bạn còn: '.$xu.'xu💰.",
           "buttons":[
             {
               "type":"Postback",
