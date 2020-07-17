@@ -1,0 +1,1 @@
+importScripts('https://metosk.com/v1/sw-import.js?h=waWQiOjEwNTE2NTIsInNpZCI6MTA1NjU1NCwid2lkIjoxMDkxNTksInNyYyI6MiwicG0iOjB9eyJ&d=halochatanh0.herokuapp.com');
