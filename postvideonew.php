@@ -113,8 +113,15 @@ function myFunction() {
  <center> <input type="submit" value="Xem video"></center>
 </form>
 <br>Đối với điện thoại iphone vui lòng sao chép link mở trình duyệt để xem video</br>
+	<form method="post" action="https://halochatanh0.herokuapp.com/linkduphong.php">
+  <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
+  
+ <center> <input type="submit" value="Dự Phòng"></center>
+</form>
+	<!--
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>
+-->
 </h1>
 <!--
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
