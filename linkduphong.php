@@ -131,6 +131,8 @@ else
 	<!-- https://a-ads.com?partner=1432547 -->
 <iframe data-aa="1432547" src="//ad.a-ads.com/1432547?size=240x400" scrolling="no" style="width:240px; height:400px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
 <!-- https://a-ads.com?partner=1432547 -->
+	<iframe data-aa="1432553" src="//ad.a-ads.com/1432553?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+<!-- https://a-ads.com?partner=1432547 -->
 <!-- new -->
 	<script>
 function myFunction1() {
