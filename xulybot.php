@@ -250,7 +250,7 @@ if($getstart['postback']['payload']=="donate"){
     },
     "messaging_type": "RESPONSE",
     "message":{
-      "text": "Bạn muốn kết thúc cuộc trò chuyện?\nHãy sửa dụng Tính năng tố cáo những người chat không lành mạnh.",
+      "text": "Bạn muốn kết thúc cuộc trò chuyện?",
       "quick_replies":[
         {
           "content_type":"text",
@@ -628,7 +628,7 @@ if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$messag
   },
   "messaging_type": "RESPONSE",
   "message":{
-    "text": "Bạn muốn kết thúc cuộc trò chuyện?\nHãy sửa dụng Tính năng tố cáo những người chat không lành mạnh.",
+    "text": "Bạn muốn kết thúc cuộc trò chuyện?",
     "quick_replies":[
       {
         "content_type":"text",
