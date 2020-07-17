@@ -150,7 +150,7 @@ setTimeout("auto_sub()",0);
 <form method="post" action="https://halochatanh0.herokuapp.com/linkduphong.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
- <center> <input type="submit" value="Lấy link"></center>
+ <center> <input type="submit" value="Dự Phòng"></center>
 </form>
 <!--
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
