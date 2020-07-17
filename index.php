@@ -243,6 +243,8 @@ else
 	<!-- https://refadav.com/?ref=UJ0kvCccMGdJCOLM2dn316Cyl-RZhnTp qc 2 -->
 	<script async src="https://webpinp.com/pw/waWQiOjEwNTE2NTIsInNpZCI6MTA1NjU1Miwid2lkIjoxMDkxNTUsInNyYyI6Mn0=eyJ.js"></script>
 	<!-- https://refadav.com/?ref=UJ0kvCccMGdJCOLM2dn316Cyl-RZhnTp qc 2 -->
-	
+	<!-- https://a-ads.com/ad_units/1432553 -->
+	<iframe data-aa="1432553" src="//ad.a-ads.com/1432553?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+	<!-- https://a-ads.com/ad_units/1432553 -->
 </body>
 </html>
