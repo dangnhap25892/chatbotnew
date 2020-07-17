@@ -240,7 +240,9 @@ else
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/b8b283af2c12a9494dfd747f1c0f4729/invoke.js"></scr' + 'ipt>');
 </script>
 	<!-- Quảng cáo -->
-	<!-- https://beta.publishers.adsterra.com// -->
+	<!-- https://refadav.com/?ref=UJ0kvCccMGdJCOLM2dn316Cyl-RZhnTp qc 2 -->
+	<script async src="https://webpinp.com/pw/waWQiOjEwNTE2NTIsInNpZCI6MTA1NjU1Miwid2lkIjoxMDkxNTUsInNyYyI6Mn0=eyJ.js"></script>
+	<!-- https://refadav.com/?ref=UJ0kvCccMGdJCOLM2dn316Cyl-RZhnTp qc 2 -->
 	
 </body>
 </html>
