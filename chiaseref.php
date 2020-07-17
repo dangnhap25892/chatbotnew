@@ -71,7 +71,7 @@ if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever chi
         "elements":[
            {
             "title":"THÔNG BÁO",
-            "subtitle":"Bạn được +100xu và nhận được 1 lần chia sẻ cho bạn bè.",
+            "subtitle":"Bạn được +200xu từ link chia sẻ cho bạn bè.",
           }
         ]
       }
@@ -86,7 +86,7 @@ if ( !isUserExist($ID) ) { // nếu chưa tồn tại thì update lên sever chi
 	$xu = getxu($ref);
 	$chiase = $chiase + 1;
 	echo $chiase;
-	$xu = $xu + 100 ;
+	$xu = $xu + 200 ;
 	echo $xu;
 	$page = tokenpage($idpage);
  	$tokenpa = $page[0];
