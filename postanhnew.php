@@ -67,12 +67,17 @@ input[type="submit"]:focus {
 }
 </style>
 <body>
-	
+	<!-- https://a-ads.com?partner=1433203-->
+	<iframe data-aa="1433203" src="//ad.a-ads.com/1433203?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+<!-- https://a-ads.com?partner=1433203-->
 	<!-- https://beta.propellerads.com/-->
      <h1 style="1">
 	     
      <!--   <p>Ảnh người lạ đã gửi cho bạn</p> -->
 <?php	
+	     
+	     
+	     
 $url = $_GET['url'];
 $url2 = '&_nc_sid=';
 $url3 = $_GET['_nc_sid'];
