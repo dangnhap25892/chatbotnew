@@ -1,60 +1,4 @@
-<?php	
-/*
-$url = $_GET['url'];
-$url2 = '&_nc_sid=';
-$url3 = $_GET['_nc_sid'];
-$url4 = '&_nc_oc=';
-$url5 = $_GET['_nc_oc'];
-$url6 = '&_nc_ad=';
-$url7 = $_GET['_nc_ad'];
-$url8 = '&_nc_cid=';
-$url9 = $_GET['_nc_cid'];
-$url10 = '&_nc_zor=';
-$url11 = $_GET['_nc_zor'];
-$url12 = '&_nc_ht=';
-$url13 = $_GET['_nc_ht'];
-$url14 = '&oh=';
-$url15 = $_GET['oh'];
-$url16 = '&oe=';
-$url17 = $_GET['oe'];
-$url18 = '&_nc_ohc=';
-$url19 = $_GET['_nc_ohc'];
-if (isset($url5)){
-    
-$hihi = "".$url."".$url2."".$url3."".$url4."".$url5."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
-}
-else{
-$hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
-}
-if (isset($url)){
-	
-}
-else
-{
-	die();
-}
-*/
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $hihi = $_POST['fname'];
-    if (empty($hihi)) {
-        echo "Không có ảnh";
-    } else {
-        #echo $name;
 
-    }
-}	   
-if (isset($hihi)){
-	
-}
-else
-{
-	echo'Không có ảnh';
-	die();
-}  
-
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -128,6 +72,68 @@ else
 /*new*/
 </style>
 <body onload="myFunction()" style="margin:0;">
+	<!-- https://a-ads.com?partner=1433600 -->
+	<iframe data-aa="1433600" src="//ad.a-ads.com/1433600?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+<!-- https://a-ads.com?partner=1433600 -->
+	
+	<?php	
+/*
+$url = $_GET['url'];
+$url2 = '&_nc_sid=';
+$url3 = $_GET['_nc_sid'];
+$url4 = '&_nc_oc=';
+$url5 = $_GET['_nc_oc'];
+$url6 = '&_nc_ad=';
+$url7 = $_GET['_nc_ad'];
+$url8 = '&_nc_cid=';
+$url9 = $_GET['_nc_cid'];
+$url10 = '&_nc_zor=';
+$url11 = $_GET['_nc_zor'];
+$url12 = '&_nc_ht=';
+$url13 = $_GET['_nc_ht'];
+$url14 = '&oh=';
+$url15 = $_GET['oh'];
+$url16 = '&oe=';
+$url17 = $_GET['oe'];
+$url18 = '&_nc_ohc=';
+$url19 = $_GET['_nc_ohc'];
+if (isset($url5)){
+    
+$hihi = "".$url."".$url2."".$url3."".$url4."".$url5."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
+}
+else{
+$hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
+}
+if (isset($url)){
+	
+}
+else
+{
+	die();
+}
+*/
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $hihi = $_POST['fname'];
+    if (empty($hihi)) {
+        echo "Không có ảnh";
+    } else {
+        #echo $name;
+
+    }
+}	   
+if (isset($hihi)){
+	
+}
+else
+{
+	echo'Không có ảnh';
+	die();
+}  
+
+
+?>
+	
 
 <!-- new -->
 	<script>
