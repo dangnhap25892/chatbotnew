@@ -595,7 +595,6 @@ if ($message=='dangnhap0935') {
   "recipient":{
     "id":"'.$userID.'"
   },
-  "messaging_type": "RESPONSE",
   "message":{
     "quick_replies":[
       {
