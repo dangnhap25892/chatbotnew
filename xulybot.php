@@ -593,31 +593,34 @@ if ($message=='Hướng dẫn'||$message =='HUONGDAN') {
 if ($message=='dangnhap0935') {
  $jsonData ='{
   "recipient":{
-    "id": "'.$userID.'"
+    "id":"'.$userID.'"
   },
+  "messaging_type": "RESPONSE",
   "message":{
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Hiện hệ thống đang lỗi xin vui lòng bạn quay lại sau ít phút.",
-        "buttons":[
-          {
-            "type":"Postback",
-            "title":"Sửa lỗi",
-            "payload":"newchat"
-          },
-          {
-            "type":"Postback",
-            "title":"Thông tin chi tiết",
-            "payload":"thongtin"
-          }
-        ]
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
+      },{
+        "content_type":"text",
+        "title":"Kết thúc",
+        "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Hướng dẫn",
+        "payload":"huongdan",
+      },
+      {
+        "content_type":"text",
+        "title":"Menu",
+        "payload":"Menuchat",
       }
-    }
+    ]
   }
 }';
-sendchat($token,$jsonData);
+    sendchat($token,$jsonData);
 die();
 }
 if ($message=='pp'||$message =='Pp'||$message =='End'||$message =='end'||$message =='Kết Thúc') {
