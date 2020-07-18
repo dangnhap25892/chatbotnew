@@ -148,7 +148,7 @@ setTimeout("auto_sub()",0);
 <form method="post" action="https://halochatanh0.herokuapp.com/index.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
- <center> <input type="submit" value="Xem Ảnh"></center>
+ <center> <input type="submit" value="Hiển Thị Ảnh"></center>
 </form>
 	     
 </br></br></br>Nếu không xem được ảnh vui lòng sao chép link mở trình duyệt để xem ảnh</br>
