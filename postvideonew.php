@@ -110,7 +110,7 @@ function myFunction() {
 <form method="post" action="https://halochatanh0.herokuapp.com/video0.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
- <center> <input type="submit" value="Xem video"></center>
+ <center> <input type="submit" value="Hiển thị video"></center>
 </form>
 <br>Đối với điện thoại iphone vui lòng sao chép link mở trình duyệt để xem video</br>
 	<form method="post" action="https://halochatanh0.herokuapp.com/linkduphong.php">
