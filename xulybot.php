@@ -371,10 +371,11 @@ if ($message=='upxuloi') {
     header("Location: $link1/uptimtheogt.php?ID=$userID&token=$token&chatfuel=$idpage&gt=$quick_reply");
     die();
   }
-  
+  if($quick_reply=="Khong"){
+    die();
+  }
     
-
-  
+    //$quick_reply
  }
     
 
@@ -419,9 +420,7 @@ if ($message=='block') {
   header("Location: $link1/blockbot.php?ID=$userID&token=$token");
   die();
 }
-if ($message=='Không.') {
-  die();
-}
+
 if ($message=='tham gia test') {
   header("Location: thamgiatest.php?ID=$userID&token=$token");
   die();
