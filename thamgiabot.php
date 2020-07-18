@@ -287,7 +287,7 @@ function ketnoi($userid,$gioitinh,$token) { //tìm người chát
   "messaging_type": "RESPONSE",
   
   "message":{
-    "text": "Hãy sửa dụng Tính năng tố cáo những người chat không lành mạnh\nChat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
     }
   
 }';
@@ -304,7 +304,7 @@ sendchat($token,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$partner.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
       }
@@ -319,7 +319,7 @@ sendchat($token,$jsonData);
   "messaging_type": "RESPONSE",
   
   "message":{
-    "text": "Hãy sửa dụng Tính năng tố cáo những người chat không lành mạnh\nChat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
     }
   
 }';
@@ -336,7 +336,7 @@ sendchat($tokenpa,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$userid.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
       }
@@ -372,7 +372,7 @@ function ketnoi2($userid,$token) { //tìm người chát
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗'.$userid.'",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
           }
         ]
       }
@@ -400,7 +400,7 @@ sendchat($token,$jsonData);
   "messaging_type": "RESPONSE",
   
   "message":{
-    "text": "Hãy sửa dụng Tính năng tố cáo những người chat không lành mạnh\nChat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
     }
   
 }';
@@ -417,7 +417,7 @@ sendchat($token,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$partner.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
       }
@@ -432,7 +432,7 @@ sendchat($token,$jsonData);
   "messaging_type": "RESPONSE",
   
   "message":{
-    "text": "Hãy sửa dụng Tính năng tố cáo những người chat không lành mạnh\nChat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
+    "text": "Chat bot có thể gửi ảnh, video và void chat hãy gửi ảnh của mình để cuộc trò chuyện thú vị hơn😍\nBạn có thể BLOCK để tránh gặp lại người trò chuyện trước đó🤔\n\nGõ\nEND ( để kết thúc cuộc trò chuyện )\nBLOCK ( để block đối phương )\nHUONGDAN (Để đọc hướng dẫn trước khi dùng)\nChúc các bạn có cuộc trò chuyện vui vẻ🤗",
     }
   
 }';
@@ -449,7 +449,7 @@ sendchat($tokenpa,$jsonData1);
         "elements":[
            {
             "title":"Người lạ đã tham gia cuộc trò chuyện",
-            "subtitle":"Gõ pp hoặc end chat để kết thúc.\nBạn kết nối với id:'.$userid.'",
+            "subtitle":"Gõ pp hoặc end chat để kết thúc.",
           }
         ]
       }
@@ -479,7 +479,7 @@ ketnoi($userid,$gioitinh,$token);
         "elements":[
            {
             "title":"Đang tìm kiếm...",
-            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗\nId của bạn'.$userid.'",
+            "subtitle":"Vui lòng đợi chút nha. Mình đang kết nối giúp bạn đây 😗",
           }
         ]
       }
