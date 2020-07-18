@@ -229,9 +229,7 @@ else
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://w3plywbd72pf.com/01a7d2ae60a14be7b40cec0a732f0ff6/invoke.js"></scr' + 'ipt>');
 </script>
 	
-	<!-- https://a-ads.com/ad_units/1432553 -->
-	<iframe data-aa="1432553" src="//ad.a-ads.com/1432553?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
-	<!-- https://a-ads.com/ad_units/1432553 -->
+	
 	
 	<!-- https://publishers.adsterra.com/referral/TJ3batmyH2  728x90_1 -->
 	<script type="text/javascript">
