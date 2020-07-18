@@ -161,8 +161,8 @@ function outchat($userid,$token) {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"newchat",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
       },
        {
         "content_type":"text",
@@ -174,10 +174,11 @@ function outchat($userid,$token) {
         "title":"Team 2K+",
         "payload":"endchat",
       },
+      
       {
         "content_type":"text",
-        "title":"Tìm theo giới tính",
-        "payload":"endchat",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
       },
       {
         "content_type":"text",
@@ -246,10 +247,10 @@ sendchat($tokenpa,$jsonData1);
   "message":{
     "text": "Cuộc trò chuyện đã kết thúc.",
     "quick_replies":[
-      {
+    {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"newchat",
+        "title":"Tìm theo giới tính",
+        "payload":"endchat",
       },
        {
         "content_type":"text",
@@ -263,8 +264,8 @@ sendchat($tokenpa,$jsonData1);
       },
        {
         "content_type":"text",
-        "title":"Tìm theo giới tính",
-        "payload":"endchat",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
       },
       {
         "content_type":"text",
@@ -289,11 +290,6 @@ $jsonData ='{
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"newchat",
-      },
-      {
-        "content_type":"text",
         "title":"Tìm theo giới tính",
         "payload":"endchat",
       },
@@ -306,6 +302,11 @@ $jsonData ='{
         "content_type":"text",
         "title":"Team 2K+",
         "payload":"endchat",
+      },
+      {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
       },
       {
         "content_type":"text",
@@ -324,13 +325,7 @@ $jsonData ='{
   "messaging_type": "RESPONSE",
   "message":{
     "text": "Cuộc trò chuyện đã kết thúc.",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Chat ngẫu nhiên",
-        "payload":"newchat",
-      },
-      
+    "quick_replies":[ 
       {
         "content_type":"text",
         "title":"Tìm theo giới tính",
@@ -345,6 +340,11 @@ $jsonData ='{
         "content_type":"text",
         "title":"Team 2K+",
         "payload":"endchat",
+      },
+       {
+        "content_type":"text",
+        "title":"Chat ngẫu nhiên",
+        "payload":"newchat",
       },
       {
         "content_type":"text",
