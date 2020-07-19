@@ -58,7 +58,7 @@ if (preg_match('/sex/', $noidung)||preg_match('/xxx/', $noidung)||preg_match('/d
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"tố cáo và kết thúc",
+        "title":"Tố cáo và kết thúc",
         "payload":"endchat",
       },{
         "content_type":"text",
