@@ -683,7 +683,7 @@ if ($message=='BLOCK') {
     sendchat($token,$jsonData);
   die();
 }
-if ($message=='Tố cáo') {
+if ($message=='Tố cáo'||$message=='Tố cáo và kết thúc') {
   $jsonData ='{
   "recipient":{
     "id":"'.$userID.'"
