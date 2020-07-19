@@ -273,12 +273,12 @@ function writeBoard () {
  buf+='</head><body bgcolor="#FFFFFF"><a name="s"></a><center><pre';
  for (i=0;i<boardSize;i++) {
   for (j=0;j<boardSize;j++) {
-   buf+='\n><a href="#s" onClick="top.clk('+i+','+j+');if(top.ie4)this.blur();return false;" ><img name="s'+i+'_'+j+'" src="s'+f[i][j]+'.gif" width=16 height=16 border=0></a'; 
+   buf+='\n><a href="#s" onClick="top.clk('+i+','+j+');if(top.ie4)this.blur();return false;" ><img name="s'+i+'_'+j+'" src="s'+f[i][j]+'.gif" width=26 height=26 border=0></a'; 
   }
-  buf+='\n><img src="g.gif" width=1 height=16><br';
+  buf+='\n><img src="g.gif" width=1 height=26><br';
   if (buf.length>20000) {top.f1.document.writeln(buf); buf='';}
  }
- buf+='\n><img src="g.gif" width='+(boardSize*16+1)+' height=1></pre></center></body></html>';
+ buf+='\n><img src="g.gif" width='+(boardSize*26+1)+' height=1></pre></center></body></html>';
  top.f1.document.writeln(buf);
  top.f1.document.close();
  buf='';
