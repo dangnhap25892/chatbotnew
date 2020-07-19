@@ -72,9 +72,7 @@
 /*new*/
 </style>
 <body onload="myFunction()" style="margin:0;">
-	<!-- https://a-ads.com?partner=1433600 -->
-	<iframe data-aa="1433600" src="//ad.a-ads.com/1433600?size=320x50" scrolling="no" style="width:320px; height:50px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
-<!-- https://a-ads.com?partner=1433600 -->
+	
 	
 	<?php	
 /*
