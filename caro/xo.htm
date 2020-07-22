@@ -271,12 +271,7 @@ buf='';
 function writeBoard () {
  buf+='<html><head><title>Board</title>';
  if (navigator.appName=="Netscape") buf+='<base href="'+top.document.location+'">';
- buf+='</head><body bgcolor="#FFFFFF"><a name="s"></a><div id="right">
-        <div id="dsMsg"></div>
-        <div class="block"></div>
-        <input type="text" id="txtMessage" placeholder="Message..." />
-        <input type="button" id="btnChat" value="Chat" />
-      </div><center><pre';
+ buf+='</head><body bgcolor="#FFFFFF"><a name="s"></a><div id="right"><div id="dsMsg"></div><div class="block"></div><input type="text" id="txtMessage" placeholder="Message..." /><input type="button" id="btnChat" value="Chat" /></div><center><pre';
  for (i=0;i<boardSize;i++) {
   for (j=0;j<boardSize;j++) {
    buf+='\n><a href="#s" onClick="top.clk('+i+','+j+');if(top.ie4)this.blur();return false;" ><img name="s'+i+'_'+j+'" src="s'+f[i][j]+'.gif" width=25 height=25 border=0></a'; 
