@@ -2,7 +2,8 @@
 $partner = $_GET['id'];
 $noidung = $_GET['noidung'];
 $tokenpa = $_GET['token'];
-
+$noidung = $_GET['noidung'];
+/*
 $url = $_GET['noidung'];
 $v2 = '&_nc_sid=';
 $v3 = $_GET['_nc_sid'];
@@ -26,6 +27,8 @@ else
   $noidung="".$url."".$v2."".$v3."".$v12."".$v13."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."";
   #echo "$hihi";
 }
+*/
+$noidung = str_replace ("dangnhap0935","&",$noidung);
 function sendchat3($message,$userID,$token)
 {
 

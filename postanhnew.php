@@ -65,8 +65,60 @@ input[type="submit"]:focus {
     font-weight: 700;
     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
+	/*new*/
+	#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*new*/
 </style>
-<body>
+<body onload="myFunction()" style="margin:0;">
 	<!-- https://a-ads.com?partner=1433203-->
 	<iframe data-aa="1433203" src="//ad.a-ads.com/1433203?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
 <!-- https://a-ads.com?partner=1433203-->
@@ -77,7 +129,7 @@ input[type="submit"]:focus {
 <?php	
 	     
 	     
-	     
+	 /*    
 $url = $_GET['url'];
 $url2 = '&_nc_sid=';
 $url3 = $_GET['_nc_sid'];
@@ -107,6 +159,11 @@ else{
 
 $hihi= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
+*/
+
+ $url = $_GET['url'];
+ $hihi = $url;
+ $hihi = str_replace ("dangnhap0935","&",$hihi);
 if (isset($url)){ 
     
 #header("Location: https://halochatanhnguoila05.herokuapp.com/index5.php?&url=$hihi");
@@ -117,13 +174,27 @@ else{
 }
 ?>
 <script>
-function myFunction() {
+function myFunction1() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
 }
 </script>
+	     <!-- new -->
+	<script>
+	var myVar;
+
+	function myFunction() {
+	  myVar = setTimeout(showPage, 200);
+	}
+
+	function showPage() {
+	  document.getElementById("loader").style.display = "none";
+	  document.getElementById("myDiv").style.display = "block";
+	}
+</script>
+<!-- new -->
  <!--
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="JavaScript">
@@ -144,7 +215,11 @@ setTimeout("auto_sub()",0);
 	<input type="hidden" name="fname" value=<?php echo "$hihi"?> >
 	  <?php echo "$hihi"?>
 </form>
-  -->
+  --><!-- new -->
+	     <div id="loader"></div>
+	     
+<div style="display:none;" id="myDiv" class="animate-bottom" >
+	<!-- new -->
 <form method="post" action="https://halochatanh0.herokuapp.com/index.php">
   <input type="hidden" name="fname" value=<?php echo "$hihi"?> >
   
@@ -157,6 +232,10 @@ setTimeout("auto_sub()",0);
   
  <center> <input type="submit" value="Dự Phòng"></center>
 </form>
+
+</div>
+
+
 <!--
 <input type="text" value=<?php echo "$hihi"?> id="myInput">
 <button  onclick="myFunction()">Copy</button>

@@ -3,7 +3,7 @@ require_once 'config.php'; //lấy thông tin từ config
 require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
-#$noidung = $_GET['noidung'];
+$noidung = $_GET['noidung'];
 #$token = gettoken($userid);
 // if (!$conn) {
 //     echo'{
@@ -25,7 +25,7 @@ $userid = $_GET['id'];
 //   ]
 // }';
 // }
-
+/*
 $url = $_GET['noidung'];
 $v2 = '&_nc_sid=';
 $v3 = $_GET['_nc_sid'];
@@ -52,6 +52,7 @@ else
   $noidung= "".$url."".$v2."".$v3."".$v14."".$v15."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."".$v12."".$v13."";
   #echo "$hihi";
 }
+*/
 // $message = '"message":{
 //     "attachment":{
 //       "type":"audio", 
@@ -232,7 +233,7 @@ if(isset($noidung)){
 sendchat($tokenpa,$thongbao);
 */
 #sendchat2($noidung,$partner,$tokenpa);
-header("Location: https://sendvideo001.herokuapp.com/guivideo.php?id=$partner&noidung=$noidung&token=$tokenpa&idsend=$userid&chatfuel=$chatfuel&chatfuelpa=$chatfuelpa");
+header("Location: https://sendvideo002.herokuapp.com/guivideo.php?id=$partner&noidung=$noidung&token=$tokenpa&idsend=$userid&chatfuel=$chatfuel&chatfuelpa=$chatfuelpa");
 die();
 }
 

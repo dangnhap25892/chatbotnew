@@ -3,7 +3,7 @@ require_once 'config.php'; //lấy thông tin từ config
 require_once ('tokenpage.php'); 
 $conn = mysqli_connect($DBHOST, $DBUSER, $DBPW, $DBNAME); // kết nối data
 $userid = $_GET['id'];
-#$noidung = $_GET['noidung'];
+$noidung = $_GET['noidung'];
 #$token = gettoken($userid);
 // if (!$conn) {
 //     echo'{
@@ -26,6 +26,7 @@ $userid = $_GET['id'];
 // }';
 // }
 ////// Hàm Gửi JSON //////////
+/*
 $url = $_GET['noidung'];
 $v2 = '&_nc_sid=';
 $v3 = $_GET['_nc_sid'];
@@ -49,6 +50,7 @@ else
   $noidung="".$url."".$v2."".$v3."".$v12."".$v13."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."";
   #echo "$hihi";
 }
+*/
 $message = '"message":{
     "attachment":{
       "type":"audio", 
@@ -164,7 +166,7 @@ if(isset($noidung)){
   echo $partner;
   echo $tokenpa;
 #sendchat3($message,$partner,$tokenpa);
-  header("Location: https://sendvoid001.herokuapp.com/guivoid.php?id=$partner&noidung=$noidung&token=$tokenpa");
+  header("Location: https://sendvoid002.herokuapp.com/guivoid.php?id=$partner&noidung=$noidung&token=$tokenpa");
 die();
 }
 

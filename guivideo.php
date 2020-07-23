@@ -6,7 +6,9 @@ $tokenpa = $_GET['token'];
 $chatfuel = $_GET['chatfuel'];
 $chatfuelpa  = $_GET['chatfuelpa'];
 $userid = $_GET['idsend'];
+$noidung = $_GET['noidung'];
 
+/*
 $url = $_GET['noidung'];
 $v2 = '&_nc_sid=';
 $v3 = $_GET['_nc_sid'];
@@ -33,7 +35,7 @@ else
   $noidung= "".$url."".$v2."".$v3."".$v14."".$v15."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."".$v12."".$v13."";
   #echo "$hihi";
 }
-
+*/
 function sendchat($token,$jsonData)
 {
 $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";

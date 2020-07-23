@@ -67,7 +67,9 @@ input[type="submit"]:focus {
 </style>
 <body>
 <h1>
+
 <?php
+/*
 $url = $_GET['url'];
 $v2 = '&_nc_sid=';
 $v3 = $_GET['_nc_sid'];
@@ -91,6 +93,10 @@ else
 {
 	$hihi = "".$url."".$v2."".$v3."".$v14."".$v15."".$v6."".$v7."".$v8."".$v9."".$v10."".$v11."".$v12."".$v13."";
 }
+*/
+ $url = $_GET['url'];
+ $hihi = $url;
+ $hihi = str_replace ("dangnhap0935","&",$hihi);
 	if (isset($url)){ 
 #header("Location: https://halochatanhnguoila05.herokuapp.com/video.php?&url=$hihi");
 	}
