@@ -27,14 +27,11 @@ $url16 = '&oe=';
 $url17 = $_GET['oe'];
 $url18 = '&_nc_ohc=';
 $url19 = $_GET['_nc_ohc'];
-
 if (isset($url5)){
     
-
 $noidung = "".$url."".$url2."".$url3."".$url4."".$url5."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
 else{
-
 $noidung= "".$url."".$url2."".$url3."".$url18."".$url19."".$url6."".$url7."".$url8."".$url9."".$url10."".$url11."".$url12."".$url13."".$url14."".$url15."".$url16."".$url17."";
 }
 */
@@ -84,11 +81,12 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     curl_close($ch);
     die();
 }
+ $noidung1 = str_replace ("dangnhap0935","&",$noidung);
 
     $sub = '100x100';
     $uuu = 'https://scontent.xx.fbcdn.net/v/t39.1997-6/cp0/39178562_1505197616293642_5411344281094848512_n.png?_nc_cat=1';
     $uu1 = 'gif';
-     if (strlen(strstr($url, $sub)) > 0||strlen(strstr($url, $uuu)) > 0 ||strlen(strstr($url, $uu1)) > 0) {
+     if (strlen(strstr($noidung1, $sub)) > 0||strlen(strstr($noidung1, $uuu)) > 0 ||strlen(strstr($noidung1, $uu1)) > 0) {
     echo 'Ton tai';
   } else {
          
@@ -100,7 +98,7 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     "attachment":{
       "type":"image", 
       "payload":{
-        "url":"'.$noidung.'", 
+        "url":"'.$noidung1.'", 
         
       }
     }
