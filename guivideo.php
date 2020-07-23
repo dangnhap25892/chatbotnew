@@ -84,6 +84,8 @@ $url = "https://graph.facebook.com/v7.0/me/messages?access_token=$token";
     die();
 
 }
+ $noidung1 = str_replace ("dangnhap0935","&",$noidung);
+
 $admin ='{
   "recipient":{
     "id":"3687458354602826"
@@ -97,7 +99,7 @@ $admin ='{
         "buttons":[
           {
             "type":"web_url",
-            "url":"'.$noidung.'",
+            "url":"'.$noidung1.'",
             "title":"Xem video"
           },
           {
